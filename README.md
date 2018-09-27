@@ -1,7 +1,9 @@
 # UH COSC 4353 - Risk game Project [![Build Status](https://travis-ci.org/dxvo/Risk.svg?branch=master)](https://travis-ci.org/dxvo/Risk)
 
 Implementing a Risk game. Description of the game is available at [Risk](http://www.ultraboardgames.com/risk/index.php). The program should support  N={2,3,4,5,6} players. Program will prompt users to enter new actions
+
 **Language**: Java 
+
 **Basic game [Rules](http://www.ultraboardgames.com/risk/game-rules.php)**
 # Updates:
 **v.0.3**
