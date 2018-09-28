@@ -1,21 +1,22 @@
-public class Player{
+public class player{
 	//firrrssstt cooooommmiitt
 	private int NumOfInfantry;
 	private int	NumOfTerritories;
 	private int NumOfBenchedInfantry;
-	
-	public Player() {
+	private int playerID;
+
+	public player() {
 		NumOfInfantry = 0;
 		NumOfBenchedInfantry = 0;
-		NumOfTerritories = 0;	
+		NumOfTerritories = 0;
 	}
-	
-	public Player(int n) {
-		NumOfInfantry = 40-((n-2)*5);
-		NumOfTerritories = 0;	
+
+	public player(int ID, int numPlayers) {
+		playerID = ID;
+		NumOfInfantry = 40-((numPlayers-2)*5);
+		NumOfBenchedInfantry = NumOfInfantry;
+		NumOfTerritories = 0;
 	}
-	
-	
 
 
 	public void setInfantry(int x) {
@@ -35,5 +36,11 @@ public class Player{
 	}
 	public int getTerritories() {
 		return NumOfTerritories;
+	}
+	public void setID(int x) {
+		this.playerID= x;
+	}
+	public int getID() {
+		return playerID;
 	}
 }
