@@ -10,4 +10,6 @@ java Risk
 
 cd ..
 
+./clean.sh
+
 echo \#done!
