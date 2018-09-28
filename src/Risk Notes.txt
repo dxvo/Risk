@@ -1,8 +1,0 @@
-New Units = floor(Owned Territories / 3) 
-	(no less than 3)
-
-Receive Risk Card when:
-	You conquer at least one opponent's territory
-
-If you have 5 or more risk cards, you must trade them in at the start of your next turn
-
