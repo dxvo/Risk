@@ -1,11 +1,11 @@
 public class Battle {
-	
-	public Battle() {
-	
-		/*	
-		 * 
-		 */
-	}
-	
+
+    public Battle() {
+
+        /*
+         *
+         */
+    }
+
 }
 //this is through vs code
