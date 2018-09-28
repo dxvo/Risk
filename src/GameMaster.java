@@ -77,7 +77,6 @@ public class GameMaster
 		
 	}
 	
-=======
 
 	private player registerPlayer(int id, int numPlayers)
 	{
