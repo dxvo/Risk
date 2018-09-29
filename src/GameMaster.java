@@ -5,28 +5,26 @@ public class GameMaster
 {
 	private Map gameMap;
 	private BattleHandler battleHandler;
-
 	private ArrayList <Player> playerList;
+	private int numPlayers;
 
 	private int maxPlayers; // dont think we need this
-	private int numPlayers;
+
 	private int playerTurn;
+
 	
-	public GameMaster()
-	{
+	public GameMaster() {
 		gameMap = new Map();
 		battleHandler = new BattleHandler();
 	}
 	
-	public void gameStart()
-	{
+	public void gameStart() {
 		gameSetup();
 		gameLoop();
 		gameCleanup();
 	}
 
-	private void gameSetup()
-	{
+	private void gameSetup() {
 		// Player Setup
 		playerSetup();
 
@@ -43,7 +41,6 @@ public class GameMaster
 		// Prompt Number of Players and
 		// Initialize Players
 		do {
-
 			Scanner reader = new Scanner(System.in);  // Reading from System.in
 			System.out.print("Enter number of player between 1 and 6: ");
 			numPlayers = reader.nextInt(); //numPlayers is an attribution of the GameMaster class
@@ -62,7 +59,7 @@ public class GameMaster
 		{
 			Player player = new Player(i); //initialize player ID - start with 0
 			int numUnits = 50 - numPlayers * 5;
-			player.setNumUnits(numUnits);
+			player.setNumUnits(numUnits); // set player number of units
 			playerList.add(player); // append player into list
 		}
 
@@ -71,6 +68,36 @@ public class GameMaster
 			System.out.println(playerList.get(i).getNumUnits()); //playerList.get(i) return object type Player
 		}
 
+	}
+
+	private void mapSetup()
+	{
+		// Prompt Dimensions
+		// Init Map
+		Scanner reader = new Scanner(System.in);// Reading from System.in
+		do{
+			System.out.print("Enter width: ");
+			int width = reader.nextInt();
+			if(width <= 0 )
+				System.out.println("Can't be negative. Re-enter width: ");
+		} while(width <= 0);
+
+		do{
+			System.out.print("Enter height: ");
+			int height = reader.nextInt();
+			if(height <= 0 )
+				System.out.println("Can't be negative. Re-enter height: ");
+		} while(height <= 0);
+
+		Map map = new Map(width, height); // This will also fill call Territory class and initialize
+
+	}
+
+	private void playerOrderSetup()
+	{
+		// Roll Dice
+
+		// Calculate Starting Player - Store in "playerTurn"
 
 	}
 
@@ -81,18 +108,15 @@ public class GameMaster
 		// Inside Loop call playerTurn()
 	}
 
-
 	private void gameCleanup()
 	{
 
 	}
-
 	private Player registerPlayer(int id) // where do we call this method
 	{
 		Player player = new Player(id);
 		return player;
 	}
-	
 	private void playerTurn(Player player)
 	{
 		// Reward new benched Units
@@ -105,23 +129,6 @@ public class GameMaster
 		
 		// Handle Results
 	}
-	
 
-	
-	private void mapSetup()
-	{
-		// Prompt Dimensions
-		
-		// Init Map
-		
-	}
-	
-	private void playerOrderSetup()
-	{
-		// Roll Dice
-		
-		// Calculate Starting Player - Store in "playerTurn"
-		
-	}
 
 }
