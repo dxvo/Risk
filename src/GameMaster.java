@@ -75,16 +75,18 @@ public class GameMaster
 		// Prompt Dimensions
 		// Init Map
 		Scanner reader = new Scanner(System.in);// Reading from System.in
+		int width = 0;
+		int height = 0;
 		do{
 			System.out.print("Enter width: ");
-			int width = reader.nextInt();
+			width = reader.nextInt();
 			if(width <= 0 )
 				System.out.println("Can't be negative. Re-enter width: ");
 		} while(width <= 0);
 
 		do{
 			System.out.print("Enter height: ");
-			int height = reader.nextInt();
+			height = reader.nextInt();
 			if(height <= 0 )
 				System.out.println("Can't be negative. Re-enter height: ");
 		} while(height <= 0);
