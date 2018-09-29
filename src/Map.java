@@ -11,7 +11,7 @@ public class Map
 		initMap();
 	}
 	
-	public Map(int w, int h)
+	public Map(int w, int h)// w and h come info come from mapSeTup
 	{
 		setDimensions(w, h);
 		initMap();
