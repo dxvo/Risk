@@ -1,23 +1,23 @@
+
 public class Map
 {
 	private Territory data[][];
 	private int width;
 	private int height;
 	
-	public Map()
-	{
+	public Map() {
 		width = 1;
 		height = 1;
 		initMap();
 	}
 	
-	public Map(int w, int h)// w and h come info come from mapSeTup
+	public Map(int w, int h) // w and h come info come from mapSeTup
 	{
 		setDimensions(w, h);
 		initMap();
 	}
 	
-	// Initialization of Data
+	// Initialization of Data and fill with
 	public void initMap()
 	{
 		data = new Territory[width][height];
