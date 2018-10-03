@@ -14,6 +14,8 @@ public class Map
 	public Map(int w, int h) // w and h come info come from mapSeTup
 	{
 		setDimensions(w, h);
+		System.out.println("Initilizing map...");
+		System.out.println("Distributing units...");
 		initMap();
 	}
 	

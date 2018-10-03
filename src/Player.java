@@ -4,13 +4,15 @@ public class Player
 	private int numUnits;
 	private int numBenchedUnits;
 	private int numTerritories;
-	
+	private int die_value;
+
 	public Player()
 	{
 		playerID = 0;
 		numUnits = 0;
 		numBenchedUnits = 0;
 		numTerritories = 0;
+		die_value = 0;
 	}
 	
 	public Player(int id)
@@ -19,6 +21,7 @@ public class Player
 		numUnits = 0;
 		numBenchedUnits = 0;
 		numTerritories = 0;
+		die_value = 0;
 	}
 	
 	// Mutators
@@ -45,7 +48,13 @@ public class Player
 		if(count >= 0)
 			numTerritories = count;
 	}
-	
+
+	public void setDie_value(int value)
+	{
+		if(value >= 0)
+			die_value = value;
+	}
+
 	public void addBenchedUnits(int count)
 	{
 		if(count < 1)
@@ -70,7 +79,8 @@ public class Player
 			numBenchedUnits -= count;
 		}
 	}
-	
+
+
 	// Getters	
 	public boolean isPlaying()
 	{
@@ -96,4 +106,6 @@ public class Player
 	{
 		return numTerritories;
 	}
+
+	public int getDie_value(){ return die_value;}
 }
