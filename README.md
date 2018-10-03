@@ -14,4 +14,4 @@ Implementing a Risk game. Description of the game is available at [Risk](http://
 
 **v.0.2**
 -  Use Travis CI and show the status of the build.
-
+- test
