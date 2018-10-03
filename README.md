@@ -5,6 +5,8 @@ Implementing a Risk game. Description of the game is available at [Risk](http://
 **Language**: Java 
 
 **Basic game [Rules](http://www.ultraboardgames.com/risk/game-rules.php)**
+
+**To compile:** ./build.sh 
 # Updates:
 **v.0.3**
 - Users can undo their actions
