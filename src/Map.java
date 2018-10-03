@@ -1,11 +1,11 @@
-
 public class Map
 {
 	private Territory data[][];
 	private int width;
 	private int height;
 	
-	public Map() {
+	public Map()
+	{
 		width = 1;
 		height = 1;
 		initMap();
@@ -17,6 +17,7 @@ public class Map
 		initMap();
 	}
 	
+
 	// Initialization of Data and fill with
 	public void initMap()
 	{

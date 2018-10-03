@@ -13,18 +13,21 @@ public class GameMaster
 	private int playerTurn;
 
 	
-	public GameMaster() {
+	public GameMaster()
+	{
 		gameMap = new Map();
 		battleHandler = new BattleHandler();
 	}
 	
-	public void gameStart() {
+	public void gameStart()
+	{
 		gameSetup();
 		gameLoop();
 		gameCleanup();
 	}
 
-	private void gameSetup() {
+	private void gameSetup()
+	{
 		// Player Setup
 		playerSetup();
 
@@ -131,6 +134,4 @@ public class GameMaster
 		
 		// Handle Results
 	}
-
-
 }

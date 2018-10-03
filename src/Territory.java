@@ -3,7 +3,8 @@ public class Territory
 	private int ownerID;
 	private int numUnits;
 	
-	public Territory() {
+	public Territory()
+	{
 		ownerID = 0;
 		numUnits = 0;
 	}
@@ -12,8 +13,10 @@ public class Territory
 	{
 		ownerID = id;
 	}
-	public int getOwnerID() { return ownerID; }
-	
+	public int getOwnerID()
+	{
+		return ownerID;
+	}	
 	public void setNumUnits(int units)
 	{
 		numUnits = units;
