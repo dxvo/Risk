@@ -27,7 +27,7 @@ public class Player
 	// Mutators
 	public void setPlayerID(int id)
 	{
-		if(id > 0)
+		if(id >= 0)
 			playerID = id;
 	}
 	
