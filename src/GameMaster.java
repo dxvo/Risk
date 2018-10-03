@@ -10,8 +10,8 @@ public class GameMaster
 	private BattleHandler battleHandler;
 
 	private int numPlayers;
-	private int maxPlayers; // dont think we need this
-	private int playerTurn; //
+	private int maxPlayers; //did not really use this
+	private int playerTurn; // i did not use this
 
 	
 	public GameMaster()
@@ -27,6 +27,7 @@ public class GameMaster
 	public void gameStart()
 	{
 		gameSetup();
+
 		gameLoop();
 		gameCleanup();
 	}
@@ -52,14 +53,14 @@ public class GameMaster
 			Scanner reader = new Scanner(System.in);  // Reading from System.in
 			System.out.print("Enter number of player between 1 and 6: ");
 			numPlayers = reader.nextInt(); //numPlayers is an attribution of the GameMaster class
-			if(numPlayers <= 0)
+			if(numPlayers <= 1)
 
-				System.out.println("Number of player cant be smaller than 0");
+				System.out.println("Number of player cant be smaller than 1");
 			if (numPlayers > 6)
 
 				System.out.println("Number of player cant be greater than 6");
 
-		} while (numPlayers <= 0 || numPlayers > 6);
+		} while (numPlayers <= 1 || numPlayers > 6);
 
 		for (int i = 0 ; i < numPlayers; i++)
 		{
@@ -70,7 +71,7 @@ public class GameMaster
 			playerList.add(player); // append player into list
 		}
 
-		System.out.println("Setting up players and units...");
+		System.out.println("SETTING UP PLAYERS AND UNITS...");
 		for (int i=0; i<playerList.size(); i++)
 		{
 			System.out.printf("PlayerID: %d",playerList.get(i).getPlayerID());
@@ -101,6 +102,8 @@ public class GameMaster
 				System.out.println("Can't be negative. Re-enter height: ");
 		} while(height <= 0);
 
+		width = 6; //over-write!
+		height = 7; //over-write for simplicity
 		Map map = new Map(width, height); // This will also fill  Territory class and initialize
 
 	}
@@ -122,12 +125,8 @@ public class GameMaster
 			playerList.get(i).setDie_value(die.roll()); //set roll die value to the player
 
 			if (i != 0 && playerList.get(i).getDie_value() == roll_value[0]) {
-				System.out.printf("Player %d and Player %d have same leading value which is %d\n", i , roll_value[1], roll_value[0]);
-				System.out.printf("Player %d rolls again. ", i);
-				System.out.print("Value is: ");
-
 				do {
-					System.out.print("Both player still have same leading roll\n");
+					System.out.printf("Player %d and Player %d have same leading value which is %d\n", i , roll_value[1], roll_value[0]);
 					System.out.printf("Player %d rolls again. ", i);
 					System.out.print("Value is: ");
 					playerList.get(i).setDie_value(die.roll()); //roll again and keep rolling if both players have same number
@@ -162,7 +161,12 @@ public class GameMaster
 
 		System.out.print("The player turn is: ");
 		for (int i = 0; i < numPlayers; i++)
-			System.out.printf("Player %d, ", turnID[i]);
+		{
+			playerList.get(i).setPlayerID(turnID[i]); //The ArrayList now is in-order to use for game loop
+			System.out.printf("Player %d, ", playerList.get(i).getPlayerID());
+		}
+
+
 		System.out.println();
 
 

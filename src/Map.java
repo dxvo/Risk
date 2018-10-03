@@ -11,9 +11,10 @@ public class Map
 		initMap();
 	}
 	
-	public Map(int w, int h) // w and h come info come from mapSeTup
+	public Map(int w, int h) //overloaded - constructor
 	{
-		setDimensions(w, h);
+		width = w;
+		height = h;
 		System.out.println("\nINITIALIZING MAP AND DISTRIBUTING ARMY UNITS...");
 		initMap();
 	}
@@ -21,18 +22,12 @@ public class Map
 	// Initialization of Data and fill with
 	public void initMap()
 	{
-		data = new Territory[width][height];
+		data = new Territory[width][height];//
 		for(int x = 0; x < width; x++)
 			for(int y = 0; y < height; y++)
 				data[x][y] = new Territory();
 	}
-	
-	public void setDimensions(int w, int h)
-	{
-		width = w;
-		height = h;
-		initMap();
-	}
+
 	
 	// Status Getters
 	public boolean isValidCoordinates(int x, int y)

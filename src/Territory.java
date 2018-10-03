@@ -16,7 +16,8 @@ public class Territory
 	public int getOwnerID()
 	{
 		return ownerID;
-	}	
+	}
+
 	public void setNumUnits(int units)
 	{
 		numUnits = units;
