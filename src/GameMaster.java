@@ -1,15 +1,16 @@
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class GameMaster
 {
 	private Map gameMap;
-	private BattleHandler battleHandler;
 	private ArrayList <Player> playerList;
+
+	private BattleHandler battleHandler;
+
 	private int numPlayers;
-
 	private int maxPlayers; // dont think we need this
-
 	private int playerTurn;
 
 	
@@ -17,6 +18,10 @@ public class GameMaster
 	{
 		gameMap = new Map();
 		battleHandler = new BattleHandler();
+		playerList = new ArrayList <Player>(); //initialize the playerlist to empty
+		numPlayers = 0;
+		playerTurn = 0;
+		maxPlayers = 6;
 	}
 	
 	public void gameStart()
@@ -56,19 +61,19 @@ public class GameMaster
 
 		} while (numPlayers <= 0 || numPlayers > 6);
 
-		//This is to initialize the playerlist. The PlayerId and numofUnits also initialize
-		playerList = new ArrayList <Player>(); //initialize the playerlist - which is an attribute of this class
 		for (int i = 0 ; i < numPlayers; i++)
 		{
 			Player player = new Player(i); //initialize player ID - start with 0
 			int numUnits = 50 - numPlayers * 5;
 			player.setNumUnits(numUnits); // set player number of units
+			player.setNumBenchedUnits(numUnits); //set bench unit equal to numunits when just started
 			playerList.add(player); // append player into list
 		}
 
-		for (int i=0; i<playerList.size(); i++) {
-			System.out.println(playerList.get(i).getPlayerID());
-			System.out.println(playerList.get(i).getNumUnits()); //playerList.get(i) return object type Player
+		for (int i=0; i<playerList.size(); i++)
+		{
+			System.out.printf("PlayerID: %d",playerList.get(i).getPlayerID());
+			System.out.printf(" - Number of unit: %d\n",playerList.get(i).getNumUnits()); //playerList.get(i) return object type Player
 		}
 
 	}
@@ -94,14 +99,51 @@ public class GameMaster
 				System.out.println("Can't be negative. Re-enter height: ");
 		} while(height <= 0);
 
-		Map map = new Map(width, height); // This will also fill call Territory class and initialize
+		Map map = new Map(width, height); // This will also fill  Territory class and initialize
 
 	}
 
-	private void playerOrderSetup()
-	{
-		// Roll Dice
+	private void playerOrderSetup() {
+		Die die = new Die();
+		int[] roll_value = new int[numPlayers];
+		roll_value[0] = 0;
 
+		for (int i = 0; i < numPlayers; i++)
+		{
+			System.out.printf("Player %d rolled: ", i);
+			playerList.get(i).setDie_value(die.roll()); //set roll die value to the player
+
+			if (i != 0 && playerList.get(i).getDie_value() == roll_value[0]) {
+				System.out.printf("Player %d and Player %d have same leading value which is %d\n", i , roll_value[1], roll_value[0]);
+				System.out.printf("Player %d rolls again. ", i);
+				System.out.print("Value is: ");
+
+				do {
+					playerList.get(i).setDie_value(die.roll()); //roll again and keep rolling if both players have same number
+				} while (playerList.get(i).getDie_value() == roll_value[0]);
+
+				if (playerList.get(i).getDie_value() > roll_value[0]) {
+					roll_value[0] = playerList.get(i).getDie_value();
+					roll_value[1] = i;
+					System.out.printf("%d is now highest roll value.\n", roll_value[0]);
+				}
+			}
+			if (playerList.get(i).getDie_value() > roll_value[0])//store the roll die value into array
+			{
+				roll_value[0] = playerList.get(i).getDie_value(); // if the roll value is greater than current value, then update
+				roll_value[1] = i; // this is actually store the playerID
+			}
+
+		}
+
+		System.out.printf("Player %d with highest roll value which is %d\n",roll_value[1],roll_value[0]);
+		System.out.printf("Player %d goes first\n", roll_value[1]);
+
+		//NOW NEED TO ASSIGN TURN VALUE TO PLAYER
+
+
+		//based on the number of player and roll dice
+		// Roll Dice
 		// Calculate Starting Player - Store in "playerTurn"
 
 	}
