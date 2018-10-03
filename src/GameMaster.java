@@ -11,7 +11,7 @@ public class GameMaster
 
 	private int numPlayers;
 	private int maxPlayers; // dont think we need this
-	private int playerTurn;
+	private int playerTurn; //
 
 	
 	public GameMaster()
@@ -20,8 +20,8 @@ public class GameMaster
 		battleHandler = new BattleHandler();
 		playerList = new ArrayList <Player>(); //initialize the playerlist to empty
 		numPlayers = 0;
-		playerTurn = 0;
 		maxPlayers = 6;
+		playerTurn = 0;
 	}
 	
 	public void gameStart()
@@ -36,11 +36,11 @@ public class GameMaster
 		// Player Setup
 		playerSetup();
 
-		// Map Setup
-		mapSetup();
-
 		// Decide Player Order
 		playerOrderSetup();
+
+		// Map Setup
+		mapSetup();
 	}
 
 
@@ -70,6 +70,7 @@ public class GameMaster
 			playerList.add(player); // append player into list
 		}
 
+		System.out.println("Setting up players and units...");
 		for (int i=0; i<playerList.size(); i++)
 		{
 			System.out.printf("PlayerID: %d",playerList.get(i).getPlayerID());
@@ -85,15 +86,16 @@ public class GameMaster
 		Scanner reader = new Scanner(System.in);// Reading from System.in
 		int width = 0;
 		int height = 0;
+		System.out.println("\nSETTING UP MAP... ");
 		do{
-			System.out.print("Enter width: ");
+			System.out.print("Enter map width: ");
 			width = reader.nextInt();
 			if(width <= 0 )
 				System.out.println("Can't be negative. Re-enter width: ");
 		} while(width <= 0);
 
 		do{
-			System.out.print("Enter height: ");
+			System.out.print("Enter map height: ");
 			height = reader.nextInt();
 			if(height <= 0 )
 				System.out.println("Can't be negative. Re-enter height: ");
@@ -103,11 +105,17 @@ public class GameMaster
 
 	}
 
-	private void playerOrderSetup() {
+	private void playerOrderSetup()
+	{
+		//Properly will re-arrange the arraylist of playpler
+		//NOW NEED TO ASSIGN TURN VALUE TO PLAYER
+		//based on the number of player and roll dice
+		// Roll Dice
+		// Calculate Starting Player - Store in "playerTurn"
 		Die die = new Die();
-		int[] roll_value = new int[numPlayers];
+		int[] roll_value = new int[2];
 		roll_value[0] = 0;
-
+		System.out.println("\nSETTING UP PLAYERS' TURN...");
 		for (int i = 0; i < numPlayers; i++)
 		{
 			System.out.printf("Player %d rolled: ", i);
@@ -119,6 +127,9 @@ public class GameMaster
 				System.out.print("Value is: ");
 
 				do {
+					System.out.print("Both player still have same leading roll\n");
+					System.out.printf("Player %d rolls again. ", i);
+					System.out.print("Value is: ");
 					playerList.get(i).setDie_value(die.roll()); //roll again and keep rolling if both players have same number
 				} while (playerList.get(i).getDie_value() == roll_value[0]);
 
@@ -130,21 +141,30 @@ public class GameMaster
 			}
 			if (playerList.get(i).getDie_value() > roll_value[0])//store the roll die value into array
 			{
-				roll_value[0] = playerList.get(i).getDie_value(); // if the roll value is greater than current value, then update
+				roll_value[0] = playerList.get(i).getDie_value();// if roll value is greater than current value, then update
 				roll_value[1] = i; // this is actually store the playerID
 			}
-
 		}
 
 		System.out.printf("Player %d with highest roll value which is %d\n",roll_value[1],roll_value[0]);
 		System.out.printf("Player %d goes first\n", roll_value[1]);
 
-		//NOW NEED TO ASSIGN TURN VALUE TO PLAYER
 
+		int [] turnID = new int[numPlayers]; //store player turn ID
+		turnID[0] = roll_value[1]; //store the Id of person who go first here
+		for (int i = 1; i < numPlayers; i++)
+		{
+			if(turnID[i-1] != numPlayers - 1) //player start at 0
+				turnID[i] = turnID[i - 1] + 1;
+			else if (turnID[i - 1] == 5)
+				turnID[i] = 0;
+		}
 
-		//based on the number of player and roll dice
-		// Roll Dice
-		// Calculate Starting Player - Store in "playerTurn"
+		System.out.print("The player turn is: ");
+		for (int i = 0; i < numPlayers; i++)
+			System.out.printf("Player %d, ", turnID[i]);
+		System.out.println();
+
 
 	}
 
