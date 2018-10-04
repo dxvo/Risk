@@ -1,42 +1,47 @@
 public class Map
 {
-	private Territory [][] data;
-	private int width;
-	private int height;
-	
+	private Territory[][] data;
+	private int row;
+	private int col;
+
+	/*
 	public Map()
 	{
-		width = 0;
-		height = 0;
-		data = new Territory[width][height];
+		row = 0;
+		col = 0;
+		data = new Territory[row][col];
 		initMap();
 	}
-	
-	public Map(int w, int h) //overloaded - constructor
+	*/ // let just not define this
+
+	public Map(int h, int w) //overloaded - constructor
 	{
-		width = w; //width is default to 6
-		height = h; //height is default to 7 to avoid scaling complexity
+		row = h; //width is default to 6
+		col = w; //height is default to 7 to avoid scaling complexity
 		System.out.println("\nINITIALIZING MAP AND DISTRIBUTING ARMY UNITS...");
-		data = new Territory[w][h];
+		data = new Territory[row][col];
 		initMap();
 	}
 
 	// Initialization of Data and fill with
 	public void initMap()
 	{
-		for(int x = 0; x < width; x++)
-			for(int y = 0; y < height; y++)
+		for(int x = 0; x < row; x++)
+		{
+			for(int y = 0; y < col; y++)
 				data[x][y] = new Territory();
+		}
+
 	}
 
 	public boolean isValidCoordinates(int x, int y)
 	{
-		return (x >= 0 || y >= 0 || x < width || y < height);
+		return (x >= 0 || y >= 0 || x < row || y < col);
 	}
 
 	public int numTerritories()
 	{
-		return width * height;
+		return row * col;
 	}
 	
 	public int getNumUnits(int x, int y)
@@ -50,8 +55,8 @@ public class Map
 	public int numOwnedTerritories(int id)
 	{
 		int count = 0;
-		for(int x = 0; x < width; x++)
-			for(int y = 0; y < height; y++)
+		for(int x = 0; x < row; x++)
+			for(int y = 0; y < col; y++)
 				if(data[x][y].getOwnerID() == id)
 					count++;
 		return count;
@@ -129,8 +134,10 @@ public class Map
 	{
 		if(isValidCoordinates(x, y) == false)
 			return false;
-
 		return data[x][y].getNumUnits() > 1;
 	}
 
+	public Territory[][] getData() {
+		return data;
+	}
 }

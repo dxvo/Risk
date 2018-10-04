@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
+import java.lang.Math;
 
 public class GameMaster
 {
@@ -17,7 +17,7 @@ public class GameMaster
 	
 	public GameMaster()
 	{
-		gameMap = new Map();
+		//gameMap = new Map();
 		battleHandler = new BattleHandler();
 		playerList = new ArrayList <Player>(); //initialize the playerlist to empty
 		numPlayers = 0;
@@ -87,85 +87,91 @@ public class GameMaster
 		// Prompt Dimensions
 		// Init Map
 		Scanner reader = new Scanner(System.in);// Reading from System.in
-		int width = 0;
-		int height = 0;
+		int row = 0;
+		int col = 0;
 
-		System.out.println("\nSETTING UP MAP... ");
+		System.out.println("\nSETTING UP AND SCALING MAP ... ");
 		do{
 			System.out.print("Enter map width: ");
-			width = reader.nextInt();
-			if(width <= 0 )
+			col = reader.nextInt();
+			if(col <= 0 )
 				System.out.println("Must be greater than 0. Re-enter width: ");
-		} while(width <= 0);
+		} while(col <= 0);
 
 		do{
 			System.out.print("Enter map height: ");
-			height = reader.nextInt();
-			if(height <= 0 )
+			row = reader.nextInt();
+			if(row <= 0 )
 				System.out.println("Must be greater than 0. Re-enter height: ");
-		} while(height <= 0);
+		} while(row <= 0);
 
-		if(height*width < 42)
+		if(row*col < 42)
 		{
 			do{
 				System.out.println("Area is not big enough. Area value must be least 42).\n Re-enter map dimension. ");
 
 				do{
 					System.out.print("Enter map width: ");
-					width = reader.nextInt();
-					if(width <= 0 )
+					col = reader.nextInt();
+					if(col <= 0 )
 						System.out.println("Must be greater than 0. Re-enter width: ");
-				} while(width <= 0);
+				} while(col <= 0);
 
 				do{
 					System.out.print("Enter map height: ");
-					height = reader.nextInt();
-					if(height <= 0 )
+					row = reader.nextInt();
+					if(row <= 0 )
 						System.out.println("Must be greater than 0. Re-enter height: ");
-				} while(height <= 0);
-			} while (height*width < 42);
+				} while(row <= 0);
+			} while (row*col < 42);
 		}
 
-		width = 6; //over-write!
-		height = 7; //over-write for simplicity
-		gameMap = new Map(width, height); //each map pixel is a territoty by calling getData(int x, int y)
+		col = 6; //over-write!
+		row = 7; //over-write for simplicity
+		gameMap = new Map(row, col); //each map pixel is a territoty by calling getData(int x, int y)
 
 
 		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories
 
-		for (int i = 0; i < numToFill; i++)
+		for (int cycle = 0; cycle < numToFill; cycle++)
 		{
-			for (int y = 0; y < 6; y++)// of col
+			for (int cell_col = 0; cell_col < 6; cell_col++) // # row number
 			{
 				for (int id = 0; id < numPlayers; id++)
 				{
-					Random rand = new Random();
-					rand.setSeed(rand.nextInt(10));
-					int x = rand.nextInt(6);//x is the width from 0 to 5 cuz width is 6
-					int cellownerID = gameMap.getOwnerID(x,y); //get owner ID at the cell
+					//Random rand = new Random();
+					//rand.setSeed(rand.nextInt(100));
+					//int cell_row = rand.nextInt(6);//col is 6 so 0 to 5
+					int cell_row = (int)(Math.random()*7);
+					int cellownerID = gameMap.getOwnerID(cell_row,cell_col); //get owner ID at the cell
 
 					if(cellownerID != -1 && cellownerID != id)
 					{
 						do{
-							Random rand2 = new Random();
-							rand2.setSeed(rand.nextInt(10));
-							x = rand2.nextInt(6);
-							cellownerID = gameMap.getOwnerID(x,y);
+							//Random rand2 = new Random();
+							//rand2.setSeed(rand.nextInt(10));
+							//cell_row = rand2.nextInt(6);
+							cell_row = (int)(Math.random() * 7); //7 is exclusive
+							cellownerID = gameMap.getOwnerID(cell_row,cell_col);
 						}while(cellownerID != -1 && cellownerID != id);
 					}
-					gameMap.setId(x,y,id); //set player Id into that cell
+					gameMap.setId(cell_row,cell_col,id); //set player Id into that cell
 				}
 			}
 		}
 
-		for(int i = 0; i < 7; i++)
+
+		for(int i = 0; i < row; i++)
 		{
-			for (int j = 0; j < 6; j++)
+			for (int j = 0; j < col; j++)
 			{
 				System.out.printf("\t %d",gameMap.getOwnerID(i,j));
 			}
 			System.out.println();
 		}
+
+
+
 
 	}
 

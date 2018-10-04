@@ -18,8 +18,6 @@ public class Territory
 
 	public void setNumUnits(int units){ numUnits = units;}
 
-	public void increase_Unit(){numUnits = numUnits +1;} //distributed at beginning
-
 	public int getNumUnits() { return numUnits;}
 
 }
