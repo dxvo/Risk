@@ -90,7 +90,7 @@ public class GameMaster
 		int row = 0;
 		int col = 0;
 
-		System.out.println("\nSETTING UP AND SCALING MAP ... ");
+		System.out.println("\nPLAYERS' TERRITORIES MAP ");
 		do{
 			System.out.print("Enter map width: ");
 			col = reader.nextInt();
@@ -129,8 +129,6 @@ public class GameMaster
 		col = 6; //over-write!
 		row = 7; //over-write for simplicity
 		gameMap = new Map(row, col); //each map pixel is a territoty by calling getData(int x, int y)
-
-
 		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories
 
 		for (int cycle = 0; cycle < numToFill; cycle++)
@@ -160,7 +158,7 @@ public class GameMaster
 			}
 		}
 
-
+		//Randomly distribute player into territories
 		for(int i = 0; i < row; i++)
 		{
 			for (int j = 0; j < col; j++)
@@ -170,8 +168,26 @@ public class GameMaster
 			System.out.println();
 		}
 
+		//Count number of territories for each player
+
+		for(int i = 0; i < numPlayers; i++)
+		{
+			int territories_own = gameMap.numOwnedTerritories(playerList.get(i).getPlayerID());
+			playerList.get(i).setNumTerritories(territories_own);
+			System.out.printf("Player %d, number of territories_own %d: \n",playerList.get(i).getPlayerID(),playerList.get(i).getNumTerritories());
+		}
 
 
+		/*
+		for (int i = 0; i < row; i++)
+		{
+			for(int j = 0; j < col; j++)
+			{
+				int ownerID = gameMap.getOwnerID(i,j);
+				if()
+			}
+		}
+		*/
 
 	}
 
