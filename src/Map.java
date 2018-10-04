@@ -6,8 +6,8 @@ public class Map
 	
 	public Map()
 	{
-		width = 1;
-		height = 1;
+		width = 0;
+		height = 0;
 		data = new Territory[width][height];
 		initMap();
 	}
@@ -29,18 +29,71 @@ public class Map
 				data[x][y] = new Territory();
 	}
 
-	
-	// Status Getters
 	public boolean isValidCoordinates(int x, int y)
 	{
 		return (x >= 0 || y >= 0 || x < width || y < height);
 	}
+
+	public int numTerritories()
+	{
+		return width * height;
+	}
 	
+	public int getNumUnits(int x, int y)
+	{
+		if(isValidCoordinates(x, y) == false)
+			return 0;
+		return data[x][y].getNumUnits();
+	}
+
+	
+	public int numOwnedTerritories(int id)
+	{
+		int count = 0;
+		for(int x = 0; x < width; x++)
+			for(int y = 0; y < height; y++)
+				if(data[x][y].getOwnerID() == id)
+					count++;
+		return count;
+	}
+
+	public int getOwnerID(int x, int y)
+	{
+		if(isValidCoordinates(x,y))
+			return data[x][y].getOwnerID();
+
+		return 0;
+	}
+
+	public void setId(int x, int y, int id)
+	{
+		if(isValidCoordinates(x, y))
+			data[x][y].setOwnerID(id);
+	}
+
+	// Mutators for Data
+	public void setTerritory(int x, int y, int id, int units)
+	{
+		if(isValidCoordinates(x, y))
+		{
+			data[x][y].setOwnerID(id);
+			data[x][y].setNumUnits(units);
+		}
+	}
+
+
+	public void setNumUnits(int x, int y, int units)
+	{
+		if(isValidCoordinates(x, y) == false)
+			return;
+		data[x][y].setNumUnits(units);
+	}
+
 	public boolean hasEnemyNeighbor(int x, int y)
 	{
 		if(isValidCoordinates(x, y) == false)
 			return false;
-		
+
 		if(isValidCoordinates(x, y-1))
 			if(data[x][y-1].getOwnerID() != data[x][y].getOwnerID())
 				return true;
@@ -53,21 +106,21 @@ public class Map
 		if(isValidCoordinates(x, y+1))
 			if(data[x][y+1].getOwnerID() != data[x][y].getOwnerID())
 				return true;
-		
+
 		return false;
 	}
-	
+
 	public boolean areEnemyNeighbors(int x1, int y1, int x2, int y2)
 	{
 		if(isValidCoordinates(x1, y1) == false)
 			return false;
 		if(isValidCoordinates(x2, y2) == false)
 			return false;
-		
+
 		if((x2 - x1) + (y2 - y1) == 1)
 			if(data[x1][y1].getOwnerID() != data[x1][y1].getOwnerID())
 				return true;
-		
+
 		return false;
 	}
 
@@ -76,61 +129,8 @@ public class Map
 	{
 		if(isValidCoordinates(x, y) == false)
 			return false;
-		
+
 		return data[x][y].getNumUnits() > 1;
 	}
-	
-	public int getNumUnits(int x, int y)
-	{
-		if(isValidCoordinates(x, y) == false)
-			return 0;
-		
-		return data[x][y].getNumUnits();
-	}
-	
-	public int getOwnerID(int x, int y)
-	{
-		if(isValidCoordinates(x, y) == false)
-			return 0;
-		return data[x][y].getOwnerID();
-	}
-	
-	public int numTerritories()
-	{
-		return width * height;
-	}
-	
-	public int numOwnedTerritories(int id)
-	{
-		int count = 0;
-		
-		for(int x = 0; x < width; x++)
-			for(int y = 0; y < height; y++)
-				if(data[x][y].getOwnerID() == id)
-					count++;
-		
-		return count;
-	}
-	
-	// Mutators for Data
-	public void setTerritory(int x, int y, int id, int units)
-	{
-		if(isValidCoordinates(x, y) == false)
-			return;
-		
-		data[x][y].setOwnerID(id);
-		data[x][y].setNumUnits(units);
-	}
-	
-	public void setNumUnits(int x, int y, int units)
-	{
-		if(isValidCoordinates(x, y) == false)
-			return;
-		
-		data[x][y].setNumUnits(units);
-	}
 
-	public Territory getData(int x, int y){
-		return data[x][y]; //return the data at the points
-	}
 }

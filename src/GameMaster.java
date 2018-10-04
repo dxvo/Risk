@@ -1,6 +1,7 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Random;
 
 public class GameMaster
 {
@@ -88,6 +89,7 @@ public class GameMaster
 		Scanner reader = new Scanner(System.in);// Reading from System.in
 		int width = 0;
 		int height = 0;
+
 		System.out.println("\nSETTING UP MAP... ");
 		do{
 			System.out.print("Enter map width: ");
@@ -126,9 +128,47 @@ public class GameMaster
 
 		width = 6; //over-write!
 		height = 7; //over-write for simplicity
-		Map map = new Map(width, height); //each map pixel is a territoty by calling getData(int x, int y)
+		gameMap = new Map(width, height); //each map pixel is a territoty by calling getData(int x, int y)
+
+
+		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories
+
+		for (int i = 0; i < numToFill; i++)
+		{
+			for (int y = 0; y < 6; y++)// of col
+			{
+				for (int id = 0; id < numPlayers; id++)
+				{
+					Random rand = new Random();
+					rand.setSeed(rand.nextInt(10));
+					int x = rand.nextInt(6);//x is the width from 0 to 5 cuz width is 6
+					int cellownerID = gameMap.getOwnerID(x,y); //get owner ID at the cell
+
+					if(cellownerID != -1 && cellownerID != id)
+					{
+						do{
+							Random rand2 = new Random();
+							rand2.setSeed(rand.nextInt(10));
+							x = rand2.nextInt(6);
+							cellownerID = gameMap.getOwnerID(x,y);
+						}while(cellownerID != -1 && cellownerID != id);
+					}
+					gameMap.setId(x,y,id); //set player Id into that cell
+				}
+			}
+		}
+
+		for(int i = 0; i < 7; i++)
+		{
+			for (int j = 0; j < 6; j++)
+			{
+				System.out.printf("\t %d",gameMap.getOwnerID(i,j));
+			}
+			System.out.println();
+		}
 
 	}
+
 
 	private void playerOrderSetup()
 	{
@@ -148,7 +188,7 @@ public class GameMaster
 
 			if (i != 0 && playerList.get(i).getDie_value() == roll_value[0]) {
 				do {
-					System.out.printf("Player %d and Player %d have same leading value which is %d\n", i , roll_value[1], roll_value[0]);
+					System.out.printf("\nPlayer %d and Player %d have same leading value which is %d\n", i , roll_value[1], roll_value[0]);
 					System.out.printf("Player %d rolls again. ", i);
 					System.out.print("Value is: ");
 					playerList.get(i).setDie_value(die.roll()); //roll again and keep rolling if both players have same number
@@ -167,8 +207,7 @@ public class GameMaster
 			}
 		}
 
-		System.out.printf("Player %d with highest roll value\n",roll_value[1]);
-		System.out.printf("Player %d goes first\n", roll_value[1]);
+		System.out.printf("\nPlayer %d goes first\n", roll_value[1]);
 
 
 		int [] turnID = new int[numPlayers]; //store player turn ID
