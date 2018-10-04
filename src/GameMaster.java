@@ -29,6 +29,7 @@ public class GameMaster
 		gameSetup();
 
 		gameLoop();
+
 		gameCleanup();
 	}
 
@@ -92,19 +93,40 @@ public class GameMaster
 			System.out.print("Enter map width: ");
 			width = reader.nextInt();
 			if(width <= 0 )
-				System.out.println("Can't be negative. Re-enter width: ");
+				System.out.println("Must be greater than 0. Re-enter width: ");
 		} while(width <= 0);
 
 		do{
 			System.out.print("Enter map height: ");
 			height = reader.nextInt();
 			if(height <= 0 )
-				System.out.println("Can't be negative. Re-enter height: ");
+				System.out.println("Must be greater than 0. Re-enter height: ");
 		} while(height <= 0);
+
+		if(height*width < 42)
+		{
+			do{
+				System.out.println("Area is not big enough. Area value must be least 42).\n Re-enter map dimension. ");
+
+				do{
+					System.out.print("Enter map width: ");
+					width = reader.nextInt();
+					if(width <= 0 )
+						System.out.println("Must be greater than 0. Re-enter width: ");
+				} while(width <= 0);
+
+				do{
+					System.out.print("Enter map height: ");
+					height = reader.nextInt();
+					if(height <= 0 )
+						System.out.println("Must be greater than 0. Re-enter height: ");
+				} while(height <= 0);
+			} while (height*width < 42);
+		}
 
 		width = 6; //over-write!
 		height = 7; //over-write for simplicity
-		Map map = new Map(width, height); // This will also fill  Territory class and initialize
+		Map map = new Map(width, height); //each map pixel is a territoty by calling getData(int x, int y)
 
 	}
 
@@ -145,7 +167,7 @@ public class GameMaster
 			}
 		}
 
-		System.out.printf("Player %d with highest roll value which is %d\n",roll_value[1],roll_value[0]);
+		System.out.printf("Player %d with highest roll value\n",roll_value[1]);
 		System.out.printf("Player %d goes first\n", roll_value[1]);
 
 
@@ -166,9 +188,7 @@ public class GameMaster
 			System.out.printf("Player %d, ", playerList.get(i).getPlayerID());
 		}
 
-
 		System.out.println();
-
 
 	}
 
@@ -183,11 +203,13 @@ public class GameMaster
 	{
 
 	}
+
 	private Player registerPlayer(int id) // where do we call this method
 	{
 		Player player = new Player(id);
 		return player;
 	}
+
 	private void playerTurn(Player player)
 	{
 		// Reward new benched Units

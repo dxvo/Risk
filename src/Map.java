@@ -1,6 +1,6 @@
 public class Map
 {
-	private Territory data[][];
+	private Territory [][] data;
 	private int width;
 	private int height;
 	
@@ -8,21 +8,22 @@ public class Map
 	{
 		width = 1;
 		height = 1;
+		data = new Territory[width][height];
 		initMap();
 	}
 	
 	public Map(int w, int h) //overloaded - constructor
 	{
-		width = w;
-		height = h;
+		width = w; //width is default to 6
+		height = h; //height is default to 7 to avoid scaling complexity
 		System.out.println("\nINITIALIZING MAP AND DISTRIBUTING ARMY UNITS...");
+		data = new Territory[w][h];
 		initMap();
 	}
 
 	// Initialization of Data and fill with
 	public void initMap()
 	{
-		data = new Territory[width][height];//
 		for(int x = 0; x < width; x++)
 			for(int y = 0; y < height; y++)
 				data[x][y] = new Territory();
@@ -69,7 +70,8 @@ public class Map
 		
 		return false;
 	}
-	
+
+
 	public boolean canAttack(int x, int y)
 	{
 		if(isValidCoordinates(x, y) == false)
@@ -90,7 +92,6 @@ public class Map
 	{
 		if(isValidCoordinates(x, y) == false)
 			return 0;
-		
 		return data[x][y].getOwnerID();
 	}
 	
@@ -127,5 +128,9 @@ public class Map
 			return;
 		
 		data[x][y].setNumUnits(units);
+	}
+
+	public Territory getData(int x, int y){
+		return data[x][y]; //return the data at the points
 	}
 }
