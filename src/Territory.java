@@ -5,25 +5,19 @@ public class Territory
 	
 	public Territory()
 	{
-		ownerID = 0;
+		ownerID = -1;
 		numUnits = 0;
 	}
 	
-	public void setOwnerID(int id)
-	{
-		ownerID = id;
-	}
+	public void setOwnerID(int id) { ownerID = id; }
+
 	public int getOwnerID()
 	{
 		return ownerID;
 	}
 
-	public void setNumUnits(int units)
-	{
-		numUnits = units;
-	}
-	public int getNumUnits()
-	{
-		return numUnits;
-	}
+	public void setNumUnits(int units){ numUnits = units;}
+
+	public int getNumUnits() { return numUnits;}
+
 }
