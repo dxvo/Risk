@@ -66,7 +66,6 @@ public class Map
 	{
 		if(isValidCoordinates(x,y))
 			return data[x][y].getOwnerID();
-
 		return 0;
 	}
 
