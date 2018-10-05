@@ -19,3 +19,5 @@ after_success:
   <check />
   </configuration>
   </plugin>
+
+script: "mvn cobertura:cobertura"
