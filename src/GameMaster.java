@@ -13,6 +13,7 @@ public class GameMaster
 	private int numPlayers;
 	private int maxPlayers; //did not really use this
 	private int playerTurn; // i did not use this
+	private int numUnits;
 
 	
 	public GameMaster()
@@ -67,7 +68,7 @@ public class GameMaster
 		for (int i = 0 ; i < numPlayers; i++)
 		{
 			Player player = new Player(i); //initialize player ID - start with 0
-			int numUnits = 50 - numPlayers * 5;
+			numUnits = 50 - numPlayers * 5;
 			player.setNumUnits(numUnits); // set player number of units
 			player.setNumBenchedUnits(numUnits); //set bench unit equal to numunits when just started
 			playerList.add(player); // append player into list
@@ -158,18 +159,9 @@ public class GameMaster
 			}
 		}
 
-		//Randomly distribute player into territories
-		for(int i = 0; i < row; i++)
-		{
-			for (int j = 0; j < col; j++)
-			{
-				System.out.printf("\t %d",gameMap.getOwnerID(i,j));
-			}
-			System.out.println();
-		}
+
 
 		//Count number of territories for each player
-
 		for(int i = 0; i < numPlayers; i++)
 		{
 			int territories_own = gameMap.numOwnedTerritories(playerList.get(i).getPlayerID());
@@ -177,17 +169,35 @@ public class GameMaster
 			System.out.printf("Player %d, number of territories_own %d: \n",playerList.get(i).getPlayerID(),playerList.get(i).getNumTerritories());
 		}
 
-
-		/*
-		for (int i = 0; i < row; i++)
+		//setting the units to map
+		for(int i = 0; i < row; i++)
 		{
 			for(int j = 0; j < col; j++)
 			{
-				int ownerID = gameMap.getOwnerID(i,j);
-				if()
+				int playerID = gameMap.getOwnerID(i,j);
+				int player_territories_own	= playerList.get(playerID).getNumTerritories();
+				int bench_unit = playerList.get(playerID).getNumBenchedUnits();
+				if(bench_unit/player_territories_own < 2) //last turn
+					gameMap.setNumUnits(i,j,bench_unit);
+				else
+					gameMap.setNumUnits(i,j,bench_unit/player_territories_own); //save units to cell
+
+				bench_unit = bench_unit - bench_unit/player_territories_own; //new bench unit
+				playerList.get(playerID).setNumBenchedUnits(bench_unit); //update bench unit
 			}
 		}
-		*/
+
+
+		//Randomly distribute player into territories
+		System.out.println("\n CURRENT MAP");
+		for(int i = 0; i < row; i++)
+		{
+			for (int j = 0; j < col; j++)
+			{
+				System.out.printf("\t ID: %d, Units: %d",gameMap.getOwnerID(i,j), gameMap.getNumUnits(i,j));
+			}
+			System.out.println();
+		}
 
 	}
 
