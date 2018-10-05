@@ -2,7 +2,6 @@ public class BattleHandler
 {
 	public BattleHandler()
 	{
-		
 	}
 	
 	public void startBattle(Player attacker, Player defender, Map gameMap)
@@ -16,7 +15,6 @@ public class BattleHandler
 	
 	private void initBattle(Player attacker, Player defender, Map gameMap)
 	{
-		
 	}
 	
 	private void endBattle(Player attacker, Player defender, Map gameMap)
