@@ -9,19 +9,3 @@ script: "mvn cobertura:cobertura"
 
 after_success:
 - bash <(curl -s https://codecov.io/bash)
-
-  <plugin>
-  <groupId>org.codehaus.mojo</groupId>
-  <artifactId>cobertura-maven-plugin</artifactId>
-  <version>2.7</version>
-  <configuration>
-  <formats>
-  <format>html</format>
-  <format>xml</format>
-  </formats>
-  <check />
-  </configuration>
-  </plugin>
-
-  mvn cobertura:cobertura
-- bash <(curl -s https://codecov.io/bash) -t 743fc5cd-fb2c-4dc7-9dfd-fdb78f7ad756
