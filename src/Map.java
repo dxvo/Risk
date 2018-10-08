@@ -23,6 +23,11 @@ public class Map
 		initMap();
 	}
 
+	public void setRow(int r) { row = r; }
+	public void setCol (int c){col = c;}
+	public int getRow(){return row;}
+	public int getCol(){ return col;}
+
 	// Initialization of Data and fill with
 	public void initMap()
 	{
@@ -51,6 +56,12 @@ public class Map
 		return data[x][y].getNumUnits();
 	}
 
+	public void setNumUnits(int x, int y, int units)
+	{
+		if(isValidCoordinates(x, y) == false)
+			return;
+		data[x][y].setNumUnits(units);
+	}
 	
 	public int numOwnedTerritories(int id)
 	{
@@ -85,13 +96,6 @@ public class Map
 		}
 	}
 
-
-	public void setNumUnits(int x, int y, int units)
-	{
-		if(isValidCoordinates(x, y) == false)
-			return;
-		data[x][y].setNumUnits(units);
-	}
 
 	public boolean hasEnemyNeighbor(int x, int y)
 	{
