@@ -37,7 +37,7 @@
           <entry key="java" value="28" />
           <entry key="md" value="8" />
           <entry key="sh" value="10" />
-          <entry key="xml" value="7" />
+          <entry key="xml" value="8" />
           <entry key="yml" value="14" />
         </counts>
       </usages-collector>
@@ -47,7 +47,7 @@
           <entry key="CLASS" value="1" />
           <entry key="JAVA" value="28" />
           <entry key="Markdown" value="8" />
-          <entry key="XML" value="7" />
+          <entry key="XML" value="8" />
           <entry key="YAML" value="14" />
         </counts>
       </usages-collector>
@@ -109,11 +109,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1310">
-              <caret line="258" column="17" lean-forward="true" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
+            <state relative-caret-position="175">
+              <caret line="391" lean-forward="true" selection-start-line="391" selection-end-line="391" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#gameStart#0;class#GameMaster#0" />
+                <element signature="method#registerPlayer#0;class#GameMaster#0" />
+                <element signature="method#mapSetup#0;class#GameMaster#0" />
+                <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
               </folding>
             </state>
           </provider>
@@ -202,6 +205,7 @@
       <find>row</find>
       <find>set</find>
       <find>roll_value</find>
+      <find>order</find>
     </findStrings>
     <replaceStrings>
       <replace>roll_arr</replace>
@@ -266,6 +270,11 @@
             <path>
               <item name="Risk" type="b2602c69:ProjectViewProjectNode" />
               <item name="Risk" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Risk" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -295,7 +304,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539377877984" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539379561473" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -359,7 +368,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3284553" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2347973" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3429054" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32715008" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -377,13 +386,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Dice.java" />
     <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,13 +503,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="10" lean-forward="true" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1310">
-          <caret line="258" column="17" lean-forward="true" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
+        <state relative-caret-position="175">
+          <caret line="391" lean-forward="true" selection-start-line="391" selection-end-line="391" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#gameStart#0;class#GameMaster#0" />
+            <element signature="method#registerPlayer#0;class#GameMaster#0" />
+            <element signature="method#mapSetup#0;class#GameMaster#0" />
+            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
           </folding>
         </state>
       </provider>
