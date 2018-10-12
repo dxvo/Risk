@@ -6,5 +6,7 @@ jdk:
 env:
   CODECOV_TOKEN="743fc5cd-fb2c-4dc7-9dfd-fdb78f7ad756"
 
+script: "mvn cobertura:cobertura"
+
 after_success:
 - bash <(curl -s https://codecov.io/bash)
