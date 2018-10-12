@@ -9,13 +9,15 @@ public class GameMaster
 	private ArrayList <Player> playerList;
 
 	private BattleHandler battleHandler;
+	Scanner reader;
 
 	private int numPlayers;
 	private int maxPlayers; //did not really use this
 	private int playerTurn; // i did not use this
 	private int numUnits;
-	private int row;
-	private int col;
+	private int row; //for map
+	private int col; //for map
+	private int credit_purchase; //for purchase function
 
 	
 	public GameMaster()
@@ -28,6 +30,7 @@ public class GameMaster
 		playerTurn = 0;
 		row = 0;
 		col = 0;
+		reader = new Scanner(System.in);
 	}
 	
 	public void gameStart()
@@ -97,7 +100,6 @@ public class GameMaster
 	{
 		// Prompt Dimensions
 		// Init Map
-		Scanner reader = new Scanner(System.in);// Reading from System.in
 
 		System.out.println("\nPLAYERS' TERRITORIES MAP ");
 		do{
@@ -291,16 +293,11 @@ public class GameMaster
 
 	private void playerTurn(Player player)
 	{
-		// Reward new benched Units
-		// Place newly benched Units on territories
-		// Choose an enemy neighbor to attack & Validate that action by checking the map
-		// Engage Battle
-		// Handle Results
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
 		System.out.println("\t1. Attack: ");
-		System.out.println("\t2. Trade in cards:  ");
-		System.out.println("\t3. Purchase credit:  ");
+		System.out.println("\t2. Purchase credit:  ");
+		System.out.println("\t3. Trade in cards:  ");
 		System.out.println("\t4. Transfer credit:  ");
 		System.out.println("\t5. End game:  ");
 
@@ -312,9 +309,46 @@ public class GameMaster
 			battleHandler.startBattle(player,gameMap);
 		}
 
-		if(choice == 3){
+		if(choice == 2)
+		{
+			System.out.println("OK! Purchase game credits.");
+			System.out.println("How many credits? $5/credit - Max credit balance is 100. ");
+			System.out.println("Please enter amount to buy: ");
+			credit_purchase = reader.nextInt();
+			int game_balance_before_purchase = player.getCredit_balance();
+
+			player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+			int new_game_balance = player.getCredit_balance();
+
+			//This makes sure the game balance is not over 100
+			while(new_game_balance > 100)
+			{
+				System.out.println("Game credit exceeds allowable limit.");
+				System.out.printf("Your current credid balance is: %d", game_balance_before_purchase);
+				System.out.print("Please enter a new amount: ");
+				credit_purchase = reader.nextInt();
+				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+				new_game_balance = player.getCredit_balance();
+			}
+
+
+
+		}
+
+		if(choice == 3)
+		{
+			System.exit(0);
+
+		}
+		if(choice == 4)
+		{
+			System.exit(0);
+
+		}
+
+		if(choice == 5){
 			// if a particular choose to exit, then call this method and also remove that player from the game
-			System.exit(1);
+			System.exit(0);
 		}
 
 	}

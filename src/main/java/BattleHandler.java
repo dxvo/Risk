@@ -3,9 +3,11 @@ import java.util.Scanner;
 
 public class BattleHandler
 {
+	private Die die;
+
 	public BattleHandler()
 	{
-
+		die = new Die();
 	}
 	
 	public void startBattle(Player attacker, Map gameMap)
@@ -122,7 +124,7 @@ public class BattleHandler
 		int defender_Id = gameMap.getOwnerID(def_x_territory, def_y_territory);
 		if (areEnemyNeighbors) {
 			System.out.printf("\nPLAYER %d, YOU ARE ATTACKED BY PLAYER %d\n", defender_Id, attacker_ID);
-			System.out.println("Ready to battle. Rolling dice.\n");
+			System.out.println("READY TO BATTLE.\n");
 		}
 
 
@@ -147,7 +149,7 @@ public class BattleHandler
 				attacker_num_die_roll = reader.nextInt();
 			}
 			//for defender
-			System.out.printf("\nDefender - Player %d - Your territory currently has %d units", defender_unit,defender_Id);
+			System.out.printf("\nDefender - Player %d - Your territory currently has %d units", defender_Id, defender_unit);
 			System.out.print("\nHow many times do you want to roll ?( Max is 2):");
 			defender_num_die_roll = reader.nextInt();
 			while (defender_unit - defender_num_die_roll < 0 || defender_num_die_roll > 2) {
@@ -161,7 +163,7 @@ public class BattleHandler
 			largest_die[0] = 0; //initalize to
 			for (int i = 0; i < attacker_num_die_roll; i++) //attacker turn
 			{
-				roll_value = (int) (Math.random() * 6) + 1; // 1 to 6
+				roll_value = die.roll(); // 1 to 6
 				if (roll_value > largest_die[0]) {
 					largest_die[0] = roll_value;
 					largest_die[1] = attacker_ID;
@@ -170,7 +172,7 @@ public class BattleHandler
 
 			//Defender turn
 			for (int i = 0; i < defender_num_die_roll; i++) {
-				roll_value = (int) (Math.random() * 6) + 1;
+				roll_value = die.roll();
 				if (roll_value >= largest_die[0]) //if value is equal, defender wins
 				{
 					largest_die[0] = roll_value;
@@ -211,6 +213,7 @@ public class BattleHandler
 		{
 			System.out.printf("Player %d decided to stop attack!\n",attacker_ID);
 		}
+
 
 		System.out.printf("The winner of last battle was: %d\n",largest_die[1]);
 		//Attacker can not lose the territory
