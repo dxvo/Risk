@@ -326,9 +326,10 @@ public class GameMaster
 		{
 			System.out.println("OK! Purchase game credits.");
 			System.out.println("How many credits? $5/credit - Max credit balance is 100. ");
+			int game_balance_before_purchase = player.getCredit_balance();
+			System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
 			System.out.print("Please enter amount to buy: ");
 			credit_purchase = reader.nextInt();
-			int game_balance_before_purchase = player.getCredit_balance();
 
 			if(game_balance_before_purchase == 100)
 			{
@@ -345,7 +346,6 @@ public class GameMaster
 				while(new_game_balance > 100)
 				{
 					System.out.println("Game credit exceeds allowable limit.");
-					System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
 					System.out.print("Please enter a new amount: ");
 					credit_purchase = reader.nextInt();
 					player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
