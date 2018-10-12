@@ -14,6 +14,8 @@ public class GameMaster
 	private int maxPlayers; //did not really use this
 	private int playerTurn; // i did not use this
 	private int numUnits;
+	private int row;
+	private int col;
 
 	
 	public GameMaster()
@@ -24,6 +26,8 @@ public class GameMaster
 		numPlayers = 0;
 		maxPlayers = 6;
 		playerTurn = 0;
+		row = 0;
+		col = 0;
 	}
 	
 	public void gameStart()
@@ -47,6 +51,12 @@ public class GameMaster
 		mapSetup();
 	}
 
+
+	private Player registerPlayer(int id) // where do we call this method
+	{
+		Player player = new Player(id);
+		return player;
+	}
 
 	private void playerSetup()
 	{
@@ -78,7 +88,7 @@ public class GameMaster
 		for (int i=0; i<playerList.size(); i++)
 		{
 			System.out.printf("PlayerID: %d",playerList.get(i).getPlayerID());
-			System.out.printf(" - Number of unit: %d\n",playerList.get(i).getNumUnits()); //playerList.get(i) return object type Player
+			System.out.printf(" - Number of unit: %d\n",playerList.get(i).getNumUnits());
 		}
 
 	}
@@ -88,8 +98,6 @@ public class GameMaster
 		// Prompt Dimensions
 		// Init Map
 		Scanner reader = new Scanner(System.in);// Reading from System.in
-		int row = 0;
-		int col = 0;
 
 		System.out.println("\nPLAYERS' TERRITORIES MAP ");
 		do{
@@ -106,10 +114,10 @@ public class GameMaster
 				System.out.println("Must be greater than 0. Re-enter height: ");
 		} while(row <= 0);
 
-		if(row*col < 42)
+		if(row*col != 42)
 		{
 			do{
-				System.out.println("Area is not big enough. Area value must be least 42).\n Re-enter map dimension. ");
+				System.out.println("Area must be 42. Re-enter map dimension. ");
 
 				do{
 					System.out.print("Enter map width: ");
@@ -124,24 +132,24 @@ public class GameMaster
 					if(row <= 0 )
 						System.out.println("Must be greater than 0. Re-enter height: ");
 				} while(row <= 0);
-			} while (row*col < 42);
+			} while (row*col != 42);
 		}
 
-		col = 6; //over-write!
-		row = 7; //over-write for simplicity
+		//col = 6; //over-write!
+		//row = 7; //over-write for simplicity
 		gameMap = new Map(row, col); //each map pixel is a territoty by calling getData(int x, int y)
 		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories
 
 		for (int cycle = 0; cycle < numToFill; cycle++)
 		{
-			for (int cell_col = 0; cell_col < 6; cell_col++) // # row number
+			for (int cell_col = 0; cell_col < col; cell_col++) // # row number
 			{
 				for (int id = 0; id < numPlayers; id++)
 				{
 					//Random rand = new Random();
 					//rand.setSeed(rand.nextInt(100));
 					//int cell_row = rand.nextInt(6);//col is 6 so 0 to 5
-					int cell_row = (int)(Math.random()*7);
+					int cell_row = (int)(Math.random()*row);
 					int cellownerID = gameMap.getOwnerID(cell_row,cell_col); //get owner ID at the cell
 
 					if(cellownerID != -1 && cellownerID != id)
@@ -150,7 +158,7 @@ public class GameMaster
 							//Random rand2 = new Random();
 							//rand2.setSeed(rand.nextInt(10));
 							//cell_row = rand2.nextInt(6);
-							cell_row = (int)(Math.random() * 7); //7 is exclusive
+							cell_row = (int)(Math.random() * row); //7 is exclusive
 							cellownerID = gameMap.getOwnerID(cell_row,cell_col);
 						}while(cellownerID != -1 && cellownerID != id);
 					}
@@ -166,7 +174,8 @@ public class GameMaster
 		{
 			int territories_own = gameMap.numOwnedTerritories(playerList.get(i).getPlayerID());
 			playerList.get(i).setNumTerritories(territories_own);
-			System.out.printf("Player %d, number of territories_own %d: \n",playerList.get(i).getPlayerID(),playerList.get(i).getNumTerritories());
+			System.out.printf("Player %d, number of territories_own %d; \n"
+					,playerList.get(i).getPlayerID(),playerList.get(i).getNumTerritories());
 		}
 
 		//setting the units to map
@@ -189,7 +198,7 @@ public class GameMaster
 
 
 		//Randomly distribute player into territories
-		System.out.println("\n CURRENT MAP");
+		System.out.println("\n STARTING MAP");
 		for(int i = 0; i < row; i++)
 		{
 			for (int j = 0; j < col; j++)
@@ -220,7 +229,8 @@ public class GameMaster
 
 			if (i != 0 && playerList.get(i).getDie_value() == roll_value[0]) {
 				do {
-					System.out.printf("\nPlayer %d and Player %d have same leading value which is %d\n", i , roll_value[1], roll_value[0]);
+					System.out.printf("\nPlayer %d and Player %d have same leading value which is %d\n",
+							i , roll_value[1], roll_value[0]);
 					System.out.printf("Player %d rolls again. ", i);
 					System.out.print("Value is: ");
 					playerList.get(i).setDie_value(die.roll()); //roll again and keep rolling if both players have same number
@@ -266,31 +276,49 @@ public class GameMaster
 	private void gameLoop()
 	{
 		// Begin loop, starting with the initial "playerTurn" value
-
 		// Inside Loop call playerTurn()
+		while(playerList.size() > 1) //while theres is 2 players or more in the playerlist
+		{
+			for(int i =0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
+			{
+				playerTurn(playerList.get(i));
+			}
+		}
+
+	}
+
+
+	private void playerTurn(Player player)
+	{
+		// Reward new benched Units
+		// Place newly benched Units on territories
+		// Choose an enemy neighbor to attack & Validate that action by checking the map
+		// Engage Battle
+		// Handle Results
+		Scanner reader = new Scanner(System.in);
+		System.out.println("Choose your option to proceed: ");
+		System.out.println("\t1. Attack: ");
+		System.out.println("\t2. Trade in cards:  ");
+		System.out.println("\t2. Purchase credit:  ");
+		System.out.println("\t3. End game:  ");
+
+		System.out.print("Your choice is: ");
+		int choice = reader.nextInt();
+
+		if(choice == 1) //attack - call battlehandler
+		{
+			battleHandler.startBattle(player,gameMap);
+		}
+
+		if(choice == 3){
+			// if a particular choose to exit, then call this method and also remove that player from the game
+			System.exit(0);
+		}
+
 	}
 
 	private void gameCleanup()
 	{
 
-	}
-
-	private Player registerPlayer(int id) // where do we call this method
-	{
-		Player player = new Player(id);
-		return player;
-	}
-
-	private void playerTurn(Player player)
-	{
-		// Reward new benched Units
-		
-		// Place newly benched Units on territories
-		
-		// Choose an enemy neighbor to attack & Validate that action by checking the map
-		
-		// Engage Battle
-		
-		// Handle Results
 	}
 }

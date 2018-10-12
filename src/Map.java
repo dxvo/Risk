@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class Map
 {
 	private Territory[][] data;
@@ -22,6 +24,11 @@ public class Map
 		data = new Territory[row][col];
 		initMap();
 	}
+
+	public void setRow(int r) { row = r; }
+	public void setCol (int c){col = c;}
+	public int getRow(){return row;}
+	public int getCol(){ return col;}
 
 	// Initialization of Data and fill with
 	public void initMap()
@@ -51,6 +58,12 @@ public class Map
 		return data[x][y].getNumUnits();
 	}
 
+	public void setNumUnits(int x, int y, int units)
+	{
+		if(isValidCoordinates(x, y) == false)
+			return;
+		data[x][y].setNumUnits(units);
+	}
 	
 	public int numOwnedTerritories(int id)
 	{
@@ -86,11 +99,11 @@ public class Map
 	}
 
 
-	public void setNumUnits(int x, int y, int units)
+	public boolean canAttack(int x, int y)
 	{
 		if(isValidCoordinates(x, y) == false)
-			return;
-		data[x][y].setNumUnits(units);
+			return false;
+		return data[x][y].getNumUnits() > 1;
 	}
 
 	public boolean hasEnemyNeighbor(int x, int y)
@@ -114,6 +127,8 @@ public class Map
 		return false;
 	}
 
+
+
 	public boolean areEnemyNeighbors(int x1, int y1, int x2, int y2)
 	{
 		if(isValidCoordinates(x1, y1) == false)
@@ -121,20 +136,15 @@ public class Map
 		if(isValidCoordinates(x2, y2) == false)
 			return false;
 
-		if((x2 - x1) + (y2 - y1) == 1)
-			if(data[x1][y1].getOwnerID() != data[x1][y1].getOwnerID())
+		if(Math.abs(x2 - x1) + Math.abs(y2 - y1) == 1)
+			if(data[x1][y1].getOwnerID() != data[x2][y2].getOwnerID())
 				return true;
 
 		return false;
 	}
 
 
-	public boolean canAttack(int x, int y)
-	{
-		if(isValidCoordinates(x, y) == false)
-			return false;
-		return data[x][y].getNumUnits() > 1;
-	}
+
 
 	public Territory[][] getData() {
 		return data;
