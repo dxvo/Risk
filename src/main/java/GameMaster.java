@@ -284,7 +284,7 @@ public class GameMaster
 		{
 			for(int i =0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
 			{
-				System.out.printf("Player %d turn",playerList.get(i).getPlayerID());
+				System.out.printf("Player %d turn\n",playerList.get(i).getPlayerID());
 				playerTurn(playerList.get(i));
 				continue;
 			}
