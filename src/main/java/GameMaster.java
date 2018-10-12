@@ -250,13 +250,13 @@ public class GameMaster
 					int roll_again_value = die.roll();
 					System.out.printf("Value is: %d\n",roll_again_value);
 					playerList.get(i).setDie_value(roll_again_value);
+				} while (playerList.get(i).getDie_value() == roll_value[0]); //exit when values are different
 
-					if (playerList.get(i).getDie_value() > roll_value[0]) {
-						roll_value[0] = playerList.get(i).getDie_value();
-						roll_value[1] = i;
-						System.out.printf("%d is now highest roll value.\n", roll_value[0]);
-					}
-				} while (playerList.get(i).getDie_value() == roll_value[0]);
+				if (playerList.get(i).getDie_value() > roll_value[0]) {
+					roll_value[0] = playerList.get(i).getDie_value();
+					roll_value[1] = i;
+					System.out.printf("%d is now highest roll value.\n", roll_value[0]);
+				}
 
 			}
 		}
