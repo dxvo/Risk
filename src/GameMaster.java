@@ -170,12 +170,13 @@ public class GameMaster
 
 
 		//Count number of territories for each player
+		//print out the territories owned
 		for(int i = 0; i < numPlayers; i++)
 		{
-			int territories_own = gameMap.numOwnedTerritories(playerList.get(i).getPlayerID());
-			playerList.get(i).setNumTerritories(territories_own);
+			int territories_own = gameMap.numOwnedTerritories(playerList.get(i).getPlayerID());//count how many territories own
+			playerList.get(i).setNumTerritories(territories_own);//this is # of territories to player
 			System.out.printf("Player %d, number of territories_own %d; \n"
-					,playerList.get(i).getPlayerID(),playerList.get(i).getNumTerritories());
+					,playerList.get(i).getPlayerID(), playerList.get(i).getNumTerritories());
 		}
 
 		//setting the units to map

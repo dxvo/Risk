@@ -11,8 +11,8 @@ public class BattleHandler
 	public void startBattle(Player attacker, Map gameMap)
 	{
 		initBattle(attacker, gameMap);
-		
-		// Battle Code Here
+
+
 		
 		endBattle(attacker, gameMap);
 	}
@@ -68,7 +68,9 @@ public class BattleHandler
 		int additional_army = addArmyEachTurn(x, y, attacker, gameMap);//update the army into territory
 		boolean canAttack = gameMap.canAttack(x,y);
 
-		//if not enough army to attack
+		//if attracker territory does not have enoguh unit to attack
+		//also need to check option where the player only have 1 territoty left and dont have enough army to attack
+		//not sure if this is needed bc the units will always be greater than 3
 		while (!canAttack)
 		{
 			System.out.println("Insufficient Units to attack. ");
@@ -115,7 +117,8 @@ public class BattleHandler
 		int def_y_territory = reader.nextInt();
 		boolean areEnemyNeighbors = gameMap.areEnemyNeighbors(x,y,def_x_territory,def_y_territory); //check to see if this is valid
 
-		//if not neightbor, select unit it's
+		//if attacker attack a territory
+		// which is not neightbor, prompt to reselect unitl it's
 		while (!areEnemyNeighbors)
 		{
 			System.out.println("Territory is not adjacent. Re-select territory to attack: ");
@@ -129,6 +132,27 @@ public class BattleHandler
 		if(areEnemyNeighbors)
 			System.out.println("Ready to battle. Rolling dice. ");
 
+		//Notify defender the territory is under-attack
+
+		//rolling dice
+		int attacker_unit = gameMap.getNumUnits(x,y);
+		int defender_unit = gameMap.getNumUnits(def_x_territory,def_y_territory);
+		int largest_die = new int[2]; //1 is store value and other is to store ID
+		int att_num_die_roll = 0;
+		int def_num_die_roll = 0;
+
+		System.out.printf("Your territory currently has %d units", attacker_unit);
+		System.out.println("\nHow many times do you want to roll ?( Max is 3)");
+		att_num_die_roll = reader.nextInt();
+
+		while(attacker_unit - att_num_die_roll < 1) //attacker must have at least 1 unit more # of die roll
+		{
+			System.out.print("You dont have enough units to roll this many die. Re-enter number of die roll: ");
+			att_num_die_roll = reader.nextInt();
+		}
+
+		System.out.println("\nHow many times do you want to roll ?( Max is 3)");
+		att_num_die_roll = reader.nextInt();
 
 	}
 
@@ -145,8 +169,6 @@ public class BattleHandler
 
 		int current_territory_unit = gamemap.getNumUnits(x,y);
 		gamemap.setNumUnits(x,y, current_territory_unit + additional_army); //update the total unit in that territory
-
-
 		return additional_army;
 	}
 

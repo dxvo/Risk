@@ -7,8 +7,16 @@ Implementing a Risk game. Description of the game is available at [Risk](http://
 
 **Basic game [Rules](http://www.ultraboardgames.com/risk/game-rules.php)**
 
-**To compile:** ./build.sh 
+**To compile program:** ./build.sh 
 # Updates:
+
+**v.0.4**
+- Notify players if their territories are under attack.
+- Players can purchase in-game credit. Players can use the credit to buy cards, buy undo actions, or transfer the credits to another player.
+- Post the number of territories conquered by each player on Twitter after each turn and at the end of the game [Reference1](https://developer.twitter.com/en/docs/developer-utilities/twitter-libraries.html) or [Reference2](http://twitter4j.org/en/index.html)
+- Modify pom.xml to generate JavaDocs and class diagrams [Reference](https://maven.apache.org/plugins/maven-javadoc-plugin/examples/alternate-doclet.html
+)
+
 **v.0.3**
 - Users can undo their actions
 - Your Program uses Amazon S3 to replay games 
