@@ -330,22 +330,32 @@ public class GameMaster
 			credit_purchase = reader.nextInt();
 			int game_balance_before_purchase = player.getCredit_balance();
 
-			player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-			int new_game_balance = player.getCredit_balance();
-
-			//This makes sure the game balance is not over 100
-			while(new_game_balance > 100)
+			if(game_balance_before_purchase == 100)
 			{
-				System.out.println("Game credit exceeds allowable limit.");
-				System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
-				System.out.print("Please enter a new amount: ");
-				credit_purchase = reader.nextInt();
+				System.out.println("Your balance is at maximum limit 100");
+				System.out.println("Not eligibile to purchase more credit");
+				playerTurn(player);
+			}
+			else
+			{
 				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-				new_game_balance = player.getCredit_balance();
+				int new_game_balance = player.getCredit_balance();
+
+				//This makes sure the game balance is not over 100
+				while(new_game_balance > 100)
+				{
+					System.out.println("Game credit exceeds allowable limit.");
+					System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
+					System.out.print("Please enter a new amount: ");
+					credit_purchase = reader.nextInt();
+					player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+					new_game_balance = player.getCredit_balance();
+				}
+
+				System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
+				playerTurn(player); //recursive call
 			}
 
-			System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
-			playerTurn(player); //recursive call
 		}
 
 		if(choice == 3)
