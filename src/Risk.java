@@ -4,7 +4,5 @@ public class Risk
 	{
 		GameMaster gameMaster = new GameMaster();
 		gameMaster.gameStart();
-		BattleHandler battle = new BattleHandler();
-		battle.
 	}
 }

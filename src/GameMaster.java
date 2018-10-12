@@ -295,17 +295,24 @@ public class GameMaster
 		// Choose an enemy neighbor to attack & Validate that action by checking the map
 		// Engage Battle
 		// Handle Results
-
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
 		System.out.println("\t1. Attack: ");
 		System.out.println("\t2. Trade in cards:  ");
+		System.out.println("\t2. Purchase credit:  ");
 		System.out.println("\t3. End game:  ");
 
+		System.out.print("Your choice is: ");
 		int choice = reader.nextInt();
+
 		if(choice == 1) //attack - call battlehandler
 		{
 			battleHandler.startBattle(player,gameMap);
+		}
+
+		if(choice == 3){
+			// if a particular choose to exit, then call this method and also remove that player from the game
+			System.exit(0);
 		}
 
 	}
