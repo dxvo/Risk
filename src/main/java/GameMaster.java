@@ -364,6 +364,7 @@ public class GameMaster
 			boolean valid_transfer = false;
 			int transfer_balance = 0;
 			int available_balance_before_transfer = 0;
+			int received_player_position = -1;
 
 			System.out.println("Transfer credit to other player.");
 			available_balance_before_transfer = player.getCredit_balance();
@@ -372,20 +373,21 @@ public class GameMaster
 			if(available_balance_before_transfer <= 0)
 			{
 				System.out.println("You have 0 balance. Insufficient to transfer.");
-				System.out.println("Please purchase credits to transfer");
+				System.out.println("Please purchase credits to transfer\n");
 				playerTurn(player);
 			}
 			else
 			{
 				do {
-					System.out.println("Enter player ID that you want to transfer to.");
+					System.out.print("Enter player ID that you want to transfer to: ");
 					received_player_Id = reader.nextInt();
 
 					//iterate throught playerlist. check to see if player still in the game
 					for (int i = 0; i < playerList.size(); i++)
 					{
-						if (received_player_Id == playerList.get(i).getPlayerID()) {
+						if (received_player_Id == playerList.get(i).getPlayerID() && received_player_Id != player.getPlayerID()) {
 							valid_transfer = true;
+							received_player_position = i;
 							break;
 						}
 					}
@@ -397,21 +399,53 @@ public class GameMaster
 
 			if(valid_transfer)
 			{
-				System.out.print("How much credits do you want to transfer\n");
-				transfer_balance = reader.nextInt();
-				while(transfer_balance > available_balance_before_transfer)
-				{
-					System.out.println("Your transfer amount is more than your current balance. ");
-					System.out.print("Enter transfer amount again: \n");
-					transfer_balance = reader.nextInt();
-				}
-				System.out.println("\t\tTRANSFERRING CREDITS... ");
-				System.out.println("\t\tTRANSFERRING CREDITS... ");
 
+				int received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
+
+				System.out.printf("The person you transfer to has balance of %d\n",received_player_current_balance);
+				if(received_player_current_balance >= 100)
+				{
+					System.out.println("Received player credit balance is at max allowable limit.");
+					System.out.println("You can not make this transfer.");
+					playerTurn(player);
+				}
+
+				else
+				{
+					System.out.print("How much credits do you want to transfer\n");
+					transfer_balance = reader.nextInt();
+					while(transfer_balance > available_balance_before_transfer || transfer_balance + received_player_current_balance > 100)
+					{
+						if(transfer_balance > available_balance_before_transfer)
+							System.out.println("Your transfer amount is more than your current balance. ");
+
+						if(transfer_balance + received_player_current_balance > 100)
+							System.out.println("Your transfer amount is too large");
+
+						System.out.print("Enter transfer amount again: \n");
+						transfer_balance = reader.nextInt();
+					}
+
+					if(transfer_balance + received_player_current_balance <= 100)
+					{
+						System.out.println("\t\tTRANSFERRING CREDITS... ");
+						System.out.println("\t\tTRANSFER IS COMPLETE... ");
+
+						//updating the balance
+
+						playerList.get(received_player_position).setCredit_balance(received_player_current_balance + transfer_balance);
+						player.setCredit_balance(available_balance_before_transfer - transfer_balance );
+
+						System.out.printf("Your balance after transfer is: %d\n",player.getCredit_balance());
+						received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
+						System.out.printf("Recived player balance after transfer: %d\n",received_player_current_balance);
+					}
+
+				}
 
 			}
+			playerTurn(player);
 		}
-
 
 		if(choice == 4)
 		{
