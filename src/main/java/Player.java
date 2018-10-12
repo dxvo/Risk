@@ -5,6 +5,7 @@ public class Player
 	private int numBenchedUnits;
 	private int numTerritories;
 	private int die_value;
+	private int credit_balance;
 
 	public Player()
 	{
@@ -24,7 +25,7 @@ public class Player
 		die_value = 0;
 	}
 	
-	// Mutators
+
 	public void setPlayerID(int id)
 	{
 		if(id >= 0)
@@ -80,32 +81,19 @@ public class Player
 		}
 	}
 
+	public void setCredit_balance(int balance){credit_balance = balance;}
 
-	// Getters	
-	public boolean isPlaying()
-	{
-		return (numUnits + numBenchedUnits > 0);
-	}
+	public int getCredit_balance() {return  credit_balance;}
+
+	public boolean isPlaying() { return (numUnits + numBenchedUnits > 0); }
 	
-	public int getPlayerID()
-	{
-		return playerID;
-	}
+	public int getPlayerID() { return playerID; }
 	
-	public int getNumUnits()
-	{
-		return numUnits;
-	}
+	public int getNumUnits() { return numUnits; }
 	
-	public int getNumBenchedUnits()
-	{
-		return numBenchedUnits;
-	}
+	public int getNumBenchedUnits() { return numBenchedUnits; }
 	
-	public int getNumTerritories()
-	{
-		return numTerritories;
-	}
+	public int getNumTerritories() { return numTerritories; }
 
 	public int getDie_value(){ return die_value;}
 }

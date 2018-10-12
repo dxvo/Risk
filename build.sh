@@ -12,6 +12,8 @@ echo \#running!
 java Risk
 
 cd ..
+cd ..
+cd ..
 
 ./clean.sh
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo \#cleaning .class files!
 
-rm src/*.class
+rm src/main/java/*.class
 
 echo \#done!
 
