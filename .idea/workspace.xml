@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4b8d82d-229c-46b7-8c2d-ac790abd2f1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameMaster.java" afterDir="false" />
-    </list>
+    <list default="true" id="e4b8d82d-229c-46b7-8c2d-ac790abd2f1c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +55,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="63" />
-          <entry key="JAVA" value="22098" />
+          <entry key="JAVA" value="22363" />
           <entry key="Markdown" value="193" />
           <entry key="XML" value="4" />
           <entry key="YAML" value="68" />
@@ -66,7 +63,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="22098" />
+          <entry key="java" value="22363" />
           <entry key="md" value="193" />
           <entry key="sh" value="63" />
           <entry key="xml" value="4" />
@@ -112,12 +109,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="218" column="35" lean-forward="true" selection-start-line="218" selection-start-column="35" selection-end-line="218" selection-end-column="35" />
+            <state relative-caret-position="-1310">
+              <caret line="258" column="17" lean-forward="true" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#gameStart#0;class#GameMaster#0" />
-                <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
               </folding>
             </state>
           </provider>
@@ -299,7 +295,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539376910438" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539377877984" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -348,7 +344,7 @@
   <component name="ToolWindowManager">
     <frame x="21" y="35" width="1228" height="684" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4945055" visible="true" weight="0.17200674" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4945055" visible="true" weight="0.17200674" />
       <window_info id="Structure" order="1" sideWeight="0.50549453" side_tool="true" weight="0.13166398" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -363,7 +359,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3284553" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33783785" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2347973" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32715008" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -507,12 +503,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="218" column="35" lean-forward="true" selection-start-line="218" selection-start-column="35" selection-end-line="218" selection-end-column="35" />
+        <state relative-caret-position="-1310">
+          <caret line="258" column="17" lean-forward="true" selection-start-line="258" selection-start-column="17" selection-end-line="258" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#gameStart#0;class#GameMaster#0" />
-            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
           </folding>
         </state>
       </provider>
