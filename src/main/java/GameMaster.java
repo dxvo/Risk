@@ -304,7 +304,7 @@ public class GameMaster
 		System.out.println("\t5. End this turn:  ");
 		System.out.println("\t6. Quit game:  ");
 
-		System.out.print("Your choice is: ");
+		System.out.print("YOUR CHOICE IS: ");
 		int choice = reader.nextInt();
 
 		if(choice == 1) //attack - call battlehandler
@@ -327,14 +327,14 @@ public class GameMaster
 			while(new_game_balance > 100)
 			{
 				System.out.println("Game credit exceeds allowable limit.");
-				System.out.printf("Your current credid balance is: %d\n", game_balance_before_purchase);
+				System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
 				System.out.print("Please enter a new amount: ");
 				credit_purchase = reader.nextInt();
 				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
 				new_game_balance = player.getCredit_balance();
 			}
 
-			System.out.printf("Your current balance is: %d", new_game_balance); //show new balance
+			System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
 			playerTurn(player);
 		}
 
