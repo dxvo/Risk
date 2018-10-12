@@ -300,8 +300,9 @@ public class GameMaster
 		System.out.println("Choose your option to proceed: ");
 		System.out.println("\t1. Attack: ");
 		System.out.println("\t2. Trade in cards:  ");
-		System.out.println("\t2. Purchase credit:  ");
-		System.out.println("\t3. End game:  ");
+		System.out.println("\t3. Purchase credit:  ");
+		System.out.println("\t4. Transfer credit:  ");
+		System.out.println("\t5. End game:  ");
 
 		System.out.print("Your choice is: ");
 		int choice = reader.nextInt();
@@ -313,7 +314,7 @@ public class GameMaster
 
 		if(choice == 3){
 			// if a particular choose to exit, then call this method and also remove that player from the game
-			System.exit(0);
+			System.exit(1);
 		}
 
 	}
