@@ -11,6 +11,7 @@ public class GameMaster
 	private BattleHandler battleHandler;
 	Scanner reader;
 
+	private Die die;
 	private int numPlayers;
 	private int maxPlayers; //did not really use this
 	private int playerTurn; // i did not use this
@@ -31,6 +32,7 @@ public class GameMaster
 		row = 0;
 		col = 0;
 		reader = new Scanner(System.in);
+		die = new Die();
 	}
 	
 	public void gameStart()
@@ -221,40 +223,48 @@ public class GameMaster
 		//based on the number of player and roll dice
 		// Roll Dice
 		// Calculate Starting Player - Store in "playerTurn"
-		Die die = new Die();
 		int[] roll_value = new int[2];
 		roll_value[0] = 0;
-		System.out.println("\nSETTING UP PLAYERS' TURN...");
+		int die_value = 0;
+		System.out.println("\nSETTING UP PLAYERS' TURN...\n");
 		for (int i = 0; i < numPlayers; i++)
 		{
-			System.out.printf("Player %d rolled: ", i);
-			playerList.get(i).setDie_value(die.roll()); //set roll die value to the player
 
-			if (i != 0 && playerList.get(i).getDie_value() == roll_value[0]) {
+			die_value = die.roll();
+			System.out.printf("Player %d rolled %d \n", i,die_value);
+			playerList.get(i).setDie_value(die_value); //set roll die value to the player
+
+			if(die_value > roll_value[0])
+			{
+				roll_value[0] = die_value;
+				roll_value[1] = i;
+			}
+
+			else if (i != 0 && playerList.get(i).getDie_value() == roll_value[0])
+			{
+
 				do {
-					System.out.printf("\nPlayer %d and Player %d have same leading value which is %d\n",
-							i , roll_value[1], roll_value[0]);
+					System.out.printf("\nPlayer %d and %d have same high rolled value which is %d\n",
+							i , roll_value[1], roll_value[0]); //roll_value[1] is used to store the Id of player with
 					System.out.printf("Player %d rolls again. ", i);
-					System.out.print("Value is: ");
-					playerList.get(i).setDie_value(die.roll()); //roll again and keep rolling if both players have same number
-				} while (playerList.get(i).getDie_value() == roll_value[0]);
+					int roll_again_value = die.roll();
+					System.out.printf("Value is: %d\n",roll_again_value);
+					playerList.get(i).setDie_value(roll_again_value);
+				} while (playerList.get(i).getDie_value() == roll_value[0]); //exit when values are different
 
 				if (playerList.get(i).getDie_value() > roll_value[0]) {
 					roll_value[0] = playerList.get(i).getDie_value();
 					roll_value[1] = i;
 					System.out.printf("%d is now highest roll value.\n", roll_value[0]);
 				}
-			}
-			if (playerList.get(i).getDie_value() > roll_value[0])//store the roll die value into array
-			{
-				roll_value[0] = playerList.get(i).getDie_value();// if roll value is greater than current value, then update
-				roll_value[1] = i; // this is actually store the playerID
+
 			}
 		}
 
-		System.out.printf("\nPlayer %d goes first\n", roll_value[1]);
+		System.out.printf("\nPlayer %d with rolled value %d goes first\n", roll_value[1],roll_value[0]);
 
 
+		//This is to organize the playerlistID
 		int [] turnID = new int[numPlayers]; //store player turn ID
 		turnID[0] = roll_value[1]; //store the Id of person who go first here
 		for (int i = 1; i < numPlayers; i++)
@@ -271,7 +281,6 @@ public class GameMaster
 			playerList.get(i).setPlayerID(turnID[i]); //The ArrayList now is in-order to use for game loop
 			System.out.printf("Player %d, ", playerList.get(i).getPlayerID());
 		}
-
 		System.out.println();
 
 	}
@@ -282,9 +291,9 @@ public class GameMaster
 		// Inside Loop call playerTurn()
 		while(playerList.size() > 1) //while theres is 2 players or more in the playerlist
 		{
-			for(int i =0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
+			for(int i = 0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
 			{
-				System.out.printf("Player %d turn\n",playerList.get(i).getPlayerID());
+				System.out.printf("\nPLAYER %d TURN\n",playerList.get(i).getPlayerID());
 				playerTurn(playerList.get(i));
 				continue;
 			}
@@ -301,8 +310,9 @@ public class GameMaster
 		System.out.println("\t2. Purchase credit:  ");
 		System.out.println("\t3. Trade in cards:  ");
 		System.out.println("\t4. Transfer credit:  ");
-		System.out.println("\t5. End this turn:  ");
-		System.out.println("\t6. Quit game:  ");
+		System.out.println("\t5. Buy undo:  ");
+		System.out.println("\t6. End this turn:  "); //turn over to next player
+		System.out.println("\t7. Quit game:  "); //need to remove this player from the playerlist
 
 		System.out.print("YOUR CHOICE IS: ");
 		int choice = reader.nextInt();
@@ -316,26 +326,36 @@ public class GameMaster
 		{
 			System.out.println("OK! Purchase game credits.");
 			System.out.println("How many credits? $5/credit - Max credit balance is 100. ");
-			System.out.print("Please enter amount to buy: ");
-			credit_purchase = reader.nextInt();
 			int game_balance_before_purchase = player.getCredit_balance();
-
-			player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-			int new_game_balance = player.getCredit_balance();
-
-			//This makes sure the game balance is not over 100
-			while(new_game_balance > 100)
+			System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
+			if(game_balance_before_purchase == 100)
 			{
-				System.out.println("Game credit exceeds allowable limit.");
-				System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
-				System.out.print("Please enter a new amount: ");
-				credit_purchase = reader.nextInt();
-				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-				new_game_balance = player.getCredit_balance();
+				System.out.println("Your balance is at maximum limit 100");
+				System.out.println("Not eligibile to purchase more credit");
+				playerTurn(player);
 			}
 
-			System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
-			playerTurn(player);
+			else
+			{
+				System.out.print("Please enter amount to buy: ");
+				credit_purchase = reader.nextInt();
+				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+				int new_game_balance = player.getCredit_balance();
+
+				//This makes sure the game balance is not over 100
+				while(new_game_balance > 100)
+				{
+					System.out.println("Game credit exceeds allowable limit.");
+					System.out.print("Please enter a new amount: ");
+					credit_purchase = reader.nextInt();
+					player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+					new_game_balance = player.getCredit_balance();
+				}
+
+				System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
+				playerTurn(player); //recursive call
+			}
+
 		}
 
 		if(choice == 3)
@@ -345,7 +365,8 @@ public class GameMaster
 		}
 		if(choice == 4)
 		{
-			System.exit(0);
+			//System.exit(0);
+			System.out.println("Do nothing");
 
 		}
 
@@ -355,9 +376,12 @@ public class GameMaster
 		}
 
 		if(choice == 6){
-			// if a particular choose to exit
-			//remove this player from the game
-			//continue with next player
+
+			System.exit(0);
+		}
+		if(choice ==7)
+		{
+
 			System.exit(0);
 		}
 
