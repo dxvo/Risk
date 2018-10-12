@@ -5,7 +5,7 @@ Implementing a Risk game. Description of the game is available at [Risk](http://
 
 **Language**: Java 
 
-**Basic game [Rules](http://www.ultraboardgames.com/risk/game-rules.php)**
+**Game's** [Rules](http://www.ultraboardgames.com/risk/game-rules.php) and [How To Play](https://www.youtube.com/watch?v=-rqxpjOz-EA)
 
 **To compile program:** ./build.sh 
 # Updates:
