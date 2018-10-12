@@ -9,7 +9,7 @@ public class GameMaster
 	private ArrayList <Player> playerList;
 
 	private BattleHandler battleHandler;
-	Scanner reader;
+	private Scanner reader;
 
 	private Die die;
 	private int numPlayers;
@@ -306,13 +306,13 @@ public class GameMaster
 	{
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
-		System.out.println("\t1. Attack: ");
-		System.out.println("\t2. Purchase credit:  ");
-		System.out.println("\t3. Trade in cards:  ");
-		System.out.println("\t4. Transfer credit:  ");
-		System.out.println("\t5. Buy undo:  ");
-		System.out.println("\t6. End this turn:  "); //turn over to next player
-		System.out.println("\t7. Quit game:  "); //need to remove this player from the playerlist
+		System.out.println("\t1. Attack. ");
+		System.out.println("\t2. Purchase credit.  ");
+		System.out.println("\t3. Transfer credit to other player.");
+		System.out.println("\t4. Trade in cards.  ");
+		System.out.println("\t5. Undo. ");
+		System.out.println("\t6. End this turn."); //turn over to next player
+		System.out.println("\t7. Quit game. "); //need to remove this player from the playerlist
 
 		System.out.print("YOUR CHOICE IS: ");
 		int choice = reader.nextInt();
@@ -360,9 +360,93 @@ public class GameMaster
 
 		if(choice == 3)
 		{
-			System.exit(0);
+			int received_player_Id;
+			boolean valid_transfer = false;
+			int transfer_balance = 0;
+			int available_balance_before_transfer = 0;
+			int received_player_position = -1;
 
+			System.out.println("Transfer credit to other player.");
+			available_balance_before_transfer = player.getCredit_balance();
+			System.out.printf("Your current balance is: %d\n", available_balance_before_transfer);
+
+			if(available_balance_before_transfer <= 0)
+			{
+				System.out.println("You have 0 balance. Insufficient to transfer.");
+				System.out.println("Please purchase credits to transfer\n");
+				playerTurn(player);
+			}
+			else
+			{
+				do {
+					System.out.print("Enter player ID that you want to transfer to: ");
+					received_player_Id = reader.nextInt();
+
+					//iterate throught playerlist. check to see if player still in the game
+					for (int i = 0; i < playerList.size(); i++)
+					{
+						if (received_player_Id == playerList.get(i).getPlayerID() && received_player_Id != player.getPlayerID()) {
+							valid_transfer = true;
+							received_player_position = i;
+							break;
+						}
+					}
+					if(!valid_transfer)
+						System.out.println("In-valid player ID.");
+
+				}while (!valid_transfer);
+			}
+
+			if(valid_transfer)
+			{
+
+				int received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
+
+				System.out.printf("The person you transfer to has balance of %d\n",received_player_current_balance);
+				if(received_player_current_balance >= 100)
+				{
+					System.out.println("Received player credit balance is at max allowable limit.");
+					System.out.println("You can not make this transfer.");
+					playerTurn(player);
+				}
+
+				else
+				{
+					System.out.print("How much credits do you want to transfer\n");
+					transfer_balance = reader.nextInt();
+					while(transfer_balance > available_balance_before_transfer || transfer_balance + received_player_current_balance > 100)
+					{
+						if(transfer_balance > available_balance_before_transfer)
+							System.out.println("Your transfer amount is more than your current balance. ");
+
+						if(transfer_balance + received_player_current_balance > 100)
+							System.out.println("Your transfer amount is too large");
+
+						System.out.print("Enter transfer amount again: \n");
+						transfer_balance = reader.nextInt();
+					}
+
+					if(transfer_balance + received_player_current_balance <= 100)
+					{
+						System.out.println("\t\tTRANSFERRING CREDITS... ");
+						System.out.println("\t\tTRANSFER IS COMPLETE... ");
+
+						//updating the balance
+
+						playerList.get(received_player_position).setCredit_balance(received_player_current_balance + transfer_balance);
+						player.setCredit_balance(available_balance_before_transfer - transfer_balance );
+
+						System.out.printf("Your balance after transfer is: %d\n",player.getCredit_balance());
+						received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
+						System.out.printf("Recived player balance after transfer: %d\n",received_player_current_balance);
+					}
+
+				}
+
+			}
+			playerTurn(player);
 		}
+
 		if(choice == 4)
 		{
 			//System.exit(0);
