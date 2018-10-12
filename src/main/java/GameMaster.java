@@ -316,7 +316,7 @@ public class GameMaster
 		{
 			System.out.println("OK! Purchase game credits.");
 			System.out.println("How many credits? $5/credit - Max credit balance is 100. ");
-			System.out.println("Please enter amount to buy: ");
+			System.out.print("Please enter amount to buy: ");
 			credit_purchase = reader.nextInt();
 			int game_balance_before_purchase = player.getCredit_balance();
 
