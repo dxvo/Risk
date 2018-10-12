@@ -284,7 +284,9 @@ public class GameMaster
 		{
 			for(int i =0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
 			{
+				System.out.printf("Player %d turn",playerList.get(i).getPlayerID());
 				playerTurn(playerList.get(i));
+				continue;
 			}
 		}
 
@@ -299,7 +301,8 @@ public class GameMaster
 		System.out.println("\t2. Purchase credit:  ");
 		System.out.println("\t3. Trade in cards:  ");
 		System.out.println("\t4. Transfer credit:  ");
-		System.out.println("\t5. End game:  ");
+		System.out.println("\t5. End this turn:  ");
+		System.out.println("\t6. Quit game:  ");
 
 		System.out.print("Your choice is: ");
 		int choice = reader.nextInt();
@@ -324,15 +327,15 @@ public class GameMaster
 			while(new_game_balance > 100)
 			{
 				System.out.println("Game credit exceeds allowable limit.");
-				System.out.printf("Your current credid balance is: %d", game_balance_before_purchase);
+				System.out.printf("Your current credid balance is: %d\n", game_balance_before_purchase);
 				System.out.print("Please enter a new amount: ");
 				credit_purchase = reader.nextInt();
 				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
 				new_game_balance = player.getCredit_balance();
 			}
 
-
-
+			System.out.printf("Your current balance is: %d", new_game_balance); //show new balance
+			playerTurn(player);
 		}
 
 		if(choice == 3)
@@ -348,6 +351,13 @@ public class GameMaster
 
 		if(choice == 5){
 			// if a particular choose to exit, then call this method and also remove that player from the game
+			System.exit(0);
+		}
+
+		if(choice == 6){
+			// if a particular choose to exit
+			//remove this player from the game
+			//continue with next player
 			System.exit(0);
 		}
 
