@@ -2,6 +2,8 @@
 echo \#building!
 
 cd src
+cd main
+cd java
 
 javac *.java
 
