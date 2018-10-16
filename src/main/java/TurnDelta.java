@@ -3,27 +3,32 @@ public class TurnDelta
 	private int attackerID;
 	private int attackerX;
 	private int attackerY;
+	private int attackerTroopsLost;
 	private boolean attackerVictory;
+
 	
 	private int defenderID;
 	private int defenderX;
 	private int defenderY;
-	
+	private int defenderTroopsLost;
+
 	public TurnDelta()
 	{
 		
 	}
 	
-	public void setDelta(int aID, int aX, int aY, boolean aV, int dID, int dX, int dY)
+	public void setDelta(int aID, int aX, int aY, int aTL, boolean aV, int dID, int dX, int dY, int dTL)
 	{
 		attackerID = aID;
 		attackerX = aX;
 		attackerY = aY;
+		attackerTroopsLost= aTL;
 		attackerVictory = aV;
 		
 		defenderID = dID;
 		defenderX = dX;
 		defenderY = dY;
+		defenderTroopsLost = dTL;
 	}
 	
 	public int getAttackerID()

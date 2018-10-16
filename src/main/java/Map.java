@@ -6,20 +6,10 @@ public class Map
 	private int row;
 	private int col;
 
-	/*
-	public Map()
-	{
-		row = 0;
-		col = 0;
-		data = new Territory[row][col];
-		initMap();
-	}
-	*/ // let just not define this
-
 	public Map(int h, int w) //overloaded - constructor
 	{
-		row = h; //width is default to 6
-		col = w; //height is default to 7 to avoid scaling complexity
+		setRow(h); //width is default to 6
+		setCol(w); //height is default to 7 to avoid scaling complexity
 		System.out.println("\nINITIALIZING MAP AND DISTRIBUTING ARMY UNITS...");
 		data = new Territory[row][col];
 		initMap();
@@ -43,7 +33,14 @@ public class Map
 
 	public boolean isValidCoordinates(int x, int y)
 	{
-		return (x >= 0 || y >= 0 || x < row || y < col);
+		if (x >= 0 && y >= 0 && x < row && y < col)
+			return true;
+		else
+		{
+			System.out.println("\nCoordinates Are Not Valid...");
+			return false;
+		}
+
 	}
 
 	public int numTerritories()
@@ -54,14 +51,18 @@ public class Map
 	public int getNumUnits(int x, int y)
 	{
 		if(isValidCoordinates(x, y) == false)
+		{
 			return 0;
+		}
 		return data[x][y].getNumUnits();
 	}
 
 	public void setNumUnits(int x, int y, int units)
 	{
 		if(isValidCoordinates(x, y) == false)
+		{
 			return;
+		}
 		data[x][y].setNumUnits(units);
 	}
 	

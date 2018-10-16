@@ -13,8 +13,6 @@ public class BattleHandler
 	public void startBattle(Player attacker, Map gameMap)
 	{
 		Battle(attacker, gameMap);
-
-
 		
 		endBattle(attacker, gameMap);
 	}
