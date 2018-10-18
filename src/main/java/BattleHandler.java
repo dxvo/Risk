@@ -1,6 +1,6 @@
-import twitter4j.Status;
 import twitter4j.TwitterException;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 import java.io.*;
 
@@ -15,11 +15,11 @@ public class BattleHandler
 		die = new Die();
 	}
 	
-	public void startBattle(Player attacker, Map gameMap)
+	public void startBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
 		Battle(attacker, gameMap);
 		
-		endBattle(attacker, gameMap);
+		endBattle(attacker, gameMap, playerList, turnCounter);
 	}
 	
 	private void Battle(Player attacker, Map gameMap)
@@ -144,7 +144,7 @@ public class BattleHandler
 
 		while (attacker_unit >= 2 && defender_unit > 0 && keep_attack) {
 			//for attacker
-			System.out.printf("\nAttacker - Player %d - Your territory currently has %d units", attacker_unit, attacker_ID);
+			System.out.printf("\nAttacker - Player %d - Your territory currently has %d units", attacker_ID, attacker_unit);
 			System.out.print("\nHow many times do you want to roll ?( Max is 3): ");
 			attacker_num_die_roll = reader.nextInt();
 			while (attacker_unit - attacker_num_die_roll < 1 || attacker_num_die_roll > 3) //attacker must have at least 1 unit more # of die roll
@@ -164,7 +164,7 @@ public class BattleHandler
 			//rolling die
 			//1 is store value and other is to store ID
 			int roll_value = 0;
-			largest_die[0] = 0; //initalize to
+			largest_die[0] = 0; //initialize to
 			for (int i = 0; i < attacker_num_die_roll; i++) //attacker turn
 			{
 				roll_value = die.roll(); // 1 to 6
@@ -227,45 +227,18 @@ public class BattleHandler
 			units_moved_after_battle = attacker_unit - 1;
 
 
-		//Twitter API
-		PrintStream consolePrint = System.out;
-		Tweeter tweet = new Tweeter(consolePrint);
-		String message = "";
-		String player_ID = "";
-		String player_numTerritories = "";
+
 		if(attacker_ID == largest_die[1]) //attacker win _
 		{
 			System.out.printf("The player %d has occupied territory %d, %d from player %d\n",attacker_ID,def_x_territory,def_y_territory,defender_Id);
 			gameMap.setTerritory(def_x_territory, def_y_territory, attacker_ID, units_moved_after_battle);
-			player_ID = String.valueOf(attacker_ID);
-			player_numTerritories = String.valueOf(attacker.getNumTerritories());
-			message = "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.";
-			try {
-				tweet.tweetOut(message);
-			}
-			catch(TwitterException name)
-			{
-				System.out.println("Error Tweeting on Twitter");
 
-			}
 		}
 
 
 		if(defender_Id == largest_die[1])
 		{
 			System.out.printf("The player %d has successfully defended his territory",defender_Id);
-			player_ID = String.valueOf(defender_Id);
-			player_numTerritories = String.valueOf(gameMap.numOwnedTerritories(defender_Id));
-			message = "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.";
-
-			try {
-				tweet.tweetOut(message);
-			}
-			catch(TwitterException name)
-			{
-				System.out.println("Error Tweeting on Twitter");
-
-			}
 
 		}
 
@@ -290,9 +263,32 @@ public class BattleHandler
 		return additional_army;
 	}
 
-	private void endBattle(Player attacker, Map gameMap)
+	private void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
-		
+		//print to twitter all that is required
+		//Twitter API
+		PrintStream consolePrint = System.out;
+		Tweeter tweet = new Tweeter(consolePrint);
+		String counter = String.valueOf(turnCounter);
+		String message = "During Turn " + counter +"\n";
+		String player_ID = "";
+		String player_numTerritories = "";
+
+		for (int i=0; i<playerList.size(); i++)
+		{
+			player_ID = String.valueOf(playerList.get(i).getPlayerID());
+			player_numTerritories = String.valueOf(playerList.get(i).getNumTerritories());
+			message += "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.\n";
+		}
+		try
+		{
+			tweet.tweetOut(message);
+		}
+		catch(TwitterException name)
+		{
+			System.out.println("Error Tweeting on Twitter");
+
+		}
 	}
 
 }
