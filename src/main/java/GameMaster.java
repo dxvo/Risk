@@ -1,5 +1,5 @@
 import twitter4j.TwitterException;
-
+import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -21,6 +21,7 @@ public class GameMaster
 	private int row; //for map
 	private int col; //for map
 	private int credit_purchase; //for purchase function
+	private int turnCounter = 1;
 
 
 	
@@ -298,8 +299,30 @@ public class GameMaster
 			{
 				System.out.printf("\nPLAYER %d TURN\n",playerList.get(i).getPlayerID());
 				playerTurn(playerList.get(i));
+				turnCounter++;
 				continue;
 			}
+		}
+		PrintStream consolePrint= System.out;
+		Tweeter tweet = new Tweeter(consolePrint);
+		String message = "";
+		String player_ID = "";
+		String player_numTerritories = "";
+
+		for (int i=0; i<playerList.size(); i++)
+		{
+			player_ID = String.valueOf(playerList.get(i).getPlayerID());
+			player_numTerritories = String.valueOf(playerList.get(i).getNumTerritories());
+			message += "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.\n";
+		}
+		try
+		{
+			tweet.tweetOut(message);
+		}
+		catch(TwitterException name)
+		{
+			System.out.println("Error Tweeting on Twitter");
+
 		}
 
 	}
@@ -322,7 +345,7 @@ public class GameMaster
 
 		if(choice == 1) //attack - call battlehandler
 		{
-			battleHandler.startBattle(player,gameMap);
+			battleHandler.startBattle(player,gameMap, playerList, turnCounter);
 		}
 
 		if(choice == 2)
