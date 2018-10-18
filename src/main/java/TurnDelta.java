@@ -3,12 +3,15 @@ public class TurnDelta
 	private int attackerID;
 	private int attackerX;
 	private int attackerY;
+
 	private boolean attackerVictory;
+
 	
 	private int defenderID;
 	private int defenderX;
 	private int defenderY;
-	
+
+
 	public TurnDelta()
 	{
 		
@@ -19,11 +22,13 @@ public class TurnDelta
 		attackerID = aID;
 		attackerX = aX;
 		attackerY = aY;
+
 		attackerVictory = aV;
 		
 		defenderID = dID;
 		defenderX = dX;
 		defenderY = dY;
+
 	}
 	
 	public int getAttackerID()

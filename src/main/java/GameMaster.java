@@ -1,3 +1,5 @@
+import twitter4j.TwitterException;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,6 +21,7 @@ public class GameMaster
 	private int row; //for map
 	private int col; //for map
 	private int credit_purchase; //for purchase function
+
 
 	
 	public GameMaster()
