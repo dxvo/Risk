@@ -1,4 +1,9 @@
+import twitter4j.Status;
+import twitter4j.TwitterException;
+
 import java.util.Scanner;
+import java.io.*;
+
 
 
 public class BattleHandler
@@ -13,13 +18,12 @@ public class BattleHandler
 	public void startBattle(Player attacker, Map gameMap)
 	{
 		Battle(attacker, gameMap);
-
-
 		
 		endBattle(attacker, gameMap);
 	}
 	
-	private void Battle(Player attacker, Map gameMap) {
+	private void Battle(Player attacker, Map gameMap)
+	{
 		//print out the current map
 		System.out.println("\n CURRENT MAP");
 
@@ -222,14 +226,48 @@ public class BattleHandler
 		else
 			units_moved_after_battle = attacker_unit - 1;
 
+
+		//Twitter API
+		PrintStream consolePrint = System.out;
+		Tweeter tweet = new Tweeter(consolePrint);
+		String message = "";
+		String player_ID = "";
+		String player_numTerritories = "";
 		if(attacker_ID == largest_die[1]) //attacker win _
 		{
 			System.out.printf("The player %d has occupied territory %d, %d from player %d\n",attacker_ID,def_x_territory,def_y_territory,defender_Id);
 			gameMap.setTerritory(def_x_territory, def_y_territory, attacker_ID, units_moved_after_battle);
+			player_ID = String.valueOf(attacker_ID);
+			player_numTerritories = String.valueOf(attacker.getNumTerritories());
+			message = "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.";
+			try {
+				tweet.tweetOut(message);
+			}
+			catch(TwitterException name)
+			{
+				System.out.println("Error Tweeting on Twitter");
+
+			}
 		}
 
+
 		if(defender_Id == largest_die[1])
+		{
 			System.out.printf("The player %d has successfully defended his territory",defender_Id);
+			player_ID = String.valueOf(defender_Id);
+			player_numTerritories = String.valueOf(gameMap.numOwnedTerritories(defender_Id));
+			message = "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.";
+
+			try {
+				tweet.tweetOut(message);
+			}
+			catch(TwitterException name)
+			{
+				System.out.println("Error Tweeting on Twitter");
+
+			}
+
+		}
 
 	}
 
