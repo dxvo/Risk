@@ -10,6 +10,13 @@ Implementing a Risk game. Description of the game is available at [Risk](http://
 **To compile program:** ./build.sh 
 # Updates:
 
+**v.0.5**
+- Timeout: A player has only 30 seconds to take an action, otherwise the game moves on to the next player
+
+- Telegram Chatbot: Players can play using a Chatbot. At first, player identifies the game session that it wants to play by entering a gameId. 
+A game starts when all players have joined the game. Assume that the number of players in this case is always 3.
+[Link1](https://core.telegram.org/bots/samples) or [Link2](https://monsterdeveloper.gitbooks.io/writing-telegram-bots-on-java/chapter1.html)
+
 **v.0.4**
 - Notify players if their territories are under attack.
 - Players can purchase in-game credit. Players can use the credit to buy cards, buy undo actions, or transfer the credits to another player.
