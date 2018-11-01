@@ -287,7 +287,6 @@ public class BattleHandler
 		catch(TwitterException name)
 		{
 			System.out.println("Error Tweeting on Twitter");
-
 		}
 	}
 
