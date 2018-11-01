@@ -297,7 +297,6 @@ public class GameMaster
 		{
 			for(int i = 0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
 			{
-				System.out.printf("\nPLAYER %d TURN\n",playerList.get(i).getPlayerID());
 				playerTurn(playerList.get(i));
 				turnCounter++;
 				continue;
@@ -330,6 +329,7 @@ public class GameMaster
 
 	private void playerTurn(Player player)
 	{
+		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
 		Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
 		System.out.println("\t1. Attack. ");
@@ -486,8 +486,11 @@ public class GameMaster
 		}
 
 		if(choice == 6){
-
-			System.exit(0);
+			int pos = playerList.indexOf(player); //find position of the current player in arraylist
+			System.out.print("Moving to next player\n");
+			if(pos == playerList.size() - 1)
+				pos = -1;
+			playerTurn(playerList.get(pos+1));
 		}
 		if(choice ==7)
 		{

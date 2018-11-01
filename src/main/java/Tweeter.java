@@ -2,7 +2,7 @@ import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
 import twitter4j.TwitterException;
-
+//import twitter4j.conf.ConfigurationBuilder;
 import java.io.PrintStream;
 
 import java.util.ArrayList;
@@ -14,10 +14,13 @@ public class Tweeter
     private PrintStream consolePrint;
     private List<Status> statuses;
 
+
+
     public Tweeter(PrintStream console)
     {
         //Makes an instance of twitter - this is re-usable and thread safe
         //connects to twitter and performs authorization
+        //twitter = new TwitterFactory().getInstance();
         twitter = TwitterFactory.getSingleton();
         consolePrint = console;
         statuses = new ArrayList<Status>();
