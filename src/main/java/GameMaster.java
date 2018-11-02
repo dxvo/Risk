@@ -12,7 +12,7 @@ public class GameMaster
 
 	private BattleHandler battleHandler;
 	private Scanner reader;
-
+	//private timer timer;
 	private Die die;
 	private int numPlayers;
 	private int maxPlayers; //did not really use this
@@ -37,6 +37,7 @@ public class GameMaster
 		col = 0;
 		reader = new Scanner(System.in);
 		die = new Die();
+		//timer = new timer();
 	}
 	
 	public void gameStart()
@@ -341,7 +342,18 @@ public class GameMaster
 		System.out.println("\t7. Quit game. "); //need to remove this player from the playerlist
 
 		System.out.print("YOUR CHOICE IS: ");
-		int choice = reader.nextInt();
+		//int choice = reader.nextInt();
+		int  choice = 0;
+
+		try
+		{
+			choice = new timer().getInput();
+		}
+		catch( Exception e )
+		{
+			System.out.println( e );
+		}
+
 
 		if(choice == 1) //attack - call battlehandler
 		{
@@ -486,11 +498,7 @@ public class GameMaster
 		}
 
 		if(choice == 6){
-			int pos = playerList.indexOf(player); //find position of the current player in arraylist
-			System.out.print("Moving to next player\n");
-			if(pos == playerList.size() - 1)
-				pos = -1;
-			playerTurn(playerList.get(pos+1));
+			next_turn(player);
 		}
 		if(choice ==7)
 		{
@@ -498,6 +506,15 @@ public class GameMaster
 			System.exit(0);
 		}
 
+	}
+
+	public void next_turn(Player player)
+	{
+		int pos = playerList.indexOf(player); //find position of the current player in arraylist
+		System.out.print("Moving to next player\n");
+		if(pos == playerList.size() - 1)
+			pos = -1;
+		playerTurn(playerList.get(pos+1));
 	}
 
 	private void gameCleanup()
