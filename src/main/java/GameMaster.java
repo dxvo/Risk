@@ -9,10 +9,9 @@ public class GameMaster
 {
 	private Map gameMap;
 	private ArrayList <Player> playerList;
-
+	private timer_input timer_input;
 	private BattleHandler battleHandler;
 	private Scanner reader;
-	//private timer timer;
 	private Die die;
 	private int numPlayers;
 	private int maxPlayers; //did not really use this
@@ -22,6 +21,7 @@ public class GameMaster
 	private int col; //for map
 	private int credit_purchase; //for purchase function
 	private int turnCounter = 1;
+	private int choice;
 
 
 	
@@ -37,7 +37,8 @@ public class GameMaster
 		col = 0;
 		reader = new Scanner(System.in);
 		die = new Die();
-		//timer = new timer();
+		timer_input = new timer_input();
+		choice = 0;
 	}
 	
 	public void gameStart()
@@ -315,6 +316,7 @@ public class GameMaster
 			player_numTerritories = String.valueOf(playerList.get(i).getNumTerritories());
 			message += "The Player with ID = " + player_ID + " Has " + player_numTerritories + " Territories.\n";
 		}
+
 		try
 		{
 			tweet.tweetOut(message);
@@ -331,7 +333,7 @@ public class GameMaster
 	private void playerTurn(Player player)
 	{
 		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
-		Scanner reader = new Scanner(System.in);
+		//Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
 		System.out.println("\t1. Attack. ");
 		System.out.println("\t2. Purchase credit.  ");
@@ -341,18 +343,10 @@ public class GameMaster
 		System.out.println("\t6. End this turn."); //turn over to next player
 		System.out.println("\t7. Quit game. "); //need to remove this player from the playerlist
 
-		System.out.print("YOUR CHOICE IS: ");
-		//int choice = reader.nextInt();
-		int  choice = 0;
+		//System.out.print("YOUR CHOICE IS: ");
 
-		try
-		{
-			choice = new timer().getInput();
-		}
-		catch( Exception e )
-		{
-			System.out.println( e );
-		}
+
+		choice = timer_input.get_input();
 
 
 		if(choice == 1) //attack - call battlehandler
@@ -497,12 +491,13 @@ public class GameMaster
 			System.exit(0);
 		}
 
+		//please keep choice = 6 to move to next turn
 		if(choice == 6){
 			next_turn(player);
 		}
 		if(choice ==7)
 		{
-
+			System.out.println("Thanks for playing! BYE ");
 			System.exit(0);
 		}
 
