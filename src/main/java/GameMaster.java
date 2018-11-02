@@ -210,8 +210,13 @@ public class GameMaster
 
 		//Randomly distribute player into territories
 		System.out.println("\n STARTING MAP");
+		for (int i = 0; i < col; i++)
+			System.out.printf("\t\t\t\t%d   ",i);
+
+		System.out.println();
 		for(int i = 0; i < row; i++)
 		{
+			System.out.print(i);
 			for (int j = 0; j < col; j++)
 			{
 				System.out.printf("\t ID: %d, Units: %d",gameMap.getOwnerID(i,j), gameMap.getNumUnits(i,j));
