@@ -341,7 +341,6 @@ public class GameMaster
 
 	}
 
-
 	private void playerTurn(Player player)
 	{
 		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
