@@ -210,8 +210,13 @@ public class GameMaster
 
 		//Randomly distribute player into territories
 		System.out.println("\n STARTING MAP");
+		for (int i = 0; i < col; i++)
+			System.out.printf("\t\t\t\t%d   ",i);
+
+		System.out.println();
 		for(int i = 0; i < row; i++)
 		{
+			System.out.print(i);
 			for (int j = 0; j < col; j++)
 			{
 				System.out.printf("\t ID: %d, Units: %d",gameMap.getOwnerID(i,j), gameMap.getNumUnits(i,j));
@@ -299,9 +304,16 @@ public class GameMaster
 		{
 			for(int i = 0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
 			{
-				playerTurn(playerList.get(i));
-				turnCounter++;
-				continue;
+				if(playerList.size() <= 1)
+				{
+					System.out.printf("Player %d wins",playerList.get(0).getPlayerID()); //only player left in playerlist
+					System.exit(1);
+				}
+				else {
+					playerTurn(playerList.get(i));
+					turnCounter++;
+					continue;
+				}
 			}
 		}
 		PrintStream consolePrint= System.out;
