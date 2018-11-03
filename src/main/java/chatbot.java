@@ -36,6 +36,6 @@ public class chatbot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         // TODO
-        return "730204765:AAHqIUzXasdRJsZUDySybOi_yX4BBZOtT58";
+        return "please ask for the key";
     }
 }
