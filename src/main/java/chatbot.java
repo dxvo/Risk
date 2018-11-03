@@ -6,8 +6,25 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 
 public class chatbot extends TelegramLongPollingBot {
     @Override
+
+    //public void onUpdateReceived(Update update) {
+        //System.out.println(update.getMessage().getText());
+    //}
+
+
+
     public void onUpdateReceived(Update update) {
-        System.out.println(update.getMessage().getText());
+        // We check if the update has a message and the message has text
+        if (update.hasMessage() && update.getMessage().hasText()) {
+            SendMessage message = new SendMessage() // Create a SendMessage object with mandatory fields
+                    .setChatId(update.getMessage().getChatId())
+                    .setText(update.getMessage().getText());
+            try {
+                execute(message); // Call method to send the message
+            } catch (TelegramApiException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     @Override

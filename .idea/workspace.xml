@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pengrad_java_telegram_bot_api_4_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chatbot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junit5-jupiter-starter-maven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/junit5-jupiter-starter-maven.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameMaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Risk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/chatbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatbot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -105,7 +95,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1358" />
+          <entry key="java" value="1555" />
           <entry key="md" value="2" />
           <entry key="properties" value="16" />
           <entry key="sh" value="16" />
@@ -115,7 +105,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Bash" value="16" />
-          <entry key="JAVA" value="1358" />
+          <entry key="JAVA" value="1555" />
           <entry key="Markdown" value="2" />
           <entry key="Properties" value="16" />
           <entry key="XML" value="19" />
@@ -142,23 +132,22 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="135">
+              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="24">
               <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
@@ -266,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541218251077" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541229870326" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -322,6 +311,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="707" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -330,7 +320,7 @@
       <window_info id="Image Layers" order="4" />
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26655897" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49919224" weight="0.35772356" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49919224" weight="0.35609755" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.24151857" side_tool="true" weight="0.4878049" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49919224" weight="0.3284553" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3284553" />
@@ -559,21 +549,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="135">
+          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
