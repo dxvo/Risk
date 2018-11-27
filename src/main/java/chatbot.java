@@ -10,6 +10,7 @@ import java.util.*;
 public class chatbot extends TelegramLongPollingBot {
 
     int player_count = 0;
+    long[] player_ID = new long[3];
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -35,8 +36,17 @@ public class chatbot extends TelegramLongPollingBot {
             }
 
             else if ((message_text).equals("@joinGame")){
-                player_count += 1;
-                SendMessage message = new SendMessage().setChatId(session_id).setText("You have successfully entered the game");
+
+                for(int i = 0; i < 3; i++)
+                {
+                    if(session_id != player_ID[i])
+                    {
+                        player_ID[player_count] = session_id;
+                        player_count += 1;
+                    }
+                }
+                String answer = "You have successfully entered the game." + "You are currently player #" + Integer.toString(player_count);
+                SendMessage message = new SendMessage().setChatId(session_id).setText(answer);
 
                 try {
                     execute(message); // Call method to send the message
@@ -46,9 +56,21 @@ public class chatbot extends TelegramLongPollingBot {
             }
 
         }
-        System.out.println(player_count);
-        if(player_count == 3)
-            System.exit(1);
+        //System.out.println(player_count);
+
+        if(player_count == 3){
+            String game_start_message = "3 players has joined. The game is now started";
+            for(int i = 0; i < 3; i++){
+                SendMessage message = new SendMessage().setChatId(player_ID[i]).setText(game_start_message);
+                try {
+                    execute(message); // Call method to send the message
+                } catch (TelegramApiException e) {
+                    e.printStackTrace();
+                }
+            }
+
+        }
+
     }
 
     @Override
