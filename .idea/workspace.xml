@@ -12,6 +12,16 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Risk3$Risk.ic" NAME="Risk Coverage Results" MODIFIED="1543292932328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="225" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="112667621">
       <usages-collector id="statistics.lifecycle.project">
@@ -113,14 +123,56 @@
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
+    <session id="-888255989">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.5" value="4" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="class" value="1" />
+          <entry key="java" value="1204" />
+          <entry key="xml" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="1204" />
+          <entry key="XML" value="15" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="class" value="2" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="14" />
+          <entry key="xml" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="2" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="14" />
+          <entry key="XML" value="3" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-466">
-              <caret line="342" selection-start-line="342" selection-end-line="342" />
+            <state relative-caret-position="210">
+              <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#gameStart#0;class#GameMaster#0" />
@@ -132,23 +184,79 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#347#403#1" expanded="true" />
+                <element signature="e#484#544#0" expanded="true" />
+                <element signature="e#484#544#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+            <state relative-caret-position="268">
+              <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#609#628#0" expanded="true" />
+                <element signature="e#655#707#1" expanded="true" />
+                <element signature="e#677#696#0" expanded="true" />
+                <element signature="e#677#706#0" expanded="true" />
+                <element signature="e#720#770#1" expanded="true" />
+                <element signature="e#738#757#0" expanded="true" />
+                <element signature="e#738#769#0" expanded="true" />
+                <element signature="e#783#846#1" expanded="true" />
+                <element signature="e#801#820#0" expanded="true" />
+                <element signature="e#801#830#0" expanded="true" />
+                <element signature="e#801#845#0" expanded="true" />
+                <element signature="e#889#2006#0" expanded="true" />
+                <element signature="e#893#927#0" expanded="true" />
+                <element signature="e#893#927#0" expanded="true" />
+                <element signature="e#893#927#0" expanded="true" />
+                <element signature="e#889#2006#0" expanded="true" />
+                <element signature="e#1051#1171#1" expanded="true" />
+                <element signature="e#993#1106#0" expanded="true" />
+                <element signature="e#1297#1388#0" expanded="true" />
+                <element signature="e#1297#1388#0" expanded="true" />
+                <element signature="e#1425#1459#0" expanded="true" />
+                <element signature="e#1425#1459#0" expanded="true" />
+                <element signature="e#1425#1459#0" expanded="true" />
+                <element signature="e#1477#1521#1" expanded="true" />
+                <element signature="e#1584#1689#0" expanded="true" />
+                <element signature="e#1584#1689#0" expanded="true" />
+                <element signature="e#1584#1689#0" expanded="true" />
+                <element signature="e#1606#1718#1" expanded="true" />
+                <element signature="e#1901#1992#0" expanded="true" />
+                <element signature="e#1901#1992#0" expanded="true" />
+                <element signature="e#2114#2165#1" expanded="true" />
+                <element signature="e#2182#2191#1" expanded="true" />
+                <element signature="e#2178#2236#0" expanded="true" />
+                <element signature="e#2178#2236#0" expanded="true" />
+                <element signature="e#2178#2236#0" expanded="true" />
+                <element signature="e#2222#2314#1" expanded="true" />
+                <element signature="e#2428#2519#0" expanded="true" />
+                <element signature="e#2428#2519#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="-238">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -189,6 +297,7 @@
         <option value="$PROJECT_DIR$/src/main/java/GameMaster.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/Risk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/newBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/chatbot.java" />
       </list>
     </option>
@@ -201,16 +310,620 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-3" />
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="707" />
+    <option name="width" value="1349" />
+    <option name="height" value="782" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectUserFactors">
+    <factor id="binaryFeature:liftShorter">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="8.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="false" value="71.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:liftShorterClasses">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="false" value="7.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="67.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:middleMatching">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="8.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="false" value="70.0" />
+        <observation name="true" value="1.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:nonGeneric">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="8.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="0" value="31.0" />
+        <observation name="UNDEFINED" value="40.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:prox_inResolveScope">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="1.0" />
+        <observation name="true" value="7.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="30.0" />
+        <observation name="true" value="37.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:prox_openedInEditor">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="7.0" />
+        <observation name="true" value="1.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="48.0" />
+        <observation name="true" value="19.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:prox_sameDirectory">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="7.0" />
+        <observation name="true" value="1.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="48.0" />
+        <observation name="true" value="19.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:prox_sameLogicalRoot">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="7.0" />
+        <observation name="true" value="1.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="48.0" />
+        <observation name="true" value="19.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:prox_sdkOrLibrary">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="2.0" />
+        <observation name="true" value="6.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="55.0" />
+        <observation name="true" value="12.0" />
+      </dailyData>
+    </factor>
+    <factor id="binaryFeature:templates">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="8.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="false" value="71.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:accessible">
+      <dailyData date="26-11-2018">
+        <observation name="NORMAL" value="7.0" />
+        <observation name="UNDEFINED" value="1.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="NORMAL" value="69.0" />
+        <observation name="UNDEFINED" value="2.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:expectedType">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="normal" value="7.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="expected" value="16.0" />
+        <observation name="maybeExpected" value="6.0" />
+        <observation name="normal" value="46.0" />
+        <observation name="ofDefaultType" value="1.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:kind">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="classNameOrGlobalStatic" value="1.0" />
+        <observation name="normal" value="4.0" />
+        <observation name="suitableClass" value="1.0" />
+        <observation name="variable" value="1.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="classNameOrGlobalStatic" value="5.0" />
+        <observation name="expectedTypeVariable" value="8.0" />
+        <observation name="improbableKeyword" value="1.0" />
+        <observation name="normal" value="42.0" />
+        <observation name="probableKeyword" value="2.0" />
+        <observation name="variable" value="11.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
+      <dailyData date="26-11-2018">
+        <observation name="unknown" value="8.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="unknown" value="67.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:prox_javaInheritance">
+      <dailyData date="26-11-2018">
+        <observation name="false" value="2.0" />
+        <observation name="null" value="6.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="false" value="5.0" />
+        <observation name="null" value="62.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:prox_referenceList">
+      <dailyData date="26-11-2018">
+        <observation name="unknown" value="8.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="unknown" value="67.0" />
+      </dailyData>
+    </factor>
+    <factor id="categoricalFeature:recursion">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="normal" value="6.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="7.0" />
+        <observation name="normal" value="64.0" />
+      </dailyData>
+    </factor>
+    <factor id="completionFinishedType">
+      <dailyData date="26-11-2018">
+        <observation name="cancelled" value="45.0" />
+        <observation name="explicitSelect" value="4.0" />
+        <observation name="typedSelect" value="4.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="cancelled" value="458.0" />
+        <observation name="explicitSelect" value="30.0" />
+        <observation name="typedSelect" value="41.0" />
+      </dailyData>
+    </factor>
+    <factor id="completionType">
+      <dailyData date="26-11-2018">
+        <observation name="BASIC" value="13.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="BASIC" value="96.0" />
+      </dailyData>
+    </factor>
+    <factor id="completionUsage">
+      <dailyData date="26-11-2018">
+        <observation name="count" value="53.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="count" value="529.0" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:explicitProximity">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.4" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.120666" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="0.134752" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.11415" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:grouping">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:mostUsed">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="3.0" />
+        <observation name="average" value="-82.333333" />
+        <observation name="count" value="9.0" />
+        <observation name="max" value="-3.0" />
+        <observation name="min" value="-136.0" />
+        <observation name="variance" value="1002.876856" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="49.0" />
+        <observation name="average" value="-38.860465" />
+        <observation name="count" value="43.0" />
+        <observation name="max" value="-1.0" />
+        <observation name="min" value="-137.0" />
+        <observation name="variance" value="2189.945183" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:nameEnd">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="13.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="average" value="-0.043796" />
+        <observation name="count" value="137.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="-1.0" />
+        <observation name="variance" value="0.029062" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:position">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="0.085106" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.170845" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prefix">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="-972.4" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="-1154.0" />
+        <observation name="variance" value="77449.627461" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="-1127.744681" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="-1202.0" />
+        <observation name="variance" value="21377.948291" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:priority">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.066667" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.037555" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prox_explicitlyImported">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="66.666667" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="300.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="6100.71279" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="average" value="93.233083" />
+        <observation name="count" value="133.0" />
+        <observation name="max" value="300.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="12953.664076" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prox_knownElement">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="3.733333" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="8.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="5.625225" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="average" value="1.142857" />
+        <observation name="count" value="133.0" />
+        <observation name="max" value="8.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="5.84381" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prox_sameModule">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.266667" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.295887" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="average" value="0.571429" />
+        <observation name="count" value="133.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.589929" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:prox_samePsiMember">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.266667" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.295887" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="4.0" />
+        <observation name="average" value="0.466165" />
+        <observation name="count" value="133.0" />
+        <observation name="max" value="2.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.474291" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:query_length">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="0.0" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:result_length">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="6.4" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="8.0" />
+        <observation name="min" value="3.0" />
+        <observation name="variance" value="1.365964" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="5.198582" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="12.0" />
+        <observation name="min" value="1.0" />
+        <observation name="variance" value="8.501472" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:sameWords">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="13.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="average" value="-0.043796" />
+        <observation name="count" value="137.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="-1.0" />
+        <observation name="variance" value="0.029062" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:shorter">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="13.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="average" value="-43.664234" />
+        <observation name="count" value="137.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="-997.0" />
+        <observation name="variance" value="28887.732949" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:simple">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="1.0" />
+        <observation name="average" value="0.0" />
+        <observation name="count" value="13.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="2.0" />
+        <observation name="average" value="0.291971" />
+        <observation name="count" value="137.0" />
+        <observation name="max" value="10.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="1.935512" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:sorter">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="1.0" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="1.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="1.0" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="1.0" />
+        <observation name="min" value="1.0" />
+        <observation name="variance" value="0.0" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:statics">
+      <dailyData date="26-11-2018">
+        <observation name="UNDEFINED" value="6.0" />
+        <observation name="average" value="-3.666667" />
+        <observation name="count" value="3.0" />
+        <observation name="max" value="-3.0" />
+        <observation name="min" value="-4.0" />
+        <observation name="variance" value="0.055556" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="UNDEFINED" value="63.0" />
+        <observation name="average" value="-2.666667" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="0.0" />
+        <observation name="min" value="-5.0" />
+        <observation name="variance" value="1.648658" />
+      </dailyData>
+    </factor>
+    <factor id="doubleFeature:stats">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="1333.333333" />
+        <observation name="count" value="15.0" />
+        <observation name="max" value="10000.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="5365079.365079" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="1560.255319" />
+        <observation name="count" value="141.0" />
+        <observation name="max" value="10000.0" />
+        <observation name="min" value="0.0" />
+        <observation name="variance" value="8486453.410755" />
+      </dailyData>
+    </factor>
+    <factor id="itemPosition">
+      <dailyData date="26-11-2018">
+        <observation name="0" value="4.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="0" value="25.0" />
+        <observation name="1" value="3.0" />
+        <observation name="2" value="2.0" />
+      </dailyData>
+    </factor>
+    <factor id="mnemonicsUsage">
+      <dailyData date="26-11-2018">
+        <observation name="total" value="3.0" />
+        <observation name="withMnemonics" value="0.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="total" value="25.0" />
+        <observation name="withMnemonics" value="1.0" />
+      </dailyData>
+    </factor>
+    <factor id="prefixLength">
+      <dailyData date="26-11-2018">
+        <observation name="0" value="1.0" />
+        <observation name="3" value="2.0" />
+        <observation name="4" value="1.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="0" value="1.0" />
+        <observation name="1" value="4.0" />
+        <observation name="2" value="10.0" />
+        <observation name="3" value="11.0" />
+        <observation name="4" value="4.0" />
+      </dailyData>
+    </factor>
+    <factor id="timeBetweenTyping">
+      <dailyData date="26-11-2018">
+        <observation name="average" value="338.0" />
+        <observation name="count" value="12.0" />
+      </dailyData>
+      <dailyData date="27-11-2018">
+        <observation name="average" value="222.631579" />
+        <observation name="count" value="76.0" />
+      </dailyData>
+    </factor>
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -222,46 +935,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Risk2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Risk2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Risk2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Risk2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Risk2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Risk2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Risk2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Risk2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541229870326" />
+    <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543303230786" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.23602484" />
+    <property name="project.structure.side.proportion" value="0.20020325" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -309,8 +993,17 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="707" extended-state="0" />
+    <frame x="-3" y="23" width="1349" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -318,19 +1011,22 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26655897" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.16679418" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49919224" weight="0.35609755" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.24151857" side_tool="true" weight="0.4878049" />
-      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.49919224" weight="0.3284553" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.3284553" />
+      <window_info id="Learn" order="7" weight="0.20219436" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" weight="0.3" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.60188085" side_tool="true" weight="0.35507247" />
+      <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4976489" weight="0.32753623" />
+      <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4968652" weight="0.11884058" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.2504065" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.75848144" visible="true" weight="0.38536584" />
+      <window_info active="true" anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" visible="true" weight="0.33913043" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.4968652" weight="0.19855073" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.4050445" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -405,31 +1101,7 @@
     <entry file="file://$PROJECT_DIR$/clean.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Twitter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="68" column="34" lean-forward="true" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1411">
@@ -455,13 +1127,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/main/twitter4j.properties" />
     <entry file="file://$PROJECT_DIR$/target/classes/Risk.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-508">
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -506,25 +1171,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Territory.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/timer.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="-209">
+          <caret line="1377" selection-start-line="1377" selection-end-line="1377" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/timer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/timer_input.java">
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestDie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/classes/GameRecord.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#1263#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-466">
-          <caret line="342" selection-start-line="342" selection-end-line="342" />
+        <state relative-caret-position="210">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#gameStart#0;class#GameMaster#0" />
@@ -535,33 +1222,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/target/classes/Map.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="57" lean-forward="true" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+        <state relative-caret-position="27">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-10.0.2.jdk/Contents/Home/lib/src.zip!/java.base/java/util/ArrayList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="1377" selection-start-line="1377" selection-end-line="1377" />
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/timer_input.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#615#0" expanded="true" />
+            <element signature="e#594#615#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Territory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="36" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/newBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="348">
+          <caret line="29" column="15" lean-forward="true" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#347#403#1" expanded="true" />
+            <element signature="e#484#544#0" expanded="true" />
+            <element signature="e#484#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-238">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="4" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        <state relative-caret-position="268">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#609#628#0" expanded="true" />
+            <element signature="e#655#707#1" expanded="true" />
+            <element signature="e#677#696#0" expanded="true" />
+            <element signature="e#677#706#0" expanded="true" />
+            <element signature="e#720#770#1" expanded="true" />
+            <element signature="e#738#757#0" expanded="true" />
+            <element signature="e#738#769#0" expanded="true" />
+            <element signature="e#783#846#1" expanded="true" />
+            <element signature="e#801#820#0" expanded="true" />
+            <element signature="e#801#830#0" expanded="true" />
+            <element signature="e#801#845#0" expanded="true" />
+            <element signature="e#889#2006#0" expanded="true" />
+            <element signature="e#893#927#0" expanded="true" />
+            <element signature="e#893#927#0" expanded="true" />
+            <element signature="e#893#927#0" expanded="true" />
+            <element signature="e#889#2006#0" expanded="true" />
+            <element signature="e#1051#1171#1" expanded="true" />
+            <element signature="e#993#1106#0" expanded="true" />
+            <element signature="e#1297#1388#0" expanded="true" />
+            <element signature="e#1297#1388#0" expanded="true" />
+            <element signature="e#1425#1459#0" expanded="true" />
+            <element signature="e#1425#1459#0" expanded="true" />
+            <element signature="e#1425#1459#0" expanded="true" />
+            <element signature="e#1477#1521#1" expanded="true" />
+            <element signature="e#1584#1689#0" expanded="true" />
+            <element signature="e#1584#1689#0" expanded="true" />
+            <element signature="e#1584#1689#0" expanded="true" />
+            <element signature="e#1606#1718#1" expanded="true" />
+            <element signature="e#1901#1992#0" expanded="true" />
+            <element signature="e#1901#1992#0" expanded="true" />
+            <element signature="e#2114#2165#1" expanded="true" />
+            <element signature="e#2182#2191#1" expanded="true" />
+            <element signature="e#2178#2236#0" expanded="true" />
+            <element signature="e#2178#2236#0" expanded="true" />
+            <element signature="e#2178#2236#0" expanded="true" />
+            <element signature="e#2222#2314#1" expanded="true" />
+            <element signature="e#2428#2519#0" expanded="true" />
+            <element signature="e#2428#2519#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -575,7 +1362,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.20020325" />
               </list>
             </option>
           </splitter-proportions>
@@ -587,7 +1374,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.20020325" />
               </list>
             </option>
           </splitter-proportions>
@@ -598,7 +1385,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.29471543" />
               </list>
             </option>
           </splitter-proportions>
@@ -606,11 +1393,11 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>10</last-edited>
+          <last-edited>11</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.20020325" />
               </list>
             </option>
           </splitter-proportions>
@@ -622,8 +1409,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
-                <option value="0.6" />
+                <option value="0.20020325" />
               </list>
             </option>
           </splitter-proportions>
@@ -631,7 +1417,7 @@
       </state>
       <state key="ProjectJDKs.UI">
         <settings>
-          <last-edited>11</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -647,7 +1433,7 @@
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.20020325" />
               </list>
             </option>
           </splitter-proportions>
