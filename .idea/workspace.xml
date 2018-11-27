@@ -2,312 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_ethz_ganymed_ganymed_ssh2_build210.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_acm_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_acmpca_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_alexaforbusiness_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_api_gateway_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_applicationautoscaling_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_appstream_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_appsync_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_athena_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_autoscaling_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_autoscalingplans_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_batch_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_budgets_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloud9_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_clouddirectory_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudformation_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudfront_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudhsm_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudhsmv2_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudsearch_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudtrail_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudwatch_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudwatchmetrics_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codebuild_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codecommit_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codedeploy_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codepipeline_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codestar_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitoidentity_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitoidp_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitosync_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_comprehend_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_config_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_connect_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_core_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_costandusagereport_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_costexplorer_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_datapipeline_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dax_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_devicefarm_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_directconnect_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_directory_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_discovery_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dms_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dynamodb_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ec2_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ecr_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ecs_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_efs_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticache_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticbeanstalk_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticloadbalancing_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticloadbalancingv2_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticsearch_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elastictranscoder_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_emr_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_events_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_fms_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_gamelift_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_glacier_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_glue_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_greengrass_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_guardduty_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_health_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iam_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_importexport_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_inspector_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iot_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iotanalytics_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iotjobsdataplane_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kinesis_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kinesisvideo_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kms_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lambda_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lex_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lexmodelbuilding_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lightsail_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_logs_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_machinelearning_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_marketplacecommerceanalytics_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_marketplaceentitlement_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_marketplacemeteringservice_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mechanicalturkrequester_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediaconvert_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_medialive_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediapackage_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediastore_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediastoredata_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_migrationhub_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mobile_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_models_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mq_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_opsworks_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_opsworkscm_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_organizations_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_pinpoint_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_polly_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_pricing_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_rds_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_redshift_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_rekognition_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_resourcegroups_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_resourcegroupstaggingapi_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_route53_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_s3_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sagemaker_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sagemakerruntime_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_secretsmanager_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_serverlessapplicationrepository_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_servermigration_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_servicecatalog_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_servicediscovery_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ses_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_shield_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_simpledb_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_simpleworkflow_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_snowball_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sns_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sqs_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ssm_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_stepfunctions_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_storagegateway_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sts_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_support_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_swf_libraries_1_11_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_transcribe_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_translate_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_waf_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_workdocs_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_workmail_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_workspaces_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_xray_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_jmespath_java_1_11_327.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibm_icu_icu4j_58_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_44_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_openhtmltopdf_openhtmltopdf_core_0_0_1_RC9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_openhtmltopdf_openhtmltopdf_jsoup_dom_converter_0_0_1_RC9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_openhtmltopdf_openhtmltopdf_pdfbox_0_0_1_RC9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_openhtmltopdf_openhtmltopdf_rtl_support_0_0_1_RC9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_qdox_qdox_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_all_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_abbreviation_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_anchorlink_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_aside_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_autolink_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_definition_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_emoji_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_escaped_character_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_footnotes_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_gfm_strikethrough_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_gfm_tables_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_gfm_tasklist_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_ins_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_jekyll_front_matter_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_jekyll_tag_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_spec_example_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_superscript_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_tables_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_toc_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_typographic_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_wikilink_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_xwiki_macros_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_ext_yaml_front_matter_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_formatter_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_html_parser_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_jira_converter_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_pdf_converter_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_profile_pegdown_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_test_util_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_util_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vladsch_flexmark_flexmark_youtrack_converter_0_18_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_chain_commons_chain_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_zeigermann_xml_xml_im_exporter_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_17_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_regexp_jakarta_regexp_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jdom_jdom_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_1_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_bcel_bcel_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_core_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_decoration_model_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_integration_tools_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_logging_api_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_apt_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_fml_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_markdown_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xdoc_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_site_renderer_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_skin_model_1_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_archiver_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_error_diagnostics_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_monitor_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_descriptor_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_parameter_documenter_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_2_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_toolchain_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_javadoc_plugin_maven_plugin_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_project_info_reports_plugin_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_site_plugin_maven_plugin_3_7_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_exec_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_impl_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_api_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_manager_plexus_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_cvs_commons_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_cvsexe_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_cvsjava_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_git_commons_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_gitexe_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_hg_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_perforce_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_starteam_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_svn_commons_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_scm_maven_scm_provider_svnexe_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_common_artifact_filters_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_dependency_tree_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_doxia_tools_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_invoker_2_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_plugin_testing_harness_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_jar_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_utils_3_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_file_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_lightweight_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_http_shared_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_beta_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_common_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_ssh_external_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_webdav_1_0_beta_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_fontbox_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_pdfbox_pdfbox_2_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_core_1_3_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_taglib_1_3_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_struts_struts_tiles_1_3_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_archiver_1_0_alpha_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_digest_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_i18n_1_0_beta_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interactivity_api_1_0_alpha_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_io_1_0_alpha_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_1_5_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_velocity_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_aether_aether_util_0_9_0_M2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_20081211.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_netbeans_lib_cvsclient_20060125.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_nibor_autolink_autolink_0_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_umlgraph_umlgraph_5_6_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__regexp_regexp_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__slide_slide_webdavlib_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__software_amazon_ion_ion_java_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__sslext_sslext_1_2_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/junit5-jupiter-starter-maven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/junit5-jupiter-starter-maven.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameMaster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BattleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BattleHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Risk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chatbot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chatbot.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -431,41 +129,45 @@
     <session id="-888255989">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="class" value="1" />
-          <entry key="java" value="1757" />
-          <entry key="xml" value="23" />
+          <entry key="class" value="3" />
+          <entry key="java" value="2885" />
+          <entry key="xml" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="1757" />
-          <entry key="XML" value="23" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="2885" />
+          <entry key="XML" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="2" />
-          <entry key="iml" value="1" />
-          <entry key="java" value="21" />
+          <entry key="class" value="3" />
+          <entry key="iml" value="2" />
+          <entry key="java" value="35" />
+          <entry key="sh" value="2" />
           <entry key="xml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="2" />
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="21" />
+          <entry key="CLASS" value="3" />
+          <entry key="IDEA_MODULE" value="2" />
+          <entry key="JAVA" value="35" />
+          <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="6" />
         </counts>
       </usages-collector>
@@ -476,21 +178,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5573">
-              <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2807#2818#1" expanded="true" />
-                <element signature="e#2802#3164#0" expanded="true" />
-                <element signature="e#2802#3164#0" expanded="true" />
-                <element signature="e#2802#3164#0" expanded="true" />
-                <element signature="e#2847#2877#0" expanded="true" />
-                <element signature="e#2491#2519#0" expanded="true" />
-                <element signature="e#2491#2519#0" expanded="true" />
-                <element signature="e#2554#2589#0" expanded="true" />
-                <element signature="e#2554#2589#0" expanded="true" />
-                <element signature="e#2647#2669#0" expanded="true" />
-                <element signature="e#2647#2669#0" expanded="true" />
                 <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
               </folding>
             </state>
@@ -498,29 +189,215 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="540">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#749#799#1" expanded="true" />
-                <element signature="e#1492#1513#1" expanded="true" />
+                <element signature="e#626#655#0" expanded="true" />
+                <element signature="e#926#972#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#344#345#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#793#809#0" expanded="true" />
+                <element signature="e#874#1100#0" expanded="true" />
+                <element signature="e#820#830#1" expanded="true" />
+                <element signature="e#874#1100#0" expanded="true" />
+                <element signature="e#874#1100#0" expanded="true" />
+                <element signature="e#835#851#0" expanded="true" />
+                <element signature="e#874#1100#0" expanded="true" />
+                <element signature="e#874#1100#0" expanded="true" />
+                <element signature="e#922#1071#0" expanded="true" />
+                <element signature="e#868#878#1" expanded="true" />
+                <element signature="e#922#1071#0" expanded="true" />
+                <element signature="e#922#1071#0" expanded="true" />
+                <element signature="e#883#899#0" expanded="true" />
+                <element signature="e#922#1071#0" expanded="true" />
+                <element signature="e#922#1071#0" expanded="true" />
+                <element signature="e#930#952#0" expanded="true" />
+                <element signature="e#1062#1092#0" expanded="true" />
+                <element signature="e#1094#1116#0" expanded="true" />
+                <element signature="e#1161#1201#0" expanded="true" />
+                <element signature="e#1352#1377#1" expanded="true" />
+                <element signature="e#1424#1449#1" expanded="true" />
+                <element signature="e#1452#1491#0" expanded="true" />
+                <element signature="e#1528#1569#1" expanded="true" />
+                <element signature="e#1546#1568#0" expanded="true" />
+                <element signature="e#1573#1589#1" expanded="true" />
+                <element signature="e#1651#2225#0" expanded="true" />
+                <element signature="e#1651#2225#0" expanded="true" />
+                <element signature="e#1928#2221#0" expanded="true" />
+                <element signature="e#1928#2221#0" expanded="true" />
+                <element signature="e#2007#2216#0" expanded="true" />
+                <element signature="e#1953#1963#1" expanded="true" />
+                <element signature="e#2007#2216#0" expanded="true" />
+                <element signature="e#2007#2216#0" expanded="true" />
+                <element signature="e#1968#1984#0" expanded="true" />
+                <element signature="e#2007#2216#0" expanded="true" />
+                <element signature="e#2007#2216#0" expanded="true" />
+                <element signature="e#2057#2183#0" expanded="true" />
+                <element signature="e#2003#2013#1" expanded="true" />
+                <element signature="e#2057#2183#0" expanded="true" />
+                <element signature="e#2057#2183#0" expanded="true" />
+                <element signature="e#2018#2034#0" expanded="true" />
+                <element signature="e#2057#2183#0" expanded="true" />
+                <element signature="e#2057#2183#0" expanded="true" />
+                <element signature="e#2067#2089#0" expanded="true" />
+                <element signature="e#2170#2233#0" expanded="true" />
+                <element signature="e#2268#2312#1" expanded="true" />
+                <element signature="e#2622#3677#0" expanded="true" />
+                <element signature="e#2622#3677#0" expanded="true" />
+                <element signature="e#2952#2974#0" expanded="true" />
+                <element signature="e#3040#3632#0" expanded="true" />
+                <element signature="e#3040#3632#0" expanded="true" />
+                <element signature="e#3325#3627#0" expanded="true" />
+                <element signature="e#3325#3627#0" expanded="true" />
+                <element signature="e#3407#3621#0" expanded="true" />
+                <element signature="e#3353#3363#1" expanded="true" />
+                <element signature="e#3407#3621#0" expanded="true" />
+                <element signature="e#3407#3621#0" expanded="true" />
+                <element signature="e#3368#3384#0" expanded="true" />
+                <element signature="e#3407#3621#0" expanded="true" />
+                <element signature="e#3407#3621#0" expanded="true" />
+                <element signature="e#3458#3586#0" expanded="true" />
+                <element signature="e#3404#3414#1" expanded="true" />
+                <element signature="e#3458#3586#0" expanded="true" />
+                <element signature="e#3458#3586#0" expanded="true" />
+                <element signature="e#3419#3435#0" expanded="true" />
+                <element signature="e#3458#3586#0" expanded="true" />
+                <element signature="e#3458#3586#0" expanded="true" />
+                <element signature="e#3469#3491#0" expanded="true" />
+                <element signature="e#3777#3816#1" expanded="true" />
+                <element signature="e#3863#3902#1" expanded="true" />
+                <element signature="e#3905#3999#0" expanded="true" />
+                <element signature="e#4188#4569#0" expanded="true" />
+                <element signature="e#4188#4569#0" expanded="true" />
+                <element signature="e#4564#4635#1" expanded="true" />
+                <element signature="e#4697#4866#0" expanded="true" />
+                <element signature="e#4697#4866#0" expanded="true" />
+                <element signature="e#4684#4730#0" expanded="true" />
+                <element signature="e#4781#4801#0" expanded="true" />
+                <element signature="e#4854#4900#1" expanded="true" />
+                <element signature="e#4903#4977#1" expanded="true" />
+                <element signature="e#4980#5010#1" expanded="true" />
+                <element signature="e#5013#5043#1" expanded="true" />
+                <element signature="e#5046#5077#1" expanded="true" />
+                <element signature="e#5080#5113#1" expanded="true" />
+                <element signature="e#5116#5143#1" expanded="true" />
+                <element signature="e#5146#5169#1" expanded="true" />
+                <element signature="e#5232#8006#0" expanded="true" />
+                <element signature="e#5232#8006#0" expanded="true" />
+                <element signature="e#5277#5341#0" expanded="true" />
+                <element signature="e#5392#5445#0" expanded="true" />
+                <element signature="e#5555#5813#0" expanded="true" />
+                <element signature="e#5555#5813#0" expanded="true" />
+                <element signature="e#5794#5858#0" expanded="true" />
+                <element signature="e#5909#5961#0" expanded="true" />
+                <element signature="e#6071#6270#0" expanded="true" />
+                <element signature="e#6071#6270#0" expanded="true" />
+                <element signature="e#6280#6299#1" expanded="true" />
+                <element signature="e#6401#6627#0" expanded="true" />
+                <element signature="e#6347#6357#1" expanded="true" />
+                <element signature="e#6401#6627#0" expanded="true" />
+                <element signature="e#6401#6627#0" expanded="true" />
+                <element signature="e#6401#6627#0" expanded="true" />
+                <element signature="e#6401#6627#0" expanded="true" />
+                <element signature="e#6513#6622#0" expanded="true" />
+                <element signature="e#6513#6622#0" expanded="true" />
+                <element signature="e#6651#6888#0" expanded="true" />
+                <element signature="e#6597#6607#1" expanded="true" />
+                <element signature="e#6651#6888#0" expanded="true" />
+                <element signature="e#6651#6888#0" expanded="true" />
+                <element signature="e#6651#6888#0" expanded="true" />
+                <element signature="e#6651#6888#0" expanded="true" />
+                <element signature="e#6734#6883#0" expanded="true" />
+                <element signature="e#6734#6883#0" expanded="true" />
+                <element signature="e#6921#7196#0" expanded="true" />
+                <element signature="e#6921#7196#0" expanded="true" />
+                <element signature="e#6949#6980#0" expanded="true" />
+                <element signature="e#7201#7396#0" expanded="true" />
+                <element signature="e#7201#7396#0" expanded="true" />
+                <element signature="e#7220#7251#0" expanded="true" />
+                <element signature="e#7537#7591#0" expanded="true" />
+                <element signature="e#7642#7696#0" expanded="true" />
+                <element signature="e#7747#7792#0" expanded="true" />
+                <element signature="e#7867#7897#1" expanded="true" />
+                <element signature="e#7994#8031#0" expanded="true" />
+                <element signature="e#8072#8109#0" expanded="true" />
+                <element signature="e#8362#8424#0" expanded="true" />
+                <element signature="e#8867#8916#0" expanded="true" />
+                <element signature="e#8887#8915#0" expanded="true" />
+                <element signature="e#8964#9002#1" expanded="true" />
+                <element signature="e#9045#9060#0" expanded="true" />
+                <element signature="e#9057#9100#1" expanded="true" />
+                <element signature="e#9077#9099#0" expanded="true" />
+                <element signature="e#9162#9215#0" expanded="true" />
+                <element signature="e#9162#9215#0" expanded="true" />
+                <element signature="e#9200#9254#1" expanded="true" />
+                <element signature="e#9561#9599#1" expanded="true" />
+                <element signature="e#9602#9644#1" expanded="true" />
+                <element signature="e#9647#9692#1" expanded="true" />
+                <element signature="e#9723#9750#0" expanded="true" />
+                <element signature="e#9723#9750#0" expanded="true" />
+                <element signature="e#9695#9743#1" expanded="true" />
+                <element signature="e#9712#9742#0" expanded="true" />
+                <element signature="e#9712#9742#0" expanded="true" />
+                <element signature="e#9746#9768#1" expanded="true" />
+                <element signature="e#9771#9805#1" expanded="true" />
+                <element signature="e#9814#9822#1" expanded="true" />
+                <element signature="e#9868#10166#0" expanded="true" />
+                <element signature="e#9868#10166#0" expanded="true" />
+                <element signature="e#9868#10166#0" expanded="true" />
+                <element signature="e#9942#9959#0" expanded="true" />
+                <element signature="e#9942#9959#0" expanded="true" />
+                <element signature="e#9883#9914#0" expanded="true" />
+                <element signature="e#10018#10035#0" expanded="true" />
+                <element signature="e#10018#10035#0" expanded="true" />
+                <element signature="e#9959#9996#0" expanded="true" />
+                <element signature="e#10013#10102#0" expanded="true" />
+                <element signature="e#10013#10102#0" expanded="true" />
+                <element signature="e#10013#10102#0" expanded="true" />
+                <element signature="e#10013#10102#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+              <folding>
+                <element signature="e#389#413#0" expanded="true" />
+                <element signature="e#389#413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="180">
+              <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#347#403#1" expanded="true" />
-                <element signature="e#486#546#0" expanded="true" />
-                <element signature="e#486#546#0" expanded="true" />
+                <element signature="e#358#414#1" expanded="true" />
+                <element signature="e#682#742#0" expanded="true" />
+                <element signature="e#682#742#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -532,6 +409,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -551,7 +429,6 @@
         <option value="$PROJECT_DIR$/src/main/java/TurnDelta.java" />
         <option value="$PROJECT_DIR$/src/main/TwitterProperties" />
         <option value="$PROJECT_DIR$/out/production/main/twitter4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/BattleHandler.java" />
         <option value="$PROJECT_DIR$/src/test/twitter4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/twitter4j.properties" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -560,10 +437,14 @@
         <option value="$PROJECT_DIR$/src/main/java/timer.java" />
         <option value="$PROJECT_DIR$/src/main/java/timer_input.java" />
         <option value="$PROJECT_DIR$/src/main/java/newBot.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/GameMaster.java" />
         <option value="$PROJECT_DIR$/src/main/java/chatbot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/GameMaster.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/TestDie.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DieTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Risk.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BattleHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Die.java" />
       </list>
     </option>
   </component>
@@ -575,7 +456,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="78" />
+    <option name="x" value="28" />
     <option name="y" value="23" />
     <option name="width" value="1349" />
     <option name="height" value="782" />
@@ -587,7 +468,7 @@
         <observation name="false" value="8.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="false" value="120.0" />
+        <observation name="false" value="144.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
@@ -596,8 +477,8 @@
         <observation name="false" value="7.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="5.0" />
-        <observation name="false" value="115.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="128.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
@@ -605,7 +486,7 @@
         <observation name="false" value="8.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="false" value="119.0" />
+        <observation name="false" value="143.0" />
         <observation name="true" value="1.0" />
       </dailyData>
     </factor>
@@ -614,8 +495,8 @@
         <observation name="UNDEFINED" value="8.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="0" value="45.0" />
-        <observation name="UNDEFINED" value="75.0" />
+        <observation name="0" value="50.0" />
+        <observation name="UNDEFINED" value="94.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
@@ -624,9 +505,9 @@
         <observation name="true" value="7.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="false" value="62.0" />
-        <observation name="true" value="52.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="69.0" />
+        <observation name="true" value="59.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
@@ -635,9 +516,9 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="false" value="83.0" />
-        <observation name="true" value="31.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="92.0" />
+        <observation name="true" value="36.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
@@ -646,9 +527,9 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="false" value="83.0" />
-        <observation name="true" value="31.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="94.0" />
+        <observation name="true" value="34.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
@@ -657,9 +538,9 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="false" value="83.0" />
-        <observation name="true" value="31.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="94.0" />
+        <observation name="true" value="34.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
@@ -668,8 +549,8 @@
         <observation name="true" value="6.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="false" value="101.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="115.0" />
         <observation name="true" value="13.0" />
       </dailyData>
     </factor>
@@ -678,7 +559,7 @@
         <observation name="false" value="8.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="false" value="120.0" />
+        <observation name="false" value="144.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
@@ -687,8 +568,8 @@
         <observation name="UNDEFINED" value="1.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="NORMAL" value="117.0" />
-        <observation name="UNDEFINED" value="3.0" />
+        <observation name="NORMAL" value="131.0" />
+        <observation name="UNDEFINED" value="13.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
@@ -697,10 +578,10 @@
         <observation name="normal" value="7.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="3.0" />
-        <observation name="expected" value="26.0" />
-        <observation name="maybeExpected" value="6.0" />
-        <observation name="normal" value="84.0" />
+        <observation name="UNDEFINED" value="13.0" />
+        <observation name="expected" value="28.0" />
+        <observation name="maybeExpected" value="8.0" />
+        <observation name="normal" value="94.0" />
         <observation name="ofDefaultType" value="1.0" />
       </dailyData>
     </factor>
@@ -713,13 +594,13 @@
         <observation name="variable" value="1.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="3.0" />
-        <observation name="classNameOrGlobalStatic" value="8.0" />
-        <observation name="expectedTypeVariable" value="13.0" />
+        <observation name="UNDEFINED" value="13.0" />
+        <observation name="classNameOrGlobalStatic" value="10.0" />
+        <observation name="expectedTypeVariable" value="14.0" />
         <observation name="improbableKeyword" value="1.0" />
-        <observation name="normal" value="71.0" />
+        <observation name="normal" value="80.0" />
         <observation name="probableKeyword" value="6.0" />
-        <observation name="variable" value="18.0" />
+        <observation name="variable" value="20.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_groovyReferenceListWeigher">
@@ -727,8 +608,8 @@
         <observation name="unknown" value="8.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="unknown" value="114.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="unknown" value="128.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
@@ -737,9 +618,9 @@
         <observation name="null" value="6.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="false" value="8.0" />
-        <observation name="null" value="106.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="false" value="10.0" />
+        <observation name="null" value="118.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
@@ -747,8 +628,8 @@
         <observation name="unknown" value="8.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="unknown" value="114.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="unknown" value="128.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
@@ -757,9 +638,9 @@
         <observation name="normal" value="6.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="24.0" />
-        <observation name="normal" value="95.0" />
-        <observation name="recursive" value="1.0" />
+        <observation name="UNDEFINED" value="36.0" />
+        <observation name="normal" value="106.0" />
+        <observation name="recursive" value="2.0" />
       </dailyData>
     </factor>
     <factor id="completionFinishedType">
@@ -769,9 +650,9 @@
         <observation name="typedSelect" value="4.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="cancelled" value="592.0" />
-        <observation name="explicitSelect" value="50.0" />
-        <observation name="typedSelect" value="70.0" />
+        <observation name="cancelled" value="1325.0" />
+        <observation name="explicitSelect" value="60.0" />
+        <observation name="typedSelect" value="84.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
@@ -779,7 +660,7 @@
         <observation name="BASIC" value="13.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="BASIC" value="166.0" />
+        <observation name="BASIC" value="194.0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
@@ -787,7 +668,7 @@
         <observation name="count" value="53.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="count" value="712.0" />
+        <observation name="count" value="1469.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -799,11 +680,11 @@
         <observation name="variance" value="0.120666" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="average" value="0.079498" />
-        <observation name="count" value="239.0" />
+        <observation name="average" value="0.066202" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.090262" />
+        <observation name="variance" value="0.082842" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:grouping">
@@ -816,7 +697,7 @@
       </dailyData>
       <dailyData date="27-11-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="239.0" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -832,12 +713,12 @@
         <observation name="variance" value="1002.876856" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="98.0" />
-        <observation name="average" value="-38.860465" />
-        <observation name="count" value="43.0" />
+        <observation name="UNDEFINED" value="120.0" />
+        <observation name="average" value="-35.978723" />
+        <observation name="count" value="47.0" />
         <observation name="max" value="-1.0" />
         <observation name="min" value="-137.0" />
-        <observation name="variance" value="2189.945183" />
+        <observation name="variance" value="2139.88328" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:nameEnd">
@@ -850,12 +731,12 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="3.0" />
-        <observation name="average" value="-0.034335" />
-        <observation name="count" value="233.0" />
+        <observation name="UNDEFINED" value="13.0" />
+        <observation name="average" value="-0.038314" />
+        <observation name="count" value="261.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1.0" />
-        <observation name="variance" value="0.026998" />
+        <observation name="variance" value="0.02915" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -867,11 +748,11 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="average" value="0.058577" />
-        <observation name="count" value="239.0" />
+        <observation name="average" value="0.062717" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.136599" />
+        <observation name="variance" value="0.138467" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
@@ -883,11 +764,11 @@
         <observation name="variance" value="77449.627461" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="average" value="-1125.790795" />
-        <observation name="count" value="239.0" />
+        <observation name="average" value="-1129.226481" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1202.0" />
-        <observation name="variance" value="22930.563889" />
+        <observation name="variance" value="21038.169591" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -900,7 +781,7 @@
       </dailyData>
       <dailyData date="27-11-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="239.0" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -915,12 +796,12 @@
         <observation name="variance" value="6100.71279" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="average" value="87.22467" />
-        <observation name="count" value="227.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="average" value="87.843138" />
+        <observation name="count" value="255.0" />
         <observation name="max" value="300.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="13923.151449" />
+        <observation name="variance" value="14053.535861" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
@@ -932,12 +813,12 @@
         <observation name="variance" value="5.625225" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="average" value="0.722467" />
-        <observation name="count" value="227.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="average" value="0.643137" />
+        <observation name="count" value="255.0" />
         <observation name="max" value="8.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="4.796712" />
+        <observation name="variance" value="4.552373" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
@@ -949,12 +830,12 @@
         <observation name="variance" value="0.295887" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="average" value="0.546256" />
-        <observation name="count" value="227.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="average" value="0.564706" />
+        <observation name="count" value="255.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.630234" />
+        <observation name="variance" value="0.647664" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
@@ -966,12 +847,12 @@
         <observation name="variance" value="0.295887" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="6.0" />
-        <observation name="average" value="0.46696" />
-        <observation name="count" value="227.0" />
+        <observation name="UNDEFINED" value="16.0" />
+        <observation name="average" value="0.462745" />
+        <observation name="count" value="255.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.523474" />
+        <observation name="variance" value="0.531467" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
@@ -984,7 +865,7 @@
       </dailyData>
       <dailyData date="27-11-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="239.0" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -999,11 +880,11 @@
         <observation name="variance" value="1.365964" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="average" value="4.523013" />
-        <observation name="count" value="239.0" />
-        <observation name="max" value="12.0" />
+        <observation name="average" value="4.567945" />
+        <observation name="count" value="287.0" />
+        <observation name="max" value="17.0" />
         <observation name="min" value="1.0" />
-        <observation name="variance" value="7.789781" />
+        <observation name="variance" value="8.08105" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
@@ -1016,12 +897,12 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="3.0" />
-        <observation name="average" value="-0.034335" />
-        <observation name="count" value="233.0" />
+        <observation name="UNDEFINED" value="13.0" />
+        <observation name="average" value="-0.038314" />
+        <observation name="count" value="261.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1.0" />
-        <observation name="variance" value="0.026998" />
+        <observation name="variance" value="0.02915" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
@@ -1034,12 +915,12 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="3.0" />
-        <observation name="average" value="-34.248927" />
-        <observation name="count" value="233.0" />
+        <observation name="UNDEFINED" value="13.0" />
+        <observation name="average" value="-38.229885" />
+        <observation name="count" value="261.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-999.0" />
-        <observation name="variance" value="26854.823939" />
+        <observation name="variance" value="29007.892461" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
@@ -1052,12 +933,12 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="3.0" />
-        <observation name="average" value="0.171674" />
-        <observation name="count" value="233.0" />
+        <observation name="UNDEFINED" value="13.0" />
+        <observation name="average" value="0.153257" />
+        <observation name="count" value="261.0" />
         <observation name="max" value="10.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="1.497132" />
+        <observation name="variance" value="1.416155" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sorter">
@@ -1070,7 +951,7 @@
       </dailyData>
       <dailyData date="27-11-2018">
         <observation name="average" value="1.0" />
-        <observation name="count" value="239.0" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
@@ -1086,12 +967,12 @@
         <observation name="variance" value="0.055556" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="UNDEFINED" value="96.0" />
-        <observation name="average" value="-2.765957" />
-        <observation name="count" value="47.0" />
+        <observation name="UNDEFINED" value="118.0" />
+        <observation name="average" value="-2.784313" />
+        <observation name="count" value="51.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-5.0" />
-        <observation name="variance" value="1.194787" />
+        <observation name="variance" value="1.149414" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -1103,11 +984,11 @@
         <observation name="variance" value="5365079.365079" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="average" value="920.485356" />
-        <observation name="count" value="239.0" />
+        <observation name="average" value="836.222997" />
+        <observation name="count" value="287.0" />
         <observation name="max" value="10000.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="6861138.687332" />
+        <observation name="variance" value="6617371.78743" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -1115,9 +996,9 @@
         <observation name="0" value="4.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="0" value="44.0" />
+        <observation name="0" value="53.0" />
         <observation name="1" value="4.0" />
-        <observation name="2" value="2.0" />
+        <observation name="2" value="3.0" />
       </dailyData>
     </factor>
     <factor id="mnemonicsUsage">
@@ -1126,7 +1007,7 @@
         <observation name="withMnemonics" value="0.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="total" value="41.0" />
+        <observation name="total" value="50.0" />
         <observation name="withMnemonics" value="1.0" />
       </dailyData>
     </factor>
@@ -1138,11 +1019,13 @@
       </dailyData>
       <dailyData date="27-11-2018">
         <observation name="0" value="2.0" />
-        <observation name="1" value="7.0" />
-        <observation name="2" value="13.0" />
-        <observation name="3" value="23.0" />
+        <observation name="1" value="8.0" />
+        <observation name="2" value="16.0" />
+        <observation name="3" value="27.0" />
         <observation name="4" value="4.0" />
         <observation name="5" value="1.0" />
+        <observation name="6" value="1.0" />
+        <observation name="7" value="1.0" />
       </dailyData>
     </factor>
     <factor id="timeBetweenTyping">
@@ -1151,8 +1034,8 @@
         <observation name="count" value="12.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="average" value="251.690058" />
-        <observation name="count" value="171.0" />
+        <observation name="average" value="283.965173" />
+        <observation name="count" value="201.0" />
       </dailyData>
     </factor>
   </component>
@@ -1161,6 +1044,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="CSDRisk" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1186,28 +1080,37 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
             <path>
-              <item name="CSDRisk" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="main" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Risk3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Risk3" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543307565196" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543348208789" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.23602484" />
@@ -1215,6 +1118,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java" />
       <recent name="$PROJECT_DIR$/src/test" />
@@ -1270,7 +1179,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="78" y="23" width="1349" height="782" extended-state="0" />
+    <frame x="28" y="23" width="1349" height="782" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
@@ -1278,22 +1187,21 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.23565418" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.15914308" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" weight="0.2019893" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" weight="0.1884058" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" visible="true" weight="0.16811594" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.60188085" side_tool="true" weight="0.35507247" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4976489" weight="0.32753623" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4968652" weight="0.11884058" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.2504065" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" visible="true" weight="0.2652174" />
+      <window_info anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" weight="0.38405797" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.4968652" weight="0.19855073" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.4050445" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
@@ -1302,6 +1210,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.4050445" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -1365,17 +1274,7 @@
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/clean.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Twitter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="95" column="34" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
     <entry file="file://$PROJECT_DIR$/src/main/TwitterProperties" />
     <entry file="file://$PROJECT_DIR$/src/main/java/TurnDelta.java">
@@ -1402,11 +1301,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="255">
@@ -1415,11 +1309,9 @@
           <second_editor />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1438,21 +1330,8 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestDie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/GameRecord.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1263#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/Map.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1465,78 +1344,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#594#615#0" expanded="true" />
-            <element signature="e#594#615#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Territory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#230#231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/test.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/newBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-140">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#626#655#0" expanded="true" />
-            <element signature="e#708#731#0" expanded="true" />
-            <element signature="e#926#972#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="71" lean-forward="true" selection-start-line="27" selection-start-column="71" selection-end-line="27" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/newBot.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -1551,56 +1362,310 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/target/classes/Territory.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2086">
-          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+        <state relative-caret-position="240">
+          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
+    <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5573">
-          <caret line="88" column="30" lean-forward="true" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2807#2818#1" expanded="true" />
-            <element signature="e#2802#3164#0" expanded="true" />
-            <element signature="e#2802#3164#0" expanded="true" />
-            <element signature="e#2802#3164#0" expanded="true" />
-            <element signature="e#2847#2877#0" expanded="true" />
-            <element signature="e#2491#2519#0" expanded="true" />
-            <element signature="e#2491#2519#0" expanded="true" />
-            <element signature="e#2554#2589#0" expanded="true" />
-            <element signature="e#2554#2589#0" expanded="true" />
-            <element signature="e#2647#2669#0" expanded="true" />
-            <element signature="e#2647#2669#0" expanded="true" />
-            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clean.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="182">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#749#799#1" expanded="true" />
-            <element signature="e#1492#1513#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="95" column="34" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Territory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="58" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="58" />
+          <folding>
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#230#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#626#655#0" expanded="true" />
+            <element signature="e#926#972#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestDie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DieTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="e#158#177#1" expanded="true" />
+            <element signature="e#186#195#1" expanded="true" />
+            <element signature="e#181#242#0" expanded="true" />
+            <element signature="e#181#242#0" expanded="true" />
+            <element signature="e#181#242#0" expanded="true" />
+            <element signature="e#281#315#0" expanded="true" />
+            <element signature="e#281#315#0" expanded="true" />
+            <element signature="e#281#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="33" column="6" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#344#345#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#793#809#0" expanded="true" />
+            <element signature="e#874#1100#0" expanded="true" />
+            <element signature="e#820#830#1" expanded="true" />
+            <element signature="e#874#1100#0" expanded="true" />
+            <element signature="e#874#1100#0" expanded="true" />
+            <element signature="e#835#851#0" expanded="true" />
+            <element signature="e#874#1100#0" expanded="true" />
+            <element signature="e#874#1100#0" expanded="true" />
+            <element signature="e#922#1071#0" expanded="true" />
+            <element signature="e#868#878#1" expanded="true" />
+            <element signature="e#922#1071#0" expanded="true" />
+            <element signature="e#922#1071#0" expanded="true" />
+            <element signature="e#883#899#0" expanded="true" />
+            <element signature="e#922#1071#0" expanded="true" />
+            <element signature="e#922#1071#0" expanded="true" />
+            <element signature="e#930#952#0" expanded="true" />
+            <element signature="e#1062#1092#0" expanded="true" />
+            <element signature="e#1094#1116#0" expanded="true" />
+            <element signature="e#1161#1201#0" expanded="true" />
+            <element signature="e#1352#1377#1" expanded="true" />
+            <element signature="e#1424#1449#1" expanded="true" />
+            <element signature="e#1452#1491#0" expanded="true" />
+            <element signature="e#1528#1569#1" expanded="true" />
+            <element signature="e#1546#1568#0" expanded="true" />
+            <element signature="e#1573#1589#1" expanded="true" />
+            <element signature="e#1651#2225#0" expanded="true" />
+            <element signature="e#1651#2225#0" expanded="true" />
+            <element signature="e#1928#2221#0" expanded="true" />
+            <element signature="e#1928#2221#0" expanded="true" />
+            <element signature="e#2007#2216#0" expanded="true" />
+            <element signature="e#1953#1963#1" expanded="true" />
+            <element signature="e#2007#2216#0" expanded="true" />
+            <element signature="e#2007#2216#0" expanded="true" />
+            <element signature="e#1968#1984#0" expanded="true" />
+            <element signature="e#2007#2216#0" expanded="true" />
+            <element signature="e#2007#2216#0" expanded="true" />
+            <element signature="e#2057#2183#0" expanded="true" />
+            <element signature="e#2003#2013#1" expanded="true" />
+            <element signature="e#2057#2183#0" expanded="true" />
+            <element signature="e#2057#2183#0" expanded="true" />
+            <element signature="e#2018#2034#0" expanded="true" />
+            <element signature="e#2057#2183#0" expanded="true" />
+            <element signature="e#2057#2183#0" expanded="true" />
+            <element signature="e#2067#2089#0" expanded="true" />
+            <element signature="e#2170#2233#0" expanded="true" />
+            <element signature="e#2268#2312#1" expanded="true" />
+            <element signature="e#2622#3677#0" expanded="true" />
+            <element signature="e#2622#3677#0" expanded="true" />
+            <element signature="e#2952#2974#0" expanded="true" />
+            <element signature="e#3040#3632#0" expanded="true" />
+            <element signature="e#3040#3632#0" expanded="true" />
+            <element signature="e#3325#3627#0" expanded="true" />
+            <element signature="e#3325#3627#0" expanded="true" />
+            <element signature="e#3407#3621#0" expanded="true" />
+            <element signature="e#3353#3363#1" expanded="true" />
+            <element signature="e#3407#3621#0" expanded="true" />
+            <element signature="e#3407#3621#0" expanded="true" />
+            <element signature="e#3368#3384#0" expanded="true" />
+            <element signature="e#3407#3621#0" expanded="true" />
+            <element signature="e#3407#3621#0" expanded="true" />
+            <element signature="e#3458#3586#0" expanded="true" />
+            <element signature="e#3404#3414#1" expanded="true" />
+            <element signature="e#3458#3586#0" expanded="true" />
+            <element signature="e#3458#3586#0" expanded="true" />
+            <element signature="e#3419#3435#0" expanded="true" />
+            <element signature="e#3458#3586#0" expanded="true" />
+            <element signature="e#3458#3586#0" expanded="true" />
+            <element signature="e#3469#3491#0" expanded="true" />
+            <element signature="e#3777#3816#1" expanded="true" />
+            <element signature="e#3863#3902#1" expanded="true" />
+            <element signature="e#3905#3999#0" expanded="true" />
+            <element signature="e#4188#4569#0" expanded="true" />
+            <element signature="e#4188#4569#0" expanded="true" />
+            <element signature="e#4564#4635#1" expanded="true" />
+            <element signature="e#4697#4866#0" expanded="true" />
+            <element signature="e#4697#4866#0" expanded="true" />
+            <element signature="e#4684#4730#0" expanded="true" />
+            <element signature="e#4781#4801#0" expanded="true" />
+            <element signature="e#4854#4900#1" expanded="true" />
+            <element signature="e#4903#4977#1" expanded="true" />
+            <element signature="e#4980#5010#1" expanded="true" />
+            <element signature="e#5013#5043#1" expanded="true" />
+            <element signature="e#5046#5077#1" expanded="true" />
+            <element signature="e#5080#5113#1" expanded="true" />
+            <element signature="e#5116#5143#1" expanded="true" />
+            <element signature="e#5146#5169#1" expanded="true" />
+            <element signature="e#5232#8006#0" expanded="true" />
+            <element signature="e#5232#8006#0" expanded="true" />
+            <element signature="e#5277#5341#0" expanded="true" />
+            <element signature="e#5392#5445#0" expanded="true" />
+            <element signature="e#5555#5813#0" expanded="true" />
+            <element signature="e#5555#5813#0" expanded="true" />
+            <element signature="e#5794#5858#0" expanded="true" />
+            <element signature="e#5909#5961#0" expanded="true" />
+            <element signature="e#6071#6270#0" expanded="true" />
+            <element signature="e#6071#6270#0" expanded="true" />
+            <element signature="e#6280#6299#1" expanded="true" />
+            <element signature="e#6401#6627#0" expanded="true" />
+            <element signature="e#6347#6357#1" expanded="true" />
+            <element signature="e#6401#6627#0" expanded="true" />
+            <element signature="e#6401#6627#0" expanded="true" />
+            <element signature="e#6401#6627#0" expanded="true" />
+            <element signature="e#6401#6627#0" expanded="true" />
+            <element signature="e#6513#6622#0" expanded="true" />
+            <element signature="e#6513#6622#0" expanded="true" />
+            <element signature="e#6651#6888#0" expanded="true" />
+            <element signature="e#6597#6607#1" expanded="true" />
+            <element signature="e#6651#6888#0" expanded="true" />
+            <element signature="e#6651#6888#0" expanded="true" />
+            <element signature="e#6651#6888#0" expanded="true" />
+            <element signature="e#6651#6888#0" expanded="true" />
+            <element signature="e#6734#6883#0" expanded="true" />
+            <element signature="e#6734#6883#0" expanded="true" />
+            <element signature="e#6921#7196#0" expanded="true" />
+            <element signature="e#6921#7196#0" expanded="true" />
+            <element signature="e#6949#6980#0" expanded="true" />
+            <element signature="e#7201#7396#0" expanded="true" />
+            <element signature="e#7201#7396#0" expanded="true" />
+            <element signature="e#7220#7251#0" expanded="true" />
+            <element signature="e#7537#7591#0" expanded="true" />
+            <element signature="e#7642#7696#0" expanded="true" />
+            <element signature="e#7747#7792#0" expanded="true" />
+            <element signature="e#7867#7897#1" expanded="true" />
+            <element signature="e#7994#8031#0" expanded="true" />
+            <element signature="e#8072#8109#0" expanded="true" />
+            <element signature="e#8362#8424#0" expanded="true" />
+            <element signature="e#8867#8916#0" expanded="true" />
+            <element signature="e#8887#8915#0" expanded="true" />
+            <element signature="e#8964#9002#1" expanded="true" />
+            <element signature="e#9045#9060#0" expanded="true" />
+            <element signature="e#9057#9100#1" expanded="true" />
+            <element signature="e#9077#9099#0" expanded="true" />
+            <element signature="e#9162#9215#0" expanded="true" />
+            <element signature="e#9162#9215#0" expanded="true" />
+            <element signature="e#9200#9254#1" expanded="true" />
+            <element signature="e#9561#9599#1" expanded="true" />
+            <element signature="e#9602#9644#1" expanded="true" />
+            <element signature="e#9647#9692#1" expanded="true" />
+            <element signature="e#9723#9750#0" expanded="true" />
+            <element signature="e#9723#9750#0" expanded="true" />
+            <element signature="e#9695#9743#1" expanded="true" />
+            <element signature="e#9712#9742#0" expanded="true" />
+            <element signature="e#9712#9742#0" expanded="true" />
+            <element signature="e#9746#9768#1" expanded="true" />
+            <element signature="e#9771#9805#1" expanded="true" />
+            <element signature="e#9814#9822#1" expanded="true" />
+            <element signature="e#9868#10166#0" expanded="true" />
+            <element signature="e#9868#10166#0" expanded="true" />
+            <element signature="e#9868#10166#0" expanded="true" />
+            <element signature="e#9942#9959#0" expanded="true" />
+            <element signature="e#9942#9959#0" expanded="true" />
+            <element signature="e#9883#9914#0" expanded="true" />
+            <element signature="e#10018#10035#0" expanded="true" />
+            <element signature="e#10018#10035#0" expanded="true" />
+            <element signature="e#9959#9996#0" expanded="true" />
+            <element signature="e#10013#10102#0" expanded="true" />
+            <element signature="e#10013#10102#0" expanded="true" />
+            <element signature="e#10013#10102#0" expanded="true" />
+            <element signature="e#10013#10102#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="20" column="8" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="180">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#347#403#1" expanded="true" />
-            <element signature="e#486#546#0" expanded="true" />
-            <element signature="e#486#546#0" expanded="true" />
+            <element signature="e#358#414#1" expanded="true" />
+            <element signature="e#682#742#0" expanded="true" />
+            <element signature="e#682#742#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+          <folding>
+            <element signature="e#389#413#0" expanded="true" />
+            <element signature="e#389#413#0" expanded="true" />
           </folding>
         </state>
       </provider>
