@@ -7,6 +7,7 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 // https://telegram.me/dwc_risk_bot?game=Risk
 import java.util.*;
 
+
 public class chatbot extends TelegramLongPollingBot {
 
     int player_count = 0;
@@ -35,16 +36,22 @@ public class chatbot extends TelegramLongPollingBot {
                 }
             }
 
-            else if ((message_text).equals("@joinGame")){
-
+            else if ((message_text).equals("@joinGame"))
+            {
+                Boolean flag = false;
                 for(int i = 0; i < 3; i++)
                 {
-                    if(session_id != player_ID[i])
-                    {
-                        player_ID[player_count] = session_id;
-                        player_count += 1;
-                    }
+                    if(session_id == player_ID[i])
+                        flag = true;
                 }
+                if(!flag)
+                {
+                    player_ID[player_count] = session_id;
+                    player_count += 1;
+                    flag = false;
+                }
+
+
                 String answer = "You have successfully entered the game." + "You are currently player #" + Integer.toString(player_count);
                 SendMessage message = new SendMessage().setChatId(session_id).setText(answer);
 
@@ -68,6 +75,9 @@ public class chatbot extends TelegramLongPollingBot {
                     e.printStackTrace();
                 }
             }
+
+            GameMaster gameMaster = new GameMaster();
+            gameMaster.gameStart();
 
         }
 
