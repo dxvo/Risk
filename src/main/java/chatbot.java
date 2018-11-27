@@ -3,15 +3,13 @@ import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.*;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
-
+//730204765:AAHqIUzXasdRJsZUDySybOi_yX4BBZOtT58
 public class chatbot extends TelegramLongPollingBot {
     @Override
 
     //public void onUpdateReceived(Update update) {
         //System.out.println(update.getMessage().getText());
     //}
-
-
 
     public void onUpdateReceived(Update update) {
         // We check if the update has a message and the message has text
@@ -36,6 +34,6 @@ public class chatbot extends TelegramLongPollingBot {
     @Override
     public String getBotToken() {
         // TODO
-        return "please ask for the key";
+        return "730204765:AAHqIUzXasdRJsZUDySybOi_yX4BBZOtT58";
     }
 }

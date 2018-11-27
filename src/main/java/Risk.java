@@ -9,6 +9,7 @@ public class Risk
 {
 	public static void main(String[] args)
 	{
+		/*
 		ApiContextInitializer.init();
 		TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
 		try {
@@ -18,8 +19,12 @@ public class Risk
 			e.printStackTrace();
 		}
 
-		//GameMaster gameMaster = new GameMaster();
-		//gameMaster.gameStart();
+		 */
+
+
+		GameMaster gameMaster = new GameMaster();
+		gameMaster.gameStart();
+
 		return;
 	}
 }
