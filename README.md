@@ -7,7 +7,7 @@ Implementing a Risk game. Description of the game is available at [Risk](http://
 
 **Game's** [Rules](http://www.ultraboardgames.com/risk/game-rules.php) and [How To Play](https://www.youtube.com/watch?v=-rqxpjOz-EA)
 
-**To compile program:** ./build.sh 
+
 # Updates:
 
 **v.0.5**

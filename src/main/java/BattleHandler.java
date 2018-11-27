@@ -26,11 +26,11 @@ public class BattleHandler
 	}
 
 	/***
-	 *
-	 * @param attacker
-	 * @param gameMap
-	 * @param playerList
-	 * @param turnCounter
+	 * this method will initalize the beggining of a battle
+	 * @param attacker - is he player who attacks
+	 * @param gameMap - game map with info of current army info
+	 * @param playerList - the list
+	 * @param turnCounter - current player turn
 	 *
 	 */
 	public void startBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
@@ -42,8 +42,8 @@ public class BattleHandler
 
 	/***
 	 *
-	 * @param attacker
-	 * @param gameMap
+	 * @param attacker the player who attacks
+	 * @param gameMap the current game with current game info
 	 */
 	private void Battle(Player attacker, Map gameMap)
 	{
@@ -268,9 +268,14 @@ public class BattleHandler
 	}
 
 
-
-
-	//get additional unit and then add update the total army
+	/***
+	 * This is to give a player additional units for each turns
+	 * @param x - x coordinate on gamemap
+	 * @param y - current y coordinate on gamemap
+	 * @param attacker - the attakcer player
+	 * @param gamemap - current gamemap
+	 * @return - return the additional number of player that gets added for the current player
+	 */
 	public int addArmyEachTurn(int x, int y, Player attacker, Map gamemap)
 	{
 		int att_terri_own = attacker.getNumTerritories(); //number of territory that owned by attacker
@@ -286,6 +291,13 @@ public class BattleHandler
 		return additional_army;
 	}
 
+	/***
+	 * tweet out the message the result when battle ends
+	 * @param attacker - the attakcer
+	 * @param gameMap - current gamemap
+	 * @param playerList - the current list of player that still in the game
+	 * @param turnCounter -
+	 */
 	private void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
 		//print to twitter all that is required
@@ -314,9 +326,3 @@ public class BattleHandler
 	}
 
 }
-
-/*
-Idea:
-1. can consider each row in the map as a continent..if a player owns the entire row,
-then award players with additional army
-*/
