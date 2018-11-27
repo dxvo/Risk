@@ -11,7 +11,7 @@ public class timer_input
 
         try
         {
-            while ((System.currentTimeMillis() - startTime) < 10 * 1000
+            while ((System.currentTimeMillis() - startTime) < 5 * 1000
                     && !in.ready()) {
             }
             if (in.ready()) {

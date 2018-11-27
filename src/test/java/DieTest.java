@@ -15,4 +15,17 @@ public class DieTest {
             assertTrue(test_value >= 1 && test_value <= 6);
         }
     }
+
+
+    @Test
+    public void getValue() {
+        test.setValue(5);
+        assertEquals(5,test.getValue());
+    }
+
+    @Test
+    public void setValue() {
+        test.setValue(5);
+        assertEquals(5,test.getValue());
+    }
 }
