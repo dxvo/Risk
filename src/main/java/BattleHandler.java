@@ -6,24 +6,45 @@ import java.io.*;
 
 
 /***
+ *This class is used to handle in game battle mechanics
+ *
+ * @author De, Carlos and William
+ * @version 1.0
+ * @since 2018-10-01
  *
  */
 public class BattleHandler
 {
 	private Die die;
 
+	/***
+	 * default constructor
+	 */
 	public BattleHandler()
 	{
 		die = new Die();
 	}
-	
+
+	/***
+	 *
+	 * @param attacker
+	 * @param gameMap
+	 * @param playerList
+	 * @param turnCounter
+	 *
+	 */
 	public void startBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
 		Battle(attacker, gameMap);
 		
 		endBattle(attacker, gameMap, playerList, turnCounter);
 	}
-	
+
+	/***
+	 *
+	 * @param attacker
+	 * @param gameMap
+	 */
 	private void Battle(Player attacker, Map gameMap)
 	{
 		//print out the current map

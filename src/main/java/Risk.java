@@ -7,6 +7,9 @@ import java.io.IOException;
 /***
  * The Risk class is main class that starts the application
  * The telegramBotsApi object gives the options to start the game from chat Bot
+ * @author 
+ * @version 1.0
+ * @since 2018-10-01
  */
 public class Risk
 {
