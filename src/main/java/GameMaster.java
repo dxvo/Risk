@@ -40,7 +40,24 @@ public class GameMaster
 		timer_input = new timer_input();
 		choice = 0;
 	}
-	
+
+	public GameMaster(int player)
+	{
+		//gameMap = new Map();
+		battleHandler = new BattleHandler();
+		playerList = new ArrayList <Player>(); //initialize the playerlist to empty
+		numPlayers = player;
+		maxPlayers = 6;
+		playerTurn = 0;
+		row = 0;
+		col = 0;
+		reader = new Scanner(System.in);
+		die = new Die();
+		timer_input = new timer_input();
+		choice = 0;
+	}
+
+
 	public void gameStart()
 	{
 		gameSetup();
@@ -73,18 +90,21 @@ public class GameMaster
 	{
 		// Prompt Number of Players and
 		// Initialize Players
-		do {
-			Scanner reader = new Scanner(System.in);  // Reading from System.in
-			System.out.print("Enter number of player between 1 and 6: ");
-			numPlayers = reader.nextInt(); //numPlayers is an attribution of the GameMaster class
-			if(numPlayers <= 1)
+		if(numPlayers == 0 )
+		{
+			do {
+				Scanner reader = new Scanner(System.in);  // Reading from System.in
+				System.out.print("Enter number of player between 1 and 6: ");
+				numPlayers = reader.nextInt(); //numPlayers is an attribution of the GameMaster class
+				if(numPlayers <= 1)
 
-				System.out.println("Number of player cant be smaller than 1");
-			if (numPlayers > 6)
+					System.out.println("Number of player cant be smaller than 1");
+				if (numPlayers > 6)
 
-				System.out.println("Number of player cant be greater than 6");
+					System.out.println("Number of player cant be greater than 6");
 
-		} while (numPlayers <= 1 || numPlayers > 6);
+			} while (numPlayers <= 1 || numPlayers > 6);
+		}
 
 		for (int i = 0 ; i < numPlayers; i++)
 		{

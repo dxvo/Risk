@@ -9,6 +9,7 @@ public class Risk
 	public static void main(String[] args)
 	{
 
+
 		ApiContextInitializer.init();
 		TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
 		try {
@@ -17,6 +18,11 @@ public class Risk
 		} catch (TelegramApiException e) {
 			e.printStackTrace();
 		}
+
+
+
+		 //GameMaster gameMaster = new GameMaster();
+		 //gameMaster.gameStart();
 
 		return;
 	}

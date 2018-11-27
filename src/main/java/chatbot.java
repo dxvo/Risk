@@ -76,7 +76,7 @@ public class chatbot extends TelegramLongPollingBot {
                 }
             }
 
-            GameMaster gameMaster = new GameMaster();
+            GameMaster gameMaster = new GameMaster(player_count);
             gameMaster.gameStart();
 
         }
