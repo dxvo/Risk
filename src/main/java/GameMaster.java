@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.lang.Math;
 
+
 public class GameMaster
 {
 	private Map gameMap;
@@ -24,7 +25,7 @@ public class GameMaster
 	private int choice;
 
 
-	
+
 	public GameMaster()
 	{
 		//gameMap = new Map();

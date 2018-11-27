@@ -4,6 +4,10 @@ import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.io.IOException;
 
+/***
+ * The Risk class is main class that starts the application
+ * The telegramBotsApi object gives the options to start the game from chat Bot
+ */
 public class Risk
 {
 	public static void main(String[] args)
@@ -18,9 +22,7 @@ public class Risk
 		} catch (TelegramApiException e) {
 			e.printStackTrace();
 		}
-
-
-
+		//game now starts in chatbox
 		 //GameMaster gameMaster = new GameMaster();
 		 //gameMaster.gameStart();
 
