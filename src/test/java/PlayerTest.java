@@ -4,6 +4,7 @@ import static org.junit.Assert.*;
 
 public class PlayerTest {
     Player testPlayer = new Player(5);
+
     @Test
     public void getCredit_balanceTest() {
         testPlayer.setCredit_balance(100);

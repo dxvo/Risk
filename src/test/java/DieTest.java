@@ -5,7 +5,6 @@ import static org.junit.Assert.*;
 public class DieTest {
     Die test = new Die();
 
-
     @Test
     public void roll() {
         int test_value = 0;
