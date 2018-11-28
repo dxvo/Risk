@@ -7,7 +7,9 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 // https://telegram.me/dwc_risk_bot?game=Risk
 import java.util.*;
 
-
+/***
+ *
+ */
 public class chatbot extends TelegramLongPollingBot {
 
     int player_count = 0;

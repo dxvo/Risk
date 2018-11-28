@@ -1,20 +1,18 @@
-public class Player
+/***
+ * Player class
+ */
+public class Player implements Observer
 {
+
 	private int playerID;
 	private int numUnits;
 	private int numBenchedUnits;
 	private int numTerritories;
 	private int die_value;
 	private int credit_balance;
+	private int defender_id;
 
-	public Player()
-	{
-		playerID = 0;
-		numUnits = 0;
-		numBenchedUnits = 0;
-		numTerritories = 0;
-		die_value = 0;
-	}
+
 	
 	public Player(int id)
 	{
@@ -23,6 +21,7 @@ public class Player
 		numBenchedUnits = 0;
 		numTerritories = 0;
 		die_value = 0;
+		defender_id = -1;
 	}
 	
 
@@ -56,37 +55,11 @@ public class Player
 			die_value = value;
 	}
 
-	public void addBenchedUnits(int count)
-	{
-		if(count < 1)
-			return;
-		
-		numBenchedUnits += count;
-	}
-	
-	public void deployBenchedUnits(int count)
-	{
-		if(count < 1)
-			return;
-		
-		if(numBenchedUnits < count)
-		{
-			numUnits += count - numBenchedUnits;
-			numBenchedUnits = 0;
-		}
-		else
-		{
-			numUnits += count;
-			numBenchedUnits -= count;
-		}
-	}
 
 	public void setCredit_balance(int balance){credit_balance = balance;}
 
 	public int getCredit_balance() {return  credit_balance;}
 
-	public boolean isPlaying() { return (numUnits + numBenchedUnits > 0); }
-	
 	public int getPlayerID() { return playerID; }
 	
 	public int getNumUnits() { return numUnits; }
@@ -96,4 +69,17 @@ public class Player
 	public int getNumTerritories() { return numTerritories; }
 
 	public int getDie_value(){ return die_value;}
+
+	public void setDefender_id(int id){defender_id = id;}
+
+
+	@Override
+	/***
+	 * this method needs to be implemented from parent - the Observer class
+	 * This is used to update the batte state change from BattleHandler
+	 */
+	public void update(Object id) {
+		this.setDefender_id((int)id);
+		System.out.printf("\nPlayer %d. Your territory is under attack\n", id);
+	}
 }
