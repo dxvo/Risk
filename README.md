@@ -26,10 +26,10 @@ A game starts when all players have joined the game. Assume that the number of p
 
 **v.0.3**
 - Users can undo their actions
-- Your Program uses Amazon S3 to replay games 
-- Test cases to cover at least 50% of the code
+- Uses Amazon S3 to replay games 
+- 50% line code coverage
 - Show test coverage on the repository [page](https://blog.frankel.ch/travis-ci-tutorial-for-java-projects/)
 
 **v.0.2**
 -  Use Travis CI and show the status of the build.
-- test
+- Status badge of codecov 

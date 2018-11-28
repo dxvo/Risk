@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BattleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BattleHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameRecord.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Risk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Risk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TurnDelta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -145,6 +142,7 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="java" value="5146" />
+          <entry key="md" value="56" />
           <entry key="xml" value="32" />
           <entry key="yml" value="3" />
         </counts>
@@ -153,6 +151,7 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="JAVA" value="5146" />
+          <entry key="Markdown" value="56" />
           <entry key="XML" value="32" />
           <entry key="YAML" value="3" />
         </counts>
@@ -161,8 +160,8 @@
         <counts>
           <entry key="class" value="3" />
           <entry key="iml" value="2" />
-          <entry key="java" value="59" />
-          <entry key="md" value="1" />
+          <entry key="java" value="60" />
+          <entry key="md" value="2" />
           <entry key="sh" value="2" />
           <entry key="xml" value="6" />
           <entry key="yml" value="2" />
@@ -172,8 +171,8 @@
         <counts>
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="59" />
-          <entry key="Markdown" value="1" />
+          <entry key="JAVA" value="60" />
+          <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="6" />
           <entry key="YAML" value="2" />
@@ -206,10 +205,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
+            <state relative-caret-position="-460">
               <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -250,11 +249,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="336">
+              <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,9 +262,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2887#2940#1" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-141">
               <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
@@ -274,8 +286,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="355">
+              <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#789#830#1" expanded="true" />
@@ -322,7 +334,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/TestDie.java" />
         <option value="$PROJECT_DIR$/src/main/java/Die.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/test/java/MapTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TerritoryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/timer_input.java" />
@@ -334,6 +345,7 @@
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/Risk.java" />
         <option value="$PROJECT_DIR$/src/main/java/BattleHandler.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -345,8 +357,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="49" />
-    <option name="y" value="55" />
+    <option name="x" value="43" />
+    <option name="y" value="117" />
     <option name="width" value="1349" />
     <option name="height" value="782" />
   </component>
@@ -541,7 +553,7 @@
         <observation name="typedSelect" value="4.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="cancelled" value="2968.0" />
+        <observation name="cancelled" value="3012.0" />
         <observation name="explicitSelect" value="74.0" />
         <observation name="typedSelect" value="92.0" />
       </dailyData>
@@ -559,7 +571,7 @@
         <observation name="count" value="53.0" />
       </dailyData>
       <dailyData date="27-11-2018">
-        <observation name="count" value="3134.0" />
+        <observation name="count" value="3178.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -981,7 +993,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543377119453" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543377437185" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -1123,23 +1135,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="16" y="30" width="1349" height="782" extended-state="0" />
+    <frame x="43" y="117" width="1349" height="782" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18439174" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18439174" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" weight="0.2019893" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" visible="true" weight="0.37971014" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.60188085" side_tool="true" weight="0.35507247" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4976489" weight="0.32753623" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4968652" weight="0.11884058" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.31304348" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" visible="true" weight="0.24492754" />
+      <window_info anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" weight="0.4942029" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -1293,36 +1306,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestDie.java" />
     <entry file="file://$PROJECT_DIR$/src/test/test.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="94">
-            <caret line="9" selection-start-line="9" selection-end-line="9" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1475,10 +1463,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/TurnDelta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameRecord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="355">
+          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#789#830#1" expanded="true" />
@@ -1488,21 +1490,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-141">
           <caret column="19" selection-start-column="19" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/TurnDelta.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        <state relative-caret-position="336">
+          <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="510">
+            <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chatbot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1350">
+          <caret line="91" column="13" lean-forward="true" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2887#2940#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
+        <state relative-caret-position="-460">
           <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1538,23 +1569,6 @@
             <element signature="e#11198#11496#0" expanded="true" />
             <element signature="e#11198#11496#0" expanded="true" />
             <element signature="e#11198#11496#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
