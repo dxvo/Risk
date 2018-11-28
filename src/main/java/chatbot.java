@@ -4,11 +4,16 @@ import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.*;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 //730204765:AAHqIUzXasdRJsZUDySybOi_yX4BBZOtT58
-// https://telegram.me/dwc_risk_bot?game=Risk
-import java.util.*;
 
 /***
- *
+ *This chatbot class extends TelegramLongPollingBot class under Telegram API
+ * This class gives players the ability to start the game from chatBot.
+ * The default number of player is set to 3. Once the chatBot has 3 players join - the game is automatically started
+ * if starting the game by this method, the game initial conditions are intilized with 3 players
+ * @author De Vo
+ * @version 1.1
+ * @since 2018-11-20
+ * @see <a href="https://core.telegram.org/bots/samples">https://core.telegram.org/bots/samples</a>
  */
 public class chatbot extends TelegramLongPollingBot {
 
@@ -16,6 +21,15 @@ public class chatbot extends TelegramLongPollingBot {
     long[] player_ID = new long[3];
 
     @Override
+    /***
+     * This method is to check the chatBot content
+     * The player can send @risk_dwc to ask to join the game
+     * When chatbot receives request to join game from user, it replies back with a message
+     * The play then reply @joinGame to join the game.
+     * Chatbot keeps tracks of the number of players who ask to join the game
+     * The game starts when the number of player is 3.
+     * Chatbot also keeps track of player chatID. Only user with different chat ID is added toward player list
+     */
     public void onUpdateReceived(Update update) {
 
 
@@ -53,7 +67,6 @@ public class chatbot extends TelegramLongPollingBot {
                     flag = false;
                 }
 
-
                 String answer = "You have successfully entered the game." + "You are currently player #" + Integer.toString(player_count);
                 SendMessage message = new SendMessage().setChatId(session_id).setText(answer);
 
@@ -86,14 +99,20 @@ public class chatbot extends TelegramLongPollingBot {
     }
 
     @Override
+    /***
+     * This method returns the chatBot ID
+     */
     public String getBotUsername() {
         // TODO
         return "dwc_risk_bot";
     }
 
     @Override
+    /***
+     * this method is key token
+     */
     public String getBotToken() {
         // TODO
-        return "730204765:AAHqIUzXasdRJsZUDySybOi_yX4BBZOtT58";
+        return "730204765";
     }
 }

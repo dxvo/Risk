@@ -2,10 +2,22 @@ import twitter4j.TwitterException;
 import java.io.*;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.lang.Math;
 
 
+/***
+ * This class is to used to set up the game initally
+ * It include gameMap which store player territories and number of unit
+ * playerList is to store the list of player in the game
+ * numPlayers is the number of players in the game
+ * NumUnits : depends on the number of players, the number of units initially distributed may vary
+ * row and col is gameMap width and height
+ * credit_purchase: show the player current balance which can be used to buy cards and undo
+ *
+ * @author DeVo, Carlos and Will
+ * @version 1.1
+ * @since 2018-10
+ */
 public class GameMaster
 {
 	private Map gameMap;
@@ -15,8 +27,6 @@ public class GameMaster
 	private Scanner reader;
 	private Die die;
 	private int numPlayers;
-	private int maxPlayers; //did not really use this
-	private int playerTurn; // i did not use this
 	private int numUnits;
 	private int row; //for map
 	private int col; //for map
@@ -24,16 +34,16 @@ public class GameMaster
 	private int turnCounter = 1;
 	private int choice;
 
-
-
+	/***
+	 * Class default constructor
+	 *
+	 */
 	public GameMaster()
 	{
 		//gameMap = new Map();
 		battleHandler = new BattleHandler();
 		playerList = new ArrayList <Player>(); //initialize the playerlist to empty
 		numPlayers = 0;
-		maxPlayers = 6;
-		playerTurn = 0;
 		row = 0;
 		col = 0;
 		reader = new Scanner(System.in);
@@ -42,14 +52,16 @@ public class GameMaster
 		choice = 0;
 	}
 
+	/***
+	 * This overloaded constructor which is used to start the game when using chatBot
+	 * @param player - this is the number of player and it is set to be 3
+	 */
 	public GameMaster(int player)
 	{
 		//gameMap = new Map();
 		battleHandler = new BattleHandler();
 		playerList = new ArrayList <Player>(); //initialize the playerlist to empty
 		numPlayers = player;
-		maxPlayers = 6;
-		playerTurn = 0;
 		row = 0;
 		col = 0;
 		reader = new Scanner(System.in);
@@ -58,7 +70,10 @@ public class GameMaster
 		choice = 0;
 	}
 
-
+	/***
+	 * This method starts the game
+	 * The sequence is setting up the game, the game loop and game Cleanup
+	 */
 	public void gameStart()
 	{
 		gameSetup();
@@ -68,29 +83,27 @@ public class GameMaster
 		gameCleanup();
 	}
 
+	/***
+	 * This method is to setup player: territories, number of units, player turns
+	 * It also set up the info for gamemap which holds the player territories and number of units in each territory
+	 */
 	private void gameSetup()
 	{
-		// Player Setup
 		playerSetup();
 
-		// Decide Player Order
 		playerOrderSetup();
 
-		// Map Setup
 		mapSetup();
 	}
 
-
-	private Player registerPlayer(int id) // where do we call this method
-	{
-		Player player = new Player(id);
-		return player;
-	}
-
+	/***
+	 * Setting up player
+	 * Get user input for how many players. Number of players need to be greater than 1 and less than 6
+	 * Distribute the beginning number of units based on how many players
+	 * Player is then store into the player arraylist
+	 */
 	private void playerSetup()
 	{
-		// Prompt Number of Players and
-		// Initialize Players
 		if(numPlayers == 0 )
 		{
 			do {
@@ -125,11 +138,13 @@ public class GameMaster
 
 	}
 
+	/***
+	 * Get user input on game map width and height. The game map area is default to 42.
+	 * User is prompt to re-enter if inputs mutiplication is different than 42
+	 * Randomly distribute player territories and how many units each territory hold
+	 */
 	private void mapSetup()
 	{
-		// Prompt Dimensions
-		// Init Map
-
 		System.out.println("\nPLAYERS' TERRITORIES MAP ");
 		do{
 			System.out.print("Enter map width: ");
@@ -166,9 +181,7 @@ public class GameMaster
 			} while (row*col != 42);
 		}
 
-		//col = 6; //over-write!
-		//row = 7; //over-write for simplicity
-		gameMap = new Map(row, col); //each map pixel is a territoty by calling getData(int x, int y)
+		gameMap = new Map(row, col);
 		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories
 
 		for (int cycle = 0; cycle < numToFill; cycle++)
@@ -177,18 +190,12 @@ public class GameMaster
 			{
 				for (int id = 0; id < numPlayers; id++)
 				{
-					//Random rand = new Random();
-					//rand.setSeed(rand.nextInt(100));
-					//int cell_row = rand.nextInt(6);//col is 6 so 0 to 5
 					int cell_row = (int)(Math.random()*row);
 					int cellownerID = gameMap.getOwnerID(cell_row,cell_col); //get owner ID at the cell
 
 					if(cellownerID != -1 && cellownerID != id)
 					{
 						do{
-							//Random rand2 = new Random();
-							//rand2.setSeed(rand.nextInt(10));
-							//cell_row = rand2.nextInt(6);
 							cell_row = (int)(Math.random() * row); //7 is exclusive
 							cellownerID = gameMap.getOwnerID(cell_row,cell_col);
 						}while(cellownerID != -1 && cellownerID != id);
@@ -198,10 +205,6 @@ public class GameMaster
 			}
 		}
 
-
-
-		//Count number of territories for each player
-		//print out the territories owned
 		for(int i = 0; i < numPlayers; i++)
 		{
 			int territories_own = gameMap.numOwnedTerritories(playerList.get(i).getPlayerID());//count how many territories own
@@ -222,13 +225,10 @@ public class GameMaster
 					gameMap.setNumUnits(i,j,bench_unit);
 				else
 					gameMap.setNumUnits(i,j,bench_unit/player_territories_own); //save units to cell
-
 				bench_unit = bench_unit - bench_unit/player_territories_own; //new bench unit
 				playerList.get(playerID).setNumBenchedUnits(bench_unit); //update bench unit
 			}
 		}
-
-
 		//Randomly distribute player into territories
 		System.out.println("\n STARTING MAP");
 		for (int i = 0; i < col; i++)
@@ -247,7 +247,11 @@ public class GameMaster
 
 	}
 
-
+	/***
+	 * This method determine player turn by rolling die
+	 * Player with highest roll value goes first
+	 * Then next player turn is in clockwise direction
+	 */
 	private void playerOrderSetup()
 	{
 		//Properly will re-arrange the arraylist of playpler
@@ -317,13 +321,15 @@ public class GameMaster
 
 	}
 
+	/***
+	 * While the list of player is greater than 1. The game keeps going until the condition is false
+	 * The game winner is tweeted using tweet API
+	 */
 	private void gameLoop()
 	{
-		// Begin loop, starting with the initial "playerTurn" value
-		// Inside Loop call playerTurn()
 		while(playerList.size() > 1) //while theres is 2 players or more in the playerlist
 		{
-			for(int i = 0; i < playerList.size(); i++) //break out for loop when a player is eleminated from game
+			for(int i = 0; i < playerList.size(); i++)
 			{
 				if(playerList.size() <= 1)
 				{
@@ -362,6 +368,18 @@ public class GameMaster
 
 	}
 
+	/***
+	 * This method show the available option during each player turn
+	 * option 1: is to attack adjacent territory
+	 * option2 : buy credit to get more card or buy under
+	 * option3 : transfer credit to other players
+	 * option4: trade in cards
+	 * option5: undo the previous turn
+	 * option6: pass the turn to next Player.
+	 * If the player does not enter the choice within 10 seconds, the current player loses his/her turn to next player
+	 * option7: Quit game and be removed from the playerList
+	 * @param player - the current player turn
+	 */
 	private void playerTurn(Player player)
 	{
 		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
@@ -372,14 +390,10 @@ public class GameMaster
 		System.out.println("\t3. Transfer credit to other player.");
 		System.out.println("\t4. Trade in cards.  ");
 		System.out.println("\t5. Undo. ");
-		System.out.println("\t6. End this turn."); //turn over to next player
-		System.out.println("\t7. Quit game. "); //need to remove this player from the playerlist
-
-		//System.out.print("YOUR CHOICE IS: ");
-
+		System.out.println("\t6. End this turn.");
+		System.out.println("\t7. Quit game. ");
 
 		choice = timer_input.get_input();
-
 
 		if(choice == 1) //attack - call battlehandler
 		{
@@ -419,7 +433,6 @@ public class GameMaster
 				System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
 				playerTurn(player); //recursive call
 			}
-
 		}
 
 		if(choice == 3)
@@ -535,6 +548,11 @@ public class GameMaster
 
 	}
 
+	/***
+	 * Transition to next player in the list
+	 * This can occur when a player ceases to attack or simply wants to finish turn early
+	 * @param player - the player who turn is next
+	 */
 	public void next_turn(Player player)
 	{
 		int pos = playerList.indexOf(player); //find position of the current player in arraylist
@@ -544,8 +562,12 @@ public class GameMaster
 		playerTurn(playerList.get(pos+1));
 	}
 
+	/***
+	 * Part of game cycle
+	 */
 	private void gameCleanup()
 	{
-
+		System.out.println("GAME OVER");
+		return;
 	}
 }

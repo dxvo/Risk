@@ -35,7 +35,7 @@ public class Die
 
 	/***
 	 * set die to certain value
-	 * @param a: parameters to be set for the die
+	 * @param a: parameter value to be set for the die
 	 */
 	public void setValue(int a){ value = a;}
 }

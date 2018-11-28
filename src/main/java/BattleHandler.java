@@ -24,7 +24,7 @@ public class BattleHandler
 
 	/***
 	 * default constructor
-	 * defender_Id is ID of defender
+	 * defender_Id is ID of defender which is used to keep track of the battle state
 	 */
 	public BattleHandler()
 	{
@@ -284,7 +284,7 @@ public class BattleHandler
 
 
 	/***
-	 * This is to give a player additional units for each turns
+	 * This is to give a player additional units at beginning of each battle
 	 * @param x - x coordinate on gamemap
 	 * @param y - current y coordinate on gamemap
 	 * @param attacker - the attakcer player
@@ -338,14 +338,30 @@ public class BattleHandler
 		}
 	}
 
+	/***
+	 * This is observer design pattern method
+	 * This method is used to add the observer into list
+	 * @param player - the player to be notified when his/her territory under attack
+	 */
 	public void addObserver(Player player){
 		this.players.add(player); 
 	}
 
+	/***
+	 * This is also one of the observer design pattern method
+	 * This method is used to remove the observer from the list
+	 * After notify player who is under attack - this method is called to remove that player
+	 * @param player - the player to be removed
+	 */
 	public void removeObserver(Player player){
 		this.players.remove(player);
 	}
 
+	/***
+	 * This method is used to coupled with the observer class.
+	 * When this method is call, this will notify the player about the battle state change
+	 * @param id - the defender player ID
+	 */
 	public void setDefender_Id(int id){
 		this.defender_Id = id;
 		for(Player player: this.players){
