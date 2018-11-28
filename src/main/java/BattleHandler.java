@@ -16,20 +16,24 @@ import java.io.*;
 public class BattleHandler
 {
 	private Die die;
+	int defender_Id;
+
 
 	/***
 	 * default constructor
+	 * defender_Id is ID of defender
 	 */
 	public BattleHandler()
 	{
 		die = new Die();
+		this.defender_Id = -2;
 	}
 
 	/***
 	 * this method will initalize the beggining of a battle
 	 * @param attacker - is he player who attacks
 	 * @param gameMap - game map with info of current army info
-	 * @param playerList - the list
+	 * @param playerList - the current list of player in gameMaster
 	 * @param turnCounter - current player turn
 	 *
 	 */
@@ -41,7 +45,11 @@ public class BattleHandler
 	}
 
 	/***
-	 *
+	 * The method lets attacker choose his/her starting territory location to attack
+	 * The user selects territory thats not belonged to attracker, the program will prompt for re-enter until it correct
+	 * After confirm territory, program will check to see if the army is sufficient to attack - IF not it will ask to other region
+	 * Then program will ask for territory that player want to attack. Program will check for territory adjacency.
+	 * Once attacker chooses territory to attack, the program will notify the player who own that territory.
 	 * @param attacker the player who attacks
 	 * @param gameMap the current game with current game info
 	 */
@@ -148,9 +156,9 @@ public class BattleHandler
 		}
 
 		//Notify defender the territory is under-attack
-		int defender_Id = gameMap.getOwnerID(def_x_territory, def_y_territory);
+		this.defender_Id = gameMap.getOwnerID(def_x_territory, def_y_territory);
 		if (areEnemyNeighbors) {
-			System.out.printf("\nPLAYER %d, YOU ARE ATTACKED BY PLAYER %d\n", defender_Id, attacker_ID);
+			System.out.printf("\nPLAYER %d, YOU ARE ATTACKED BY PLAYER %d\n", this.defender_Id, attacker_ID);
 			System.out.println("READY TO BATTLE.\n");
 		}
 
@@ -292,7 +300,8 @@ public class BattleHandler
 	}
 
 	/***
-	 * tweet out the message the result when battle ends
+	 *
+	 * This method Tweets out messages the result when battle ends
 	 * @param attacker - the attakcer
 	 * @param gameMap - current gamemap
 	 * @param playerList - the current list of player that still in the game
@@ -300,8 +309,6 @@ public class BattleHandler
 	 */
 	private void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
-		//print to twitter all that is required
-		//Twitter API
 		PrintStream consolePrint = System.out;
 		Tweeter tweet = new Tweeter(consolePrint);
 		String counter = String.valueOf(turnCounter);
