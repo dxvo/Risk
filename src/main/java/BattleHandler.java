@@ -300,12 +300,11 @@ public class BattleHandler
 	}
 
 	/***
-	 *
 	 * This method Tweets out messages the result when battle ends
 	 * @param attacker - the attakcer
 	 * @param gameMap - current gamemap
 	 * @param playerList - the current list of player that still in the game
-	 * @param turnCounter -
+	 * @param turnCounter -  player current turn
 	 */
 	private void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
