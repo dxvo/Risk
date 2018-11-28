@@ -7,7 +7,9 @@ import java.io.*;
 
 /***
  *This class is used to handle in game battle mechanics
- *
+ * This class is implement as observable with defender_ID is state.
+ * Defender Id is set to -2. When player attacks, this ID will be changed to defender ID.
+ * When this state changes, it will notify the defender.
  * @author De, Carlos and William
  * @version 1.0
  * @since 2018-10-01
@@ -17,6 +19,7 @@ public class BattleHandler
 {
 	private Die die;
 	int defender_Id;
+	private ArrayList<Player> players;
 
 
 	/***
@@ -27,6 +30,8 @@ public class BattleHandler
 	{
 		die = new Die();
 		this.defender_Id = -2;
+		this.players = new ArrayList<>();
+
 	}
 
 	/***
@@ -39,7 +44,7 @@ public class BattleHandler
 	 */
 	public void startBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
-		Battle(attacker, gameMap);
+		Battle(attacker, gameMap, playerList);
 		
 		endBattle(attacker, gameMap, playerList, turnCounter);
 	}
@@ -53,7 +58,7 @@ public class BattleHandler
 	 * @param attacker the player who attacks
 	 * @param gameMap the current game with current game info
 	 */
-	private void Battle(Player attacker, Map gameMap)
+	private void Battle(Player attacker, Map gameMap, ArrayList<Player> playerList)
 	{
 		//print out the current map
 		System.out.println("\n CURRENT MAP");
@@ -96,7 +101,7 @@ public class BattleHandler
 			}
 		}
 
-		int additional_army = addArmyEachTurn(x, y, attacker, gameMap);//update the army into territory
+		addArmyEachTurn(x, y, attacker, gameMap);//update the army into territory
 		boolean canAttack = gameMap.canAttack(x, y);
 
 		//if attracker territory does not have enoguh unit to attack
@@ -157,10 +162,14 @@ public class BattleHandler
 
 		//Notify defender the territory is under-attack
 		this.defender_Id = gameMap.getOwnerID(def_x_territory, def_y_territory);
+
+		addObserver(playerList.get(defender_Id));
+		setDefender_Id(defender_Id);
+		
 		if (areEnemyNeighbors) {
-			System.out.printf("\nPLAYER %d, YOU ARE ATTACKED BY PLAYER %d\n", this.defender_Id, attacker_ID);
-			System.out.println("READY TO BATTLE.\n");
+			System.out.println("BATTLE BEGINS.\n");
 		}
+		removeObserver(playerList.get(defender_Id));
 
 
 		//Setting up number of time to roll die
@@ -258,14 +267,12 @@ public class BattleHandler
 			units_moved_after_battle = attacker_unit - 1;
 
 
-
 		if(attacker_ID == largest_die[1]) //attacker win _
 		{
 			System.out.printf("The player %d has occupied territory %d, %d from player %d\n",attacker_ID,def_x_territory,def_y_territory,defender_Id);
 			gameMap.setTerritory(def_x_territory, def_y_territory, attacker_ID, units_moved_after_battle);
 
 		}
-
 
 		if(defender_Id == largest_die[1])
 		{
@@ -301,7 +308,7 @@ public class BattleHandler
 
 	/***
 	 * This method Tweets out messages the result when battle ends
-	 * @param attacker - the attakcer
+	 * @param attacker - the attacker
 	 * @param gameMap - current gamemap
 	 * @param playerList - the current list of player that still in the game
 	 * @param turnCounter -  player current turn
@@ -330,5 +337,22 @@ public class BattleHandler
 			System.out.println("Error Tweeting on Twitter");
 		}
 	}
+
+	public void addObserver(Player player){
+		this.players.add(player); 
+	}
+
+	public void removeObserver(Player player){
+		this.players.remove(player);
+	}
+
+	public void setDefender_Id(int id){
+		this.defender_Id = id;
+		for(Player player: this.players){
+			player.update(this.defender_Id);
+		}
+		
+	}
+
 
 }
