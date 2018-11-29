@@ -74,7 +74,7 @@ public class GameMaster
 	 * This method starts the game
 	 * The sequence is setting up the game, the game loop and game Cleanup
 	 */
-	public void gameStart()
+	protected void gameStart()
 	{
 		gameSetup();
 
@@ -87,7 +87,7 @@ public class GameMaster
 	 * This method is to setup player: territories, number of units, player turns
 	 * It also set up the info for gamemap which holds the player territories and number of units in each territory
 	 */
-	private void gameSetup()
+	protected void gameSetup()
 	{
 		playerSetup();
 
@@ -102,7 +102,7 @@ public class GameMaster
 	 * Distribute the beginning number of units based on how many players
 	 * Player is then store into the player arraylist
 	 */
-	private void playerSetup()
+	protected void playerSetup()
 	{
 		if(numPlayers == 0 )
 		{
@@ -143,7 +143,7 @@ public class GameMaster
 	 * User is prompt to re-enter if inputs mutiplication is different than 42
 	 * Randomly distribute player territories and how many units each territory hold
 	 */
-	private void mapSetup()
+	protected void mapSetup()
 	{
 		System.out.println("\nPLAYERS' TERRITORIES MAP ");
 		do{
@@ -252,7 +252,7 @@ public class GameMaster
 	 * Player with highest roll value goes first
 	 * Then next player turn is in clockwise direction
 	 */
-	private void playerOrderSetup()
+	protected void playerOrderSetup()
 	{
 		//Properly will re-arrange the arraylist of playpler
 		//NOW NEED TO ASSIGN TURN VALUE TO PLAYER
@@ -325,7 +325,7 @@ public class GameMaster
 	 * While the list of player is greater than 1. The game keeps going until the condition is false
 	 * The game winner is tweeted using tweet API
 	 */
-	private void gameLoop()
+	protected void gameLoop()
 	{
 		while(playerList.size() > 1) //while theres is 2 players or more in the playerlist
 		{
@@ -380,7 +380,7 @@ public class GameMaster
 	 * option7: Quit game and be removed from the playerList
 	 * @param player - the current player turn
 	 */
-	private void playerTurn(Player player)
+	protected void playerTurn(Player player)
 	{
 		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
 		//Scanner reader = new Scanner(System.in);
@@ -388,10 +388,9 @@ public class GameMaster
 		System.out.println("\t1. Attack. ");
 		System.out.println("\t2. Purchase credit.  ");
 		System.out.println("\t3. Transfer credit to other player.");
-		System.out.println("\t4. Trade in cards.  ");
-		System.out.println("\t5. Undo. ");
-		System.out.println("\t6. End this turn.");
-		System.out.println("\t7. Quit game. ");
+		System.out.println("\t4. Undo. ");
+		System.out.println("\t5. End this turn.");
+		System.out.println("\t6. Quit game. ");
 
 		choice = timer_input.get_input();
 
@@ -403,36 +402,17 @@ public class GameMaster
 		if(choice == 2)
 		{
 			System.out.println("OK! Purchase game credits.");
-			System.out.println("How many credits? $5/credit - Max credit balance is 100. ");
+			System.out.println("How many credits? $5/credit ");
 			int game_balance_before_purchase = player.getCredit_balance();
 			System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
-			if(game_balance_before_purchase == 100)
-			{
-				System.out.println("Your balance is at maximum limit 100");
-				System.out.println("Not eligibile to purchase more credit");
-				playerTurn(player);
-			}
+			System.out.print("Please enter amount to buy: ");
+			credit_purchase = reader.nextInt();
+			player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+			int new_game_balance = player.getCredit_balance();
 
-			else
-			{
-				System.out.print("Please enter amount to buy: ");
-				credit_purchase = reader.nextInt();
-				player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-				int new_game_balance = player.getCredit_balance();
+			System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
+			playerTurn(player); //recursive call
 
-				//This makes sure the game balance is not over 100
-				while(new_game_balance > 100)
-				{
-					System.out.println("Game credit exceeds allowable limit.");
-					System.out.print("Please enter a new amount: ");
-					credit_purchase = reader.nextInt();
-					player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-					new_game_balance = player.getCredit_balance();
-				}
-
-				System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
-				playerTurn(player); //recursive call
-			}
 		}
 
 		if(choice == 3)
@@ -459,7 +439,7 @@ public class GameMaster
 					System.out.print("Enter player ID that you want to transfer to: ");
 					received_player_Id = reader.nextInt();
 
-					//iterate throught playerlist. check to see if player still in the game
+					//iterate through playerlist. check to see if player still in the game
 					for (int i = 0; i < playerList.size(); i++)
 					{
 						if (received_player_Id == playerList.get(i).getPlayerID() && received_player_Id != player.getPlayerID()) {
@@ -480,67 +460,30 @@ public class GameMaster
 				int received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
 
 				System.out.printf("The person you transfer to has balance of %d\n",received_player_current_balance);
-				if(received_player_current_balance >= 100)
+				System.out.print("How much credits do you want to transfer\n");
+				transfer_balance = reader.nextInt();
+				while(transfer_balance > available_balance_before_transfer)
 				{
-					System.out.println("Received player credit balance is at max allowable limit.");
-					System.out.println("You can not make this transfer.");
-					playerTurn(player);
-				}
+					System.out.println("Your transfer amount is more than your current balance. ");
 
-				else
-				{
-					System.out.print("How much credits do you want to transfer\n");
+					System.out.print("Enter transfer amount again: \n");
 					transfer_balance = reader.nextInt();
-					while(transfer_balance > available_balance_before_transfer || transfer_balance + received_player_current_balance > 100)
-					{
-						if(transfer_balance > available_balance_before_transfer)
-							System.out.println("Your transfer amount is more than your current balance. ");
-
-						if(transfer_balance + received_player_current_balance > 100)
-							System.out.println("Your transfer amount is too large");
-
-						System.out.print("Enter transfer amount again: \n");
-						transfer_balance = reader.nextInt();
-					}
-
-					if(transfer_balance + received_player_current_balance <= 100)
-					{
-						System.out.println("\t\tTRANSFERRING CREDITS... ");
-						System.out.println("\t\tTRANSFER IS COMPLETE... ");
-
-						//updating the balance
-
-						playerList.get(received_player_position).setCredit_balance(received_player_current_balance + transfer_balance);
-						player.setCredit_balance(available_balance_before_transfer - transfer_balance );
-
-						System.out.printf("Your balance after transfer is: %d\n",player.getCredit_balance());
-						received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
-						System.out.printf("Recived player balance after transfer: %d\n",received_player_current_balance);
-					}
-
 				}
-
+				player.TransferCredits(transfer_balance, playerList.get(received_player_position));
 			}
 			playerTurn(player);
 		}
 
-		if(choice == 4)
-		{
-			//System.exit(0);
-			System.out.println("Do nothing");
-
-		}
-
-		if(choice == 5){
+		if(choice == 4){
 			// if a particular choose to exit, then call this method and also remove that player from the game
 			System.exit(0);
 		}
 
 		//please keep choice = 6 to move to next turn
-		if(choice == 6){
+		if(choice == 5){
 			next_turn(player);
 		}
-		if(choice ==7)
+		if(choice ==6)
 		{
 			System.out.println("Thanks for playing! BYE ");
 			System.exit(0);
@@ -553,7 +496,7 @@ public class GameMaster
 	 * This can occur when a player ceases to attack or simply wants to finish turn early
 	 * @param player - the player who turn is next
 	 */
-	public void next_turn(Player player)
+	protected void next_turn(Player player)
 	{
 		int pos = playerList.indexOf(player); //find position of the current player in arraylist
 		System.out.print("Moving to next player\n");
@@ -565,7 +508,7 @@ public class GameMaster
 	/***
 	 * Part of game cycle
 	 */
-	private void gameCleanup()
+	protected void gameCleanup()
 	{
 		System.out.println("GAME OVER");
 		return;
