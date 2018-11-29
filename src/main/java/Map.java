@@ -163,11 +163,8 @@ public class Map
 	 */
 	public void setTerritory(int x, int y, int id, int units)
 	{
-		if(isValidCoordinates(x, y))
-		{
 			data[x][y].setOwnerID(id);
 			data[x][y].setNumUnits(units);
-		}
 	}
 
 	/***
@@ -201,8 +198,10 @@ public class Map
 		if(!isValidCoordinates(x2, y2))
 			return false;
 		if(Math.abs(x2 - x1) + Math.abs(y2 - y1) == 1)
+		{
 			if(data[x1][y1].getOwnerID() != data[x2][y2].getOwnerID())
 				return true;
+		}
 		return false;
 	}
 
