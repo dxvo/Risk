@@ -9,11 +9,6 @@ public class GameMasterTest {
 
     GameMaster test = new GameMaster();
 
-    @Test
-    public void gameStart() {
-        test.gameStart();
-
-    }
 
     @Test
     public void next_turn() {
