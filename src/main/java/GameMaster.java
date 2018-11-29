@@ -365,7 +365,6 @@ public class GameMaster
 			System.out.println("Error Tweeting on Twitter");
 
 		}
-
 	}
 
 	/***

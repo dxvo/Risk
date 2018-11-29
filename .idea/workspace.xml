@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/GameMasterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MapTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/timer_inputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/timer_inputTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/timer_inputTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/timer_inputTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameMasterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameMasterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -196,13 +190,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="20" />
+          <entry key="java" value="23" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="20" />
+          <entry key="JAVA" value="23" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -223,8 +217,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
+            <state relative-caret-position="390">
+              <caret line="573" lean-forward="true" selection-start-line="573" selection-end-line="573" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
@@ -235,130 +229,21 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RiskTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MapTest.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+            <state relative-caret-position="150">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#161#178#0" expanded="true" />
-                <element signature="e#161#178#0" expanded="true" />
-                <element signature="e#204#220#0" expanded="true" />
-                <element signature="e#275#292#0" expanded="true" />
-                <element signature="e#275#292#0" expanded="true" />
-                <element signature="e#318#334#0" expanded="true" />
-                <element signature="e#389#406#0" expanded="true" />
-                <element signature="e#389#406#0" expanded="true" />
-                <element signature="e#432#448#0" expanded="true" />
-                <element signature="e#503#520#0" expanded="true" />
-                <element signature="e#503#520#0" expanded="true" />
-                <element signature="e#546#562#0" expanded="true" />
-                <element signature="e#654#664#1" expanded="true" />
-                <element signature="e#650#820#0" expanded="true" />
-                <element signature="e#650#820#0" expanded="true" />
-                <element signature="e#669#685#0" expanded="true" />
-                <element signature="e#650#820#0" expanded="true" />
-                <element signature="e#718#728#1" expanded="true" />
-                <element signature="e#714#810#0" expanded="true" />
-                <element signature="e#714#810#0" expanded="true" />
-                <element signature="e#733#749#0" expanded="true" />
-                <element signature="e#714#810#0" expanded="true" />
-                <element signature="e#1436#1469#1" expanded="true" />
-                <element signature="e#1609#1642#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="209" column="28" lean-forward="true" selection-start-line="209" selection-start-column="28" selection-end-line="209" selection-end-column="28" />
-              <folding>
-                <element signature="e#4713#4714#0" expanded="true" />
-                <element signature="e#4736#4737#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#185#218#0" expanded="true" />
-                <element signature="e#185#218#0" expanded="true" />
-                <element signature="e#246#276#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#356#380#0" expanded="true" />
-                <element signature="e#387#388#0" expanded="true" />
-                <element signature="e#444#470#0" expanded="true" />
-                <element signature="e#444#470#0" expanded="true" />
-                <element signature="e#497#521#0" expanded="true" />
-                <element signature="e#592#624#0" expanded="true" />
-                <element signature="e#592#624#0" expanded="true" />
-                <element signature="e#650#681#0" expanded="true" />
-                <element signature="e#751#783#0" expanded="true" />
-                <element signature="e#751#783#0" expanded="true" />
-                <element signature="e#810#840#0" expanded="true" />
-                <element signature="e#900#926#0" expanded="true" />
-                <element signature="e#900#926#0" expanded="true" />
-                <element signature="e#953#977#0" expanded="true" />
-                <element signature="e#1037#1063#0" expanded="true" />
-                <element signature="e#1037#1063#0" expanded="true" />
-                <element signature="e#1090#1114#0" expanded="true" />
-                <element signature="e#1181#1214#0" expanded="true" />
-                <element signature="e#1181#1214#0" expanded="true" />
-                <element signature="e#1241#1272#0" expanded="true" />
-                <element signature="e#1338#1370#0" expanded="true" />
-                <element signature="e#1338#1370#0" expanded="true" />
-                <element signature="e#1397#1427#0" expanded="true" />
-                <element signature="e#1488#1515#0" expanded="true" />
-                <element signature="e#1488#1515#0" expanded="true" />
-                <element signature="e#1542#1567#0" expanded="true" />
-                <element signature="e#1633#1665#0" expanded="true" />
-                <element signature="e#1633#1665#0" expanded="true" />
-                <element signature="e#1692#1722#0" expanded="true" />
-                <element signature="e#1785#1814#0" expanded="true" />
-                <element signature="e#1785#1814#0" expanded="true" />
-                <element signature="e#1841#1868#0" expanded="true" />
-                <element signature="e#1931#1960#0" expanded="true" />
-                <element signature="e#1931#1960#0" expanded="true" />
-                <element signature="e#1987#2014#0" expanded="true" />
-                <element signature="e#2069#2120#0" expanded="true" />
-                <element signature="e#2095#2119#0" expanded="true" />
-                <element signature="e#2069#2120#0" expanded="true" />
-                <element signature="e#2143#2167#0" expanded="true" />
-                <element signature="e#2169#2196#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
-              <folding>
-                <element signature="e#3513#3514#0" expanded="true" />
-                <element signature="e#3542#3543#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -411,11 +296,11 @@
         <option value="$PROJECT_DIR$/src/main/java/Observer.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/timer_inputTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameMasterTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Player.java" />
         <option value="$PROJECT_DIR$/src/test/java/MapTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Map.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameMasterTest.java" />
       </list>
     </option>
   </component>
@@ -442,9 +327,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="28" />
-    <option name="y" value="29" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="67" />
+    <option name="y" value="52" />
     <option name="width" value="1349" />
     <option name="height" value="782" />
   </component>
@@ -1354,7 +1239,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543457820114" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543459113644" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -1389,7 +1274,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Risk">
+  <component name="RunManager" selected="JUnit.TweeterTest">
     <configuration name="Risk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Risk" />
       <module name="junit5-jupiter-starter-maven" />
@@ -1413,40 +1298,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.getData1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TerritoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5-jupiter-starter-maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
-      <option name="METHOD_NAME" value="getData1" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TerritoryTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.setData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TweeterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="junit5-jupiter-starter-maven" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MapTest" />
-      <option name="METHOD_NAME" value="setData" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="TweeterTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="JUnit.GameMasterTest" />
-      <item itemvalue="JUnit.MapTest.setData" />
-      <item itemvalue="JUnit.MapTest.getData1" />
       <item itemvalue="JUnit.MapTest" />
       <item itemvalue="Application.Risk" />
+      <item itemvalue="JUnit.TerritoryTest" />
+      <item itemvalue="JUnit.TweeterTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TweeterTest" />
+        <item itemvalue="JUnit.TerritoryTest" />
+        <item itemvalue="JUnit.GameMasterTest" />
         <item itemvalue="Application.Risk" />
         <item itemvalue="JUnit.MapTest" />
-        <item itemvalue="JUnit.MapTest.getData1" />
-        <item itemvalue="JUnit.MapTest.setData" />
-        <item itemvalue="JUnit.GameMasterTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1464,18 +1345,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="PlayerTest - 2018.11.27 at 15h 16m 01s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest - 2018.11.27 at 15h 19m 14s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PlayerTest - 2018.11.27 at 15h 47m 07s.xml">
-      <configuration name="PlayerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="timer_inputTest - 2018.11.28 at 17h 46m 51s.xml">
-      <configuration name="timer_inputTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="timer_inputTest_get_input - 2018.11.28 at 17h 47m 13s.xml">
       <configuration name="timer_inputTest.get_input" configurationId="JUnit" />
     </history-entry>
@@ -1493,6 +1362,18 @@
     </history-entry>
     <history-entry file="GameMasterTest - 2018.11.28 at 20h 12m 29s.xml">
       <configuration name="GameMasterTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_setData - 2018.11.28 at 20h 15m 37s.xml">
+      <configuration name="MapTest.setData" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest_getData1 - 2018.11.28 at 20h 15m 42s.xml">
+      <configuration name="MapTest.getData1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest - 2018.11.28 at 20h 15m 49s.xml">
+      <configuration name="MapTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MapTest - 2018.11.28 at 20h 16m 32s.xml">
+      <configuration name="MapTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="3">
@@ -1513,16 +1394,16 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.18592195" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.18592195" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" weight="0.2019893" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" weight="0.09565217" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" visible="true" weight="0.23188406" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.60188085" side_tool="true" weight="0.35507247" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4976489" weight="0.32753623" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4968652" weight="0.11884058" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.31304348" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" visible="true" weight="0.22753623" />
+      <window_info anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" weight="0.45507246" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -1675,13 +1556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RiskTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codecov.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1717,17 +1591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="33" column="50" lean-forward="true" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#789#830#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1857,21 +1720,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
-            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
+        <state relative-caret-position="698">
           <caret line="150" column="27" lean-forward="true" selection-start-line="150" selection-start-column="27" selection-end-line="150" selection-end-column="27" />
           <folding>
             <element signature="e#3513#3514#0" expanded="true" />
@@ -1882,7 +1733,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
+        <state relative-caret-position="315">
           <caret line="85" column="26" lean-forward="true" selection-start-line="85" selection-start-column="26" selection-end-line="85" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1934,31 +1785,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="360">
+          <caret line="204" selection-start-line="204" selection-end-line="204" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="28" column="9" lean-forward="true" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="209" column="28" lean-forward="true" selection-start-line="209" selection-start-column="28" selection-end-line="209" selection-end-column="28" />
-          <folding>
-            <element signature="e#4713#4714#0" expanded="true" />
-            <element signature="e#4736#4737#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="91" column="19" selection-start-line="91" selection-start-column="19" selection-end-line="91" selection-end-column="19" />
+        <state relative-caret-position="-260">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#161#178#0" expanded="true" />
@@ -1973,18 +1820,35 @@
             <element signature="e#503#520#0" expanded="true" />
             <element signature="e#503#520#0" expanded="true" />
             <element signature="e#546#562#0" expanded="true" />
-            <element signature="e#654#664#1" expanded="true" />
-            <element signature="e#650#820#0" expanded="true" />
-            <element signature="e#650#820#0" expanded="true" />
-            <element signature="e#669#685#0" expanded="true" />
-            <element signature="e#650#820#0" expanded="true" />
-            <element signature="e#718#728#1" expanded="true" />
-            <element signature="e#714#810#0" expanded="true" />
-            <element signature="e#714#810#0" expanded="true" />
-            <element signature="e#733#749#0" expanded="true" />
-            <element signature="e#714#810#0" expanded="true" />
-            <element signature="e#1436#1469#1" expanded="true" />
-            <element signature="e#1609#1642#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="573" lean-forward="true" selection-start-line="573" selection-end-line="573" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
+            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RiskTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
