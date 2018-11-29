@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BattleHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BattleHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/GameMasterTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -191,13 +191,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="53" />
+          <entry key="java" value="55" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="53" />
+          <entry key="JAVA" value="55" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -214,13 +214,13 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.48129675">
+    <splitter split-orientation="horizontal" split-proportion="0.33557048">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="336">
+                <state relative-caret-position="1023">
                   <caret line="281" column="9" lean-forward="true" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -341,107 +341,79 @@
       </split-first>
       <split-second>
         <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/BattleHandlerTest.java">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1123">
-                  <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+                <state relative-caret-position="336">
+                  <caret line="281" column="9" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#244#261#0" expanded="true" />
-                    <element signature="e#661#681#0" expanded="true" />
-                    <element signature="e#661#681#0" expanded="true" />
-                    <element signature="e#691#711#0" expanded="true" />
-                    <element signature="e#691#711#0" expanded="true" />
-                    <element signature="e#688#708#1" expanded="true" />
-                    <element signature="e#1054#1074#0" expanded="true" />
-                    <element signature="e#1054#1074#0" expanded="true" />
-                    <element signature="e#1084#1104#0" expanded="true" />
-                    <element signature="e#1084#1104#0" expanded="true" />
-                    <element signature="e#1114#1134#0" expanded="true" />
-                    <element signature="e#1114#1134#0" expanded="true" />
-                    <element signature="e#928#944#0" expanded="true" />
-                    <element signature="e#1190#1461#0" expanded="true" />
-                    <element signature="e#960#970#1" expanded="true" />
-                    <element signature="e#1190#1461#0" expanded="true" />
-                    <element signature="e#1190#1461#0" expanded="true" />
-                    <element signature="e#1190#1461#0" expanded="true" />
-                    <element signature="e#1190#1461#0" expanded="true" />
-                    <element signature="e#1247#1417#0" expanded="true" />
-                    <element signature="e#1247#1417#0" expanded="true" />
-                    <element signature="e#1247#1417#0" expanded="true" />
-                    <element signature="e#1247#1417#0" expanded="true" />
-                    <element signature="e#1247#1417#0" expanded="true" />
-                    <element signature="e#1070#1092#0" expanded="true" />
-                    <element signature="e#1253#1283#0" expanded="true" />
-                    <element signature="e#1285#1307#0" expanded="true" />
-                    <element signature="e#1519#1529#1" expanded="true" />
-                    <element signature="e#1529#1539#1" expanded="true" />
-                    <element signature="e#1548#1587#1" expanded="true" />
-                    <element signature="e#1596#1637#1" expanded="true" />
-                    <element signature="e#1614#1636#0" expanded="true" />
-                    <element signature="e#1699#1743#1" expanded="true" />
-                    <element signature="e#1828#1838#1" expanded="true" />
-                    <element signature="e#1849#1858#1" expanded="true" />
-                    <element signature="e#1869#1924#1" expanded="true" />
-                    <element signature="e#2252#2286#0" expanded="true" />
-                    <element signature="e#2252#2286#0" expanded="true" />
-                    <element signature="e#2390#2436#1" expanded="true" />
-                    <element signature="e#2437#2511#1" expanded="true" />
-                    <element signature="e#2494#2524#1" expanded="true" />
-                    <element signature="e#2533#2563#1" expanded="true" />
-                    <element signature="e#2580#2611#1" expanded="true" />
-                    <element signature="e#2614#2647#1" expanded="true" />
-                    <element signature="e#2658#2685#1" expanded="true" />
-                    <element signature="e#2680#2703#1" expanded="true" />
-                    <element signature="e#2932#2985#0" expanded="true" />
-                    <element signature="e#3192#3208#0" expanded="true" />
-                    <element signature="method#endBattle#0;class#BattleHandlerTest#0" />
-                    <element signature="e#625#645#1" expanded="true" />
-                    <element signature="e#654#699#1" expanded="true" />
-                    <element signature="e#3355#3382#0" expanded="true" />
-                    <element signature="e#3355#3382#0" expanded="true" />
-                    <element signature="e#708#756#1" expanded="true" />
-                    <element signature="e#725#755#0" expanded="true" />
-                    <element signature="e#725#755#0" expanded="true" />
-                    <element signature="e#655#693#1" expanded="true" />
-                    <element signature="e#658#700#1" expanded="true" />
-                    <element signature="e#585#612#1" expanded="true" />
-                    <element signature="e#621#652#1" expanded="true" />
-                    <element signature="e#661#692#1" expanded="true" />
-                    <element signature="e#3663#3683#0" expanded="true" />
-                    <element signature="e#3663#3683#0" expanded="true" />
-                    <element signature="e#3693#3713#0" expanded="true" />
-                    <element signature="e#3693#3713#0" expanded="true" />
-                    <element signature="e#1039#1054#1" expanded="true" />
-                    <element signature="e#774#808#1" expanded="true" />
-                    <element signature="e#695#705#1" expanded="true" />
-                    <element signature="e#691#763#0" expanded="true" />
-                    <element signature="e#691#763#0" expanded="true" />
-                    <element signature="e#691#763#0" expanded="true" />
-                    <element signature="e#3874#3888#0" expanded="true" />
-                    <element signature="e#3874#3888#0" expanded="true" />
-                    <element signature="e#873#901#0" expanded="true" />
-                    <element signature="e#3956#3970#0" expanded="true" />
-                    <element signature="e#3956#3970#0" expanded="true" />
-                    <element signature="e#983#1017#0" expanded="true" />
-                    <element signature="e#1332#1414#0" expanded="true" />
-                    <element signature="e#1332#1414#0" expanded="true" />
-                    <element signature="e#1332#1414#0" expanded="true" />
-                    <element signature="e#1332#1414#0" expanded="true" />
-                    <element signature="method#addArmyEachTurn#0;class#BattleHandlerTest#0" />
-                    <element signature="e#4359#4386#0" expanded="true" />
-                    <element signature="e#4359#4386#0" expanded="true" />
-                    <element signature="e#638#664#0" expanded="true" />
-                    <element signature="method#addObserver#0;class#BattleHandlerTest#0" />
-                    <element signature="method#removeObserver#0;class#BattleHandlerTest#0" />
-                    <element signature="method#setDefender_Id#0;class#BattleHandlerTest#0" />
-                    <element signature="e#1489#1498#1" expanded="true" />
-                    <element signature="e#1485#1572#0" expanded="true" />
-                    <element signature="e#1485#1572#0" expanded="true" />
-                    <element signature="e#1485#1572#0" expanded="true" />
-                    <element signature="e#5323#5337#0" expanded="true" />
-                    <element signature="e#5323#5337#0" expanded="true" />
+                    <element signature="docComment;method#BattleHandler#0;class#BattleHandler#0" />
+                    <element signature="method#BattleHandler#0;class#BattleHandler#0" />
+                    <element signature="docComment;method#startBattle#0;class#BattleHandler#0" />
+                    <element signature="e#2359#2389#0" expanded="true" />
+                    <element signature="e#2391#2413#0" expanded="true" />
+                    <element signature="e#2458#2498#0" expanded="true" />
+                    <element signature="e#2649#2674#1" expanded="true" />
+                    <element signature="e#2721#2746#1" expanded="true" />
+                    <element signature="e#2749#2788#0" expanded="true" />
+                    <element signature="e#2825#2866#1" expanded="true" />
+                    <element signature="e#2843#2865#0" expanded="true" />
+                    <element signature="e#3364#3386#0" expanded="true" />
+                    <element signature="e#3543#3587#1" expanded="true" />
+                    <element signature="e#5052#5091#1" expanded="true" />
+                    <element signature="e#5138#5177#1" expanded="true" />
+                    <element signature="e#5180#5274#0" expanded="true" />
+                    <element signature="e#6158#6204#1" expanded="true" />
+                    <element signature="e#6207#6281#1" expanded="true" />
+                    <element signature="e#6284#6314#1" expanded="true" />
+                    <element signature="e#6317#6347#1" expanded="true" />
+                    <element signature="e#6350#6381#1" expanded="true" />
+                    <element signature="e#6384#6417#1" expanded="true" />
+                    <element signature="e#6420#6447#1" expanded="true" />
+                    <element signature="e#6450#6473#1" expanded="true" />
+                    <element signature="e#6696#6749#0" expanded="true" />
+                    <element signature="e#7098#7162#0" expanded="true" />
+                    <element signature="e#7584#7603#1" expanded="true" />
+                    <element signature="e#7901#7911#1" expanded="true" />
+                    <element signature="e#9298#9335#0" expanded="true" />
+                    <element signature="e#9376#9413#0" expanded="true" />
+                    <element signature="docComment;method#addArmyEachTurn#0;class#BattleHandler#0" />
+                    <element signature="method#addArmyEachTurn#0;class#BattleHandler#0" />
+                    <element signature="e#10451#10500#0" expanded="true" />
+                    <element signature="e#10471#10499#0" expanded="true" />
+                    <element signature="e#10548#10586#1" expanded="true" />
+                    <element signature="e#10641#10684#1" expanded="true" />
+                    <element signature="e#10661#10683#0" expanded="true" />
+                    <element signature="e#10784#10838#1" expanded="true" />
+                    <element signature="method#endBattle#0;class#BattleHandler#0" />
+                    <element signature="docComment;method#addObserver#0;class#BattleHandler#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-549">
+                  <caret line="90" selection-start-line="90" selection-end-line="90" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="docComment;class#GameMaster#0" />
+                    <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
+                    <element signature="method#GameMaster#0;class#GameMaster#0" />
+                    <element signature="docComment;method#GameMaster#1;class#GameMaster#0" />
+                    <element signature="method#GameMaster#1;class#GameMaster#0" />
+                    <element signature="method#gameStart#0;class#GameMaster#0" />
+                    <element signature="method#gameSetup#0;class#GameMaster#0" />
+                    <element signature="method#playerSetup#0;class#GameMaster#0" />
+                    <element signature="method#mapSetup#0;class#GameMaster#0" />
+                    <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
+                    <element signature="method#gameLoop#0;class#GameMaster#0" />
+                    <element signature="method#playerTurn#0;class#GameMaster#0" />
+                    <element signature="method#next_turn#0;class#GameMaster#0" />
+                    <element signature="method#gameCleanup#0;class#GameMaster#0" />
                   </folding>
                 </state>
               </provider>
@@ -499,11 +471,11 @@
         <option value="$PROJECT_DIR$/src/test/java/TerritoryTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TweeterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Tweeter.java" />
-        <option value="$PROJECT_DIR$/src/test/java/GameMasterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Map.java" />
         <option value="$PROJECT_DIR$/src/test/java/MapTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/BattleHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/BattleHandlerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/GameMasterTest.java" />
       </list>
     </option>
   </component>
@@ -1717,7 +1689,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543476998350" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543477315163" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -1831,9 +1803,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BattleHandlerTest_setDefender_Id - 2018.11.29 at 00h 23m 55s.xml">
-      <configuration name="BattleHandlerTest.setDefender_Id" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BattleHandlerTest_addArmyEachTurn - 2018.11.29 at 00h 26m 42s.xml">
       <configuration name="BattleHandlerTest.addArmyEachTurn" configurationId="JUnit" />
     </history-entry>
@@ -1861,6 +1830,9 @@
     <history-entry file="BattleHandlerTest_endBattle - 2018.11.29 at 01h 36m 21s.xml">
       <configuration name="BattleHandlerTest.endBattle" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BattleHandlerTest_Battle - 2018.11.29 at 01h 41m 12s.xml">
+      <configuration name="BattleHandlerTest.Battle" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1880,16 +1852,16 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.045421246" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.23589744" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" weight="0.2019893" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.4968652" weight="0.23188406" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.60188085" side_tool="true" weight="0.35507247" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.45128205" visible="true" weight="0.20289855" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.548718" side_tool="true" weight="0.40724638" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4976489" weight="0.32753623" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4968652" weight="0.11884058" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.31304348" />
-      <window_info active="true" anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" visible="true" weight="0.17101449" />
+      <window_info anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" weight="0.19275363" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -2077,6 +2049,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
           <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onUpdateReceived#0;class#chatbot#0" />
+            <element signature="e#1114#1133#0" expanded="true" />
+            <element signature="e#1168#1220#1" expanded="true" />
+            <element signature="e#1190#1209#0" expanded="true" />
+            <element signature="e#1190#1219#0" expanded="true" />
+            <element signature="e#1233#1283#1" expanded="true" />
+            <element signature="e#1251#1270#0" expanded="true" />
+            <element signature="e#1251#1282#0" expanded="true" />
+            <element signature="e#1296#1359#1" expanded="true" />
+            <element signature="e#1314#1333#0" expanded="true" />
+            <element signature="e#1314#1343#0" expanded="true" />
+            <element signature="e#1314#1358#0" expanded="true" />
+            <element signature="e#1872#3326#0" expanded="true" />
+            <element signature="e#1876#1910#0" expanded="true" />
+            <element signature="e#1876#1910#0" expanded="true" />
+            <element signature="e#1876#1910#0" expanded="true" />
+            <element signature="e#1872#3326#0" expanded="true" />
+            <element signature="e#1432#1668#1" expanded="true" />
+            <element signature="e#1527#1666#0" expanded="true" />
+            <element signature="e#2280#2371#0" expanded="true" />
+            <element signature="e#2280#2371#0" expanded="true" />
+            <element signature="e#2408#2442#0" expanded="true" />
+            <element signature="e#2408#2442#0" expanded="true" />
+            <element signature="e#2408#2442#0" expanded="true" />
+            <element signature="e#1976#1997#1" expanded="true" />
+            <element signature="e#2018#2028#1" expanded="true" />
+            <element signature="e#2014#2164#0" expanded="true" />
+            <element signature="e#2014#2164#0" expanded="true" />
+            <element signature="e#2014#2164#0" expanded="true" />
+            <element signature="e#2376#2498#1" expanded="true" />
+            <element signature="e#2905#3010#0" expanded="true" />
+            <element signature="e#2905#3010#0" expanded="true" />
+            <element signature="e#2905#3010#0" expanded="true" />
+            <element signature="e#2515#2593#1" expanded="true" />
+            <element signature="e#3221#3312#0" expanded="true" />
+            <element signature="e#3221#3312#0" expanded="true" />
+            <element signature="e#2913#2989#1" expanded="true" />
+            <element signature="e#3006#3016#1" expanded="true" />
+            <element signature="e#3002#3357#0" expanded="true" />
+            <element signature="e#3002#3357#0" expanded="true" />
+            <element signature="e#3002#3357#0" expanded="true" />
+            <element signature="e#3046#3138#1" expanded="true" />
+            <element signature="e#3765#3856#0" expanded="true" />
+            <element signature="e#3765#3856#0" expanded="true" />
+            <element signature="e#3371#3424#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2116,18 +2136,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="395" lean-forward="true" selection-start-line="395" selection-end-line="395" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
-            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RiskTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -2153,13 +2161,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2246,128 +2250,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="281" column="9" lean-forward="true" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#BattleHandler#0;class#BattleHandler#0" />
-            <element signature="method#BattleHandler#0;class#BattleHandler#0" />
-            <element signature="docComment;method#startBattle#0;class#BattleHandler#0" />
-            <element signature="e#2090#2106#0" expanded="true" />
-            <element signature="e#2111#2337#0" expanded="true" />
-            <element signature="e#2117#2127#1" expanded="true" />
-            <element signature="e#2111#2337#0" expanded="true" />
-            <element signature="e#2111#2337#0" expanded="true" />
-            <element signature="e#2111#2337#0" expanded="true" />
-            <element signature="e#2111#2337#0" expanded="true" />
-            <element signature="e#2159#2308#0" expanded="true" />
-            <element signature="e#2159#2308#0" expanded="true" />
-            <element signature="e#2159#2308#0" expanded="true" />
-            <element signature="e#2159#2308#0" expanded="true" />
-            <element signature="e#2159#2308#0" expanded="true" />
-            <element signature="e#2227#2249#0" expanded="true" />
-            <element signature="e#2359#2389#0" expanded="true" />
-            <element signature="e#2391#2413#0" expanded="true" />
-            <element signature="e#2458#2498#0" expanded="true" />
-            <element signature="e#2649#2674#1" expanded="true" />
-            <element signature="e#2721#2746#1" expanded="true" />
-            <element signature="e#2749#2788#0" expanded="true" />
-            <element signature="e#2825#2866#1" expanded="true" />
-            <element signature="e#2843#2865#0" expanded="true" />
-            <element signature="e#2889#3463#0" expanded="true" />
-            <element signature="e#2889#3463#0" expanded="true" />
-            <element signature="e#3166#3459#0" expanded="true" />
-            <element signature="e#3166#3459#0" expanded="true" />
-            <element signature="e#3245#3454#0" expanded="true" />
-            <element signature="e#3245#3454#0" expanded="true" />
-            <element signature="e#3245#3454#0" expanded="true" />
-            <element signature="e#3245#3454#0" expanded="true" />
-            <element signature="e#3245#3454#0" expanded="true" />
-            <element signature="e#3364#3386#0" expanded="true" />
-            <element signature="e#3543#3587#1" expanded="true" />
-            <element signature="e#4256#4848#0" expanded="true" />
-            <element signature="e#4256#4848#0" expanded="true" />
-            <element signature="e#5052#5091#1" expanded="true" />
-            <element signature="e#5138#5177#1" expanded="true" />
-            <element signature="e#5180#5274#0" expanded="true" />
-            <element signature="e#5959#5986#0" expanded="true" />
-            <element signature="e#5959#5986#0" expanded="true" />
-            <element signature="e#5993#6064#0" expanded="true" />
-            <element signature="e#5993#6064#0" expanded="true" />
-            <element signature="e#6158#6204#1" expanded="true" />
-            <element signature="e#6207#6281#1" expanded="true" />
-            <element signature="e#6284#6314#1" expanded="true" />
-            <element signature="e#6317#6347#1" expanded="true" />
-            <element signature="e#6350#6381#1" expanded="true" />
-            <element signature="e#6384#6417#1" expanded="true" />
-            <element signature="e#6420#6447#1" expanded="true" />
-            <element signature="e#6450#6473#1" expanded="true" />
-            <element signature="e#6477#9251#0" expanded="true" />
-            <element signature="e#6477#9251#0" expanded="true" />
-            <element signature="e#6696#6749#0" expanded="true" />
-            <element signature="e#6800#7058#0" expanded="true" />
-            <element signature="e#6800#7058#0" expanded="true" />
-            <element signature="e#7098#7162#0" expanded="true" />
-            <element signature="e#7316#7515#0" expanded="true" />
-            <element signature="e#7316#7515#0" expanded="true" />
-            <element signature="e#7584#7603#1" expanded="true" />
-            <element signature="e#7646#7872#0" expanded="true" />
-            <element signature="e#7646#7872#0" expanded="true" />
-            <element signature="e#7646#7872#0" expanded="true" />
-            <element signature="e#7646#7872#0" expanded="true" />
-            <element signature="e#7646#7872#0" expanded="true" />
-            <element signature="e#7758#7867#0" expanded="true" />
-            <element signature="e#7758#7867#0" expanded="true" />
-            <element signature="e#7901#7911#1" expanded="true" />
-            <element signature="e#7979#8128#0" expanded="true" />
-            <element signature="e#7979#8128#0" expanded="true" />
-            <element signature="e#8166#8441#0" expanded="true" />
-            <element signature="e#8166#8441#0" expanded="true" />
-            <element signature="e#9298#9335#0" expanded="true" />
-            <element signature="e#9376#9413#0" expanded="true" />
-            <element signature="docComment;method#addArmyEachTurn#0;class#BattleHandler#0" />
-            <element signature="method#addArmyEachTurn#0;class#BattleHandler#0" />
-            <element signature="e#10451#10500#0" expanded="true" />
-            <element signature="e#10471#10499#0" expanded="true" />
-            <element signature="e#10548#10586#1" expanded="true" />
-            <element signature="e#10641#10684#1" expanded="true" />
-            <element signature="e#10661#10683#0" expanded="true" />
-            <element signature="e#10784#10838#1" expanded="true" />
-            <element signature="method#endBattle#0;class#BattleHandler#0" />
-            <element signature="e#11354#11392#1" expanded="true" />
-            <element signature="e#11395#11437#1" expanded="true" />
-            <element signature="e#11440#11485#1" expanded="true" />
-            <element signature="e#11456#11483#0" expanded="true" />
-            <element signature="e#11456#11483#0" expanded="true" />
-            <element signature="e#11488#11536#1" expanded="true" />
-            <element signature="e#11505#11535#0" expanded="true" />
-            <element signature="e#11505#11535#0" expanded="true" />
-            <element signature="e#11539#11561#1" expanded="true" />
-            <element signature="e#11564#11598#1" expanded="true" />
-            <element signature="e#11607#11615#1" expanded="true" />
-            <element signature="e#11601#11899#0" expanded="true" />
-            <element signature="e#11601#11899#0" expanded="true" />
-            <element signature="e#11601#11899#0" expanded="true" />
-            <element signature="e#11675#11692#0" expanded="true" />
-            <element signature="e#11675#11692#0" expanded="true" />
-            <element signature="e#11676#11707#0" expanded="true" />
-            <element signature="e#11806#11895#0" expanded="true" />
-            <element signature="e#11806#11895#0" expanded="true" />
-            <element signature="e#11806#11895#0" expanded="true" />
-            <element signature="e#11806#11895#0" expanded="true" />
-            <element signature="docComment;method#addObserver#0;class#BattleHandler#0" />
-            <element signature="e#12270#12294#0" expanded="true" />
-            <element signature="e#12270#12294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/BattleHandlerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1123">
-          <caret line="94" column="32" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+        <state relative-caret-position="141">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#244#261#0" expanded="true" />
@@ -2421,8 +2307,8 @@
             <element signature="method#endBattle#0;class#BattleHandlerTest#0" />
             <element signature="e#625#645#1" expanded="true" />
             <element signature="e#654#699#1" expanded="true" />
-            <element signature="e#3355#3382#0" expanded="true" />
-            <element signature="e#3355#3382#0" expanded="true" />
+            <element signature="e#3353#3380#0" expanded="true" />
+            <element signature="e#3353#3380#0" expanded="true" />
             <element signature="e#708#756#1" expanded="true" />
             <element signature="e#725#755#0" expanded="true" />
             <element signature="e#725#755#0" expanded="true" />
@@ -2431,29 +2317,29 @@
             <element signature="e#585#612#1" expanded="true" />
             <element signature="e#621#652#1" expanded="true" />
             <element signature="e#661#692#1" expanded="true" />
-            <element signature="e#3663#3683#0" expanded="true" />
-            <element signature="e#3663#3683#0" expanded="true" />
-            <element signature="e#3693#3713#0" expanded="true" />
-            <element signature="e#3693#3713#0" expanded="true" />
+            <element signature="e#3661#3681#0" expanded="true" />
+            <element signature="e#3661#3681#0" expanded="true" />
+            <element signature="e#3691#3711#0" expanded="true" />
+            <element signature="e#3691#3711#0" expanded="true" />
             <element signature="e#1039#1054#1" expanded="true" />
             <element signature="e#774#808#1" expanded="true" />
             <element signature="e#695#705#1" expanded="true" />
             <element signature="e#691#763#0" expanded="true" />
             <element signature="e#691#763#0" expanded="true" />
             <element signature="e#691#763#0" expanded="true" />
-            <element signature="e#3874#3888#0" expanded="true" />
-            <element signature="e#3874#3888#0" expanded="true" />
+            <element signature="e#3872#3886#0" expanded="true" />
+            <element signature="e#3872#3886#0" expanded="true" />
             <element signature="e#873#901#0" expanded="true" />
-            <element signature="e#3956#3970#0" expanded="true" />
-            <element signature="e#3956#3970#0" expanded="true" />
+            <element signature="e#3954#3968#0" expanded="true" />
+            <element signature="e#3954#3968#0" expanded="true" />
             <element signature="e#983#1017#0" expanded="true" />
             <element signature="e#1332#1414#0" expanded="true" />
             <element signature="e#1332#1414#0" expanded="true" />
             <element signature="e#1332#1414#0" expanded="true" />
             <element signature="e#1332#1414#0" expanded="true" />
             <element signature="method#addArmyEachTurn#0;class#BattleHandlerTest#0" />
-            <element signature="e#4359#4386#0" expanded="true" />
-            <element signature="e#4359#4386#0" expanded="true" />
+            <element signature="e#4357#4384#0" expanded="true" />
+            <element signature="e#4357#4384#0" expanded="true" />
             <element signature="e#638#664#0" expanded="true" />
             <element signature="method#addObserver#0;class#BattleHandlerTest#0" />
             <element signature="method#removeObserver#0;class#BattleHandlerTest#0" />
@@ -2462,8 +2348,85 @@
             <element signature="e#1485#1572#0" expanded="true" />
             <element signature="e#1485#1572#0" expanded="true" />
             <element signature="e#1485#1572#0" expanded="true" />
-            <element signature="e#5323#5337#0" expanded="true" />
-            <element signature="e#5323#5337#0" expanded="true" />
+            <element signature="e#5321#5335#0" expanded="true" />
+            <element signature="e#5321#5335#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="281" column="9" selection-start-line="281" selection-start-column="9" selection-end-line="281" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#BattleHandler#0;class#BattleHandler#0" />
+            <element signature="method#BattleHandler#0;class#BattleHandler#0" />
+            <element signature="docComment;method#startBattle#0;class#BattleHandler#0" />
+            <element signature="e#2359#2389#0" expanded="true" />
+            <element signature="e#2391#2413#0" expanded="true" />
+            <element signature="e#2458#2498#0" expanded="true" />
+            <element signature="e#2649#2674#1" expanded="true" />
+            <element signature="e#2721#2746#1" expanded="true" />
+            <element signature="e#2749#2788#0" expanded="true" />
+            <element signature="e#2825#2866#1" expanded="true" />
+            <element signature="e#2843#2865#0" expanded="true" />
+            <element signature="e#3364#3386#0" expanded="true" />
+            <element signature="e#3543#3587#1" expanded="true" />
+            <element signature="e#5052#5091#1" expanded="true" />
+            <element signature="e#5138#5177#1" expanded="true" />
+            <element signature="e#5180#5274#0" expanded="true" />
+            <element signature="e#6158#6204#1" expanded="true" />
+            <element signature="e#6207#6281#1" expanded="true" />
+            <element signature="e#6284#6314#1" expanded="true" />
+            <element signature="e#6317#6347#1" expanded="true" />
+            <element signature="e#6350#6381#1" expanded="true" />
+            <element signature="e#6384#6417#1" expanded="true" />
+            <element signature="e#6420#6447#1" expanded="true" />
+            <element signature="e#6450#6473#1" expanded="true" />
+            <element signature="e#6696#6749#0" expanded="true" />
+            <element signature="e#7098#7162#0" expanded="true" />
+            <element signature="e#7584#7603#1" expanded="true" />
+            <element signature="e#7901#7911#1" expanded="true" />
+            <element signature="e#9298#9335#0" expanded="true" />
+            <element signature="e#9376#9413#0" expanded="true" />
+            <element signature="docComment;method#addArmyEachTurn#0;class#BattleHandler#0" />
+            <element signature="method#addArmyEachTurn#0;class#BattleHandler#0" />
+            <element signature="e#10451#10500#0" expanded="true" />
+            <element signature="e#10471#10499#0" expanded="true" />
+            <element signature="e#10548#10586#1" expanded="true" />
+            <element signature="e#10641#10684#1" expanded="true" />
+            <element signature="e#10661#10683#0" expanded="true" />
+            <element signature="e#10784#10838#1" expanded="true" />
+            <element signature="method#endBattle#0;class#BattleHandler#0" />
+            <element signature="docComment;method#addObserver#0;class#BattleHandler#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-549">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#GameMaster#0" />
+            <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
+            <element signature="method#GameMaster#0;class#GameMaster#0" />
+            <element signature="docComment;method#GameMaster#1;class#GameMaster#0" />
+            <element signature="method#GameMaster#1;class#GameMaster#0" />
+            <element signature="method#gameStart#0;class#GameMaster#0" />
+            <element signature="method#gameSetup#0;class#GameMaster#0" />
+            <element signature="method#playerSetup#0;class#GameMaster#0" />
+            <element signature="method#mapSetup#0;class#GameMaster#0" />
+            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
+            <element signature="method#gameLoop#0;class#GameMaster#0" />
+            <element signature="method#playerTurn#0;class#GameMaster#0" />
+            <element signature="method#next_turn#0;class#GameMaster#0" />
+            <element signature="method#gameCleanup#0;class#GameMaster#0" />
           </folding>
         </state>
       </provider>
