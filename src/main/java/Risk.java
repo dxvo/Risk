@@ -17,19 +17,6 @@ public class Risk
 {
 	public static void main(String[] args)
 	{
-
-		/*
-		ApiContextInitializer.init();
-		TelegramBotsApi telegramBotsApi = new TelegramBotsApi();
-		try {
-			telegramBotsApi.registerBot(new chatbot());//register the chatbot
-
-		} catch (TelegramApiException e) {
-			e.printStackTrace();
-		}
-
-		*/
-
 		//game now starts in chatbox
 		 GameMaster gameMaster = new GameMaster();
 		 gameMaster.gameStart();

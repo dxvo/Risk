@@ -108,8 +108,7 @@ public class BattleHandler
 		//also need to check option where the player only have 1 territoty left and dont have enough army to attack
 		//not sure if this is needed bc the units will always be greater than 3
 		while (!canAttack) {
-			System.out.println("Insufficient Units to attack. ");
-			System.out.println("Re-select your territory to begin.");//attacker territory
+			System.out.println("Insufficient Units to attack. Re-select your territory to begin.");
 			System.out.print("Enter x coordinate: ");
 			x = reader.nextInt();
 			System.out.print("Enter y coordinate: ");
