@@ -5,10 +5,7 @@ import static org.junit.Assert.*;
 
 public class GameMasterTest {
 
-
-
     GameMaster test = new GameMaster();
-
 
     @Test
     public void next_turn() {

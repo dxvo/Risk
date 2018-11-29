@@ -344,7 +344,7 @@ public class BattleHandler
 	 * @param player - the player to be notified when his/her territory under attack
 	 */
 	public void addObserver(Player player){
-		this.players.add(player); 
+		this.players.add(player);
 	}
 
 	/***
