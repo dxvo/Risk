@@ -26,9 +26,12 @@ public class BattleHandlerTest {
         players.add(player1);
         players.add(player2);
         int turnCounter = 0;
-
-        battle.startBattle(player1,gamemap,players,turnCounter);
-        battle.endBattle(player1,gamemap,players,turnCounter);
+        gamemap.setId(1,1,1);
+        gamemap.setNumUnits(1,1,5);
+        gamemap.setId(1,2,2);
+        gamemap.setNumUnits(1,2,3);
+        Battle();
+        endBattle();
     }
 
     @Test
@@ -85,8 +88,6 @@ public class BattleHandlerTest {
         int attack_counter = 1;
 
         while (attacker_unit >= 2 && defender_unit > 0 && keep_attack){
-            System.out.printf("\nAttacker - Player %d - Your territory currently has %d units", attacker_ID, attacker_unit);
-            System.out.print("\nHow many times do you want to roll ?( Max is 3): ");
             attacker_num_die_roll = 1;
             defender_num_die_roll = 1;
             largest_die[0] = 6;
@@ -101,9 +102,6 @@ public class BattleHandlerTest {
         int turnCounter = 0;
         String counter = String.valueOf(turnCounter);
         String message = "During Turn " + counter +"\n";
-        PrintStream consolePrint = System.out;
-        Tweeter tweet = new Tweeter(consolePrint);
-        Map gamemap = new Map(6,7);
         Player player1 = new Player(1);
         Player player2 = new Player(2);
         players.add(player1);
@@ -119,9 +117,6 @@ public class BattleHandlerTest {
             message += "The Player with ID = " + id + " Has " + player_numTerritories + " Territories.\n";
 
         }
-
-
-
 
     }
 
