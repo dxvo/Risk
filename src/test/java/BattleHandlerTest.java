@@ -1,19 +1,56 @@
+import org.junit.Before;
 import org.junit.Test;
 import java.util.ArrayList;
 import org.junit.Assert;
-
-
+import org.junit.Before;
+import java.util.ArrayList;
+import twitter4j.TwitterException;
+import java.io.*;
 
 import static org.junit.Assert.*;
 
 public class BattleHandlerTest {
+
     private BattleHandler battle = new BattleHandler();
     private ArrayList <Player> players = new ArrayList<>();
+    Map gamemap = new Map(6,7);
+    Player player1 = new Player(1);
+    Player player2 = new Player(2);
 
     @Test
     public void startBattle() {
         assertNotNull(battle);
     }
+
+    @Test
+    public void endBattle(){
+        int turnCounter = 0;
+        String counter = String.valueOf(turnCounter);
+        String message = "During Turn " + counter +"\n";
+        PrintStream consolePrint = System.out;
+        Tweeter tweet = new Tweeter(consolePrint);
+        Map gamemap = new Map(6,7);
+        Player player1 = new Player(1);
+        Player player2 = new Player(2);
+        players.add(player1);
+        players.add(player2);
+        String id = "";
+        String player_numTerritories = "";
+
+
+        for(int i = 0; i < players.size(); i++)
+        {
+            id = String.valueOf(players.get(i).getPlayerID());
+            player_numTerritories = String.valueOf(players.get(i).getNumTerritories());
+            message += "The Player with ID = " + id + " Has " + player_numTerritories + " Territories.\n";
+
+        }
+
+
+
+
+    }
+
 
     @Test
     public void addArmyEachTurn() {
@@ -27,7 +64,7 @@ public class BattleHandlerTest {
         player.setNumTerritories(3);
         int num_territory = player.getNumTerritories();
         int add_army = num_territory/3;
-        if(add_army <= 3)
+        if(num_territory/3 <= 3)
             add_army = 3;
 
         int current_units = player.getNumUnits();
@@ -55,8 +92,9 @@ public class BattleHandlerTest {
     @Test
     public void setDefender_Id() {
         battle.setDefender_Id(3);
-        for(Player player: players){
-            player.update(3);
+        for(int i = 0; i < players.size(); i++){
+            players.get(i).update(3);
         }
     }
+
 }
