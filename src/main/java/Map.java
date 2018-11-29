@@ -26,11 +26,9 @@ public class Map
 	}
 
 	/***
-	 * Retrieve Territory at specified coordinate
-	 * @param i - number of row
-	 * @param j - number of column
+	 * GameMap Length setter
+	 * @param r - the number of columns given by user
 	 */
-
 	public void setRow(int r) { row = r; }
 
 	/***
