@@ -71,14 +71,19 @@ public class Map
 	 */
 	public boolean isValidCoordinates(int x, int y)
 	{
-		if (x >= 0 && y >= 0 && x < row && y < col)
-			return true;
+		boolean flag = false;
+		if(x > 0 && y > 0)
+		{
+			if (x < this.row && y < this.col)
+				flag = true;
+		}
 		else
 		{
 			System.out.println("\nCoordinates Are Not Valid...");
-			return false;
+			flag = false;
 		}
 
+		return flag;
 	}
 
 

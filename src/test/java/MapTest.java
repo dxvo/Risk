@@ -44,15 +44,9 @@ public class MapTest {
 
     @Test
     public void isValidCoordinates() {
-        int x = 5; int y =5;
-        if (x < testMap.getRow() && y < testMap.getCol())
-            assertTrue(testMap.isValidCoordinates(x,y));
-        else
-        {
-            System.out.println("\nCoordinates Are Not Valid...");
-            assertFalse(testMap.isValidCoordinates(10,10));
-        }
-
+        assertTrue(testMap.isValidCoordinates(2,2));
+        assertFalse(testMap.isValidCoordinates(10,10));
+        assertFalse(testMap.isValidCoordinates(-1,-1));
     }
 
     @Test
