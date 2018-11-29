@@ -21,6 +21,8 @@ public class Player implements Observer
 	private int defender_id;
 
 
+
+
 	/***
 	 * Overloaded constructor with ID
 	 * @param id - Player ID
@@ -42,7 +44,8 @@ public class Player implements Observer
 	 */
 	public void setPlayerID(int id)
 	{
-		playerID = id;
+		if(id >= 0)
+			playerID = id;
 	}
 
 	/***
@@ -51,7 +54,8 @@ public class Player implements Observer
 	 */
 	public void setNumUnits(int units)
 	{
-		numUnits = units;
+		if(units >= 0)
+			numUnits = units;
 	}
 
 	/***
@@ -59,7 +63,9 @@ public class Player implements Observer
 	 * @param units - the bench units value to be set for player
 	 */
 	public void setNumBenchedUnits(int units)
-	{ numBenchedUnits = units;
+	{
+		if(units >= 0)
+			numBenchedUnits = units;
 	}
 
 	/***
@@ -68,6 +74,7 @@ public class Player implements Observer
 	 */
 	public void setNumTerritories(int count)
 	{
+		if(count >= 0)
 			numTerritories = count;
 	}
 
@@ -77,7 +84,8 @@ public class Player implements Observer
 	 */
 	public void setDie_value(int value)
 	{
-		die_value = value;
+		if(value >= 0)
+			die_value = value;
 	}
 
 
@@ -130,18 +138,32 @@ public class Player implements Observer
 	 */
 	public void setDefender_id(int id){defender_id = id;}
 
+	public void TransferCredits(int balanceTransferred, Player to){
+		int x = this.getCredit_balance();
+		int y = to.getCredit_balance();
+
+		this.setCredit_balance(x - balanceTransferred);
+		to.setCredit_balance(y + balanceTransferred);
+		System.out.println("Your New Balance is " + this.getCredit_balance());
+		System.out.println("Their New Credit Balance is " + to.getCredit_balance());
+	}
+
+
+	/***
+	 * This method is use particular for the update during battle mechanic
+	 * implemented with observer desigb method
+	 * @return - the ID of the Defender
+	 */
+	public int getDefender_id(){return defender_id;}
+
 
 	@Override
 	/***
 	 * this method needs to be implemented from parent - the Observer interface
-	 * This is used to update the batte state change from BattleHandler
+	 * This is used to update the battle state change from BattleHandler
 	 */
 	public void update(Object id) {
 		this.setDefender_id((int)id);
 		System.out.printf("\nPlayer %d. Your territory is under attack\n", id);
 	}
-
-    public int getDefender_id() {
-		return defender_id;
-    }
 }

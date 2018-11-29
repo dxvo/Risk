@@ -88,4 +88,15 @@ public class PlayerTest {
         assertEquals(testPlayer.getPlayerID(), testPlayer.getDefender_id());
 
     }
+
+    @Test
+    public void transferCredits() {
+        Player to = new Player(1);
+        testPlayer.setCredit_balance(100);
+        to.setCredit_balance(25);
+        testPlayer.TransferCredits(25, to);
+        assertEquals(75, testPlayer.getCredit_balance());
+        assertEquals(50, to.getCredit_balance());
+
+    }
 }
