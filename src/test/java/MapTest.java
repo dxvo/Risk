@@ -29,9 +29,6 @@ public class MapTest {
         assertEquals(3, testMap.getCol());
     }
 
-    @Test
-    public void initMap() {
-    }
 
     @Test
     public void isValidCoordinates() {
@@ -77,7 +74,5 @@ public class MapTest {
     public void areEnemyNeighbors() {
     }
 
-    @Test
-    public void getData() {
-    }
+
 }

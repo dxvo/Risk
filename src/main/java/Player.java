@@ -146,4 +146,8 @@ public class Player implements Observer
 		this.setDefender_id((int)id);
 		System.out.printf("\nPlayer %d. Your territory is under attack\n", id);
 	}
+
+    public int getDefender_id() {
+		return defender_id;
+    }
 }

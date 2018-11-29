@@ -4,7 +4,9 @@ import static org.junit.Assert.*;
 
 public class timer_inputTest {
 
-    Player testPlayer = new Player(5);
+    timer_inputTest input = new timer_inputTest();
+    GameMaster game = new GameMaster();
+
 
     @Test
     public void get_input() {
