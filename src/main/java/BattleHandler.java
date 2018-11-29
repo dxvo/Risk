@@ -58,7 +58,7 @@ public class BattleHandler
 	 * @param attacker the player who attacks
 	 * @param gameMap the current game with current game info
 	 */
-	private void Battle(Player attacker, Map gameMap, ArrayList<Player> playerList)
+	public void Battle(Player attacker, Map gameMap, ArrayList<Player> playerList)
 	{
 		//print out the current map
 		System.out.println("\n CURRENT MAP");
@@ -69,6 +69,7 @@ public class BattleHandler
 			}
 			System.out.println();
 		}
+
 		System.out.printf("\nThis is player's %d turn\n", attacker.getPlayerID());
 		//get the coodinate of the territory
 
@@ -313,7 +314,7 @@ public class BattleHandler
 	 * @param playerList - the current list of player that still in the game
 	 * @param turnCounter -  player current turn
 	 */
-	private void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
+	public void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
 		PrintStream consolePrint = System.out;
 		Tweeter tweet = new Tweeter(consolePrint);
