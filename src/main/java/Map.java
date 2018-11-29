@@ -131,9 +131,9 @@ public class Map
 	 */
 	public int getOwnerID(int x, int y)
 	{
-		if(isValidCoordinates(x,y))
-			return data[x][y].getOwnerID();
-		return -1;
+		if(!isValidCoordinates(x,y))
+			return -1;
+		return data[x][y].getOwnerID();
 	}
 
 	/***

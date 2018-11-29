@@ -66,7 +66,8 @@ public class MapTest {
     public void setNumUnits() {
         testMap.setNumUnits(1,1,10);
         assertEquals(10, testMap.getNumUnits(1,1));
-        testMap.setNumUnits(10,10,-1);
+        testMap.setNumUnits(10,10,3);
+
         assertNotEquals(-1, testMap.getNumUnits(10,10));
         assertNotNull((testMap.getNumUnits(10,10)));
     }
@@ -83,6 +84,10 @@ public class MapTest {
 
     @Test
     public void getOwnerID() {
+
+        testMap.isValidCoordinates(10,10);
+        testMap.setId(10,10,3);
+
         testMap.isValidCoordinates(3,3);
         testMap.setId(3,3,3);
         int x = testMap.getOwnerID(3,3);
