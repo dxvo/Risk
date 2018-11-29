@@ -36,7 +36,7 @@ public class timer_input
 
             } else {
                 System.out.println("\nYou did not enter anything. ");
-                choice = 6; // set choice to 6 to automatically move to next player
+                choice = 5; // set choice to 6 to automatically move to next player
             }
         }
 
