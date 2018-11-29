@@ -28,9 +28,13 @@ public class BattleHandlerTest {
 
     @Test
     public void removeObserver() {
+        Player a = new Player(5);
+        battle.addObserver(a);
+
     }
 
     @Test
     public void setDefender_Id() {
+        battle.setDefender_Id(3);
     }
 }
