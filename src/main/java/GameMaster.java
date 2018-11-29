@@ -423,14 +423,12 @@ public class GameMaster
 			int available_balance_before_transfer = 0;
 			int received_player_position = -1;
 
-			System.out.println("Transfer credit to other player.");
 			available_balance_before_transfer = player.getCredit_balance();
 			System.out.printf("Your current balance is: %d\n", available_balance_before_transfer);
 
 			if(available_balance_before_transfer <= 0)
 			{
-				System.out.println("You have 0 balance. Insufficient to transfer.");
-				System.out.println("Please purchase credits to transfer\n");
+				System.out.println("You have 0 balance. Please purchase credits to transfer\n");
 				playerTurn(player);
 			}
 			else
@@ -456,10 +454,6 @@ public class GameMaster
 
 			if(valid_transfer)
 			{
-
-				int received_player_current_balance = playerList.get(received_player_position).getCredit_balance();
-
-				System.out.printf("The person you transfer to has balance of %d\n",received_player_current_balance);
 				System.out.print("How much credits do you want to transfer\n");
 				transfer_balance = reader.nextInt();
 				while(transfer_balance > available_balance_before_transfer)

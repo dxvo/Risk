@@ -141,14 +141,11 @@ public class Player implements Observer
 	public void TransferCredits(int balanceTransferred, Player to){
 		int x = this.getCredit_balance();
 		int y = to.getCredit_balance();
-		if (balanceTransferred > x)
-			System.out.println("insufficient Funds To Complete Transfer");
-		else {
-			this.setCredit_balance(x - balanceTransferred);
-			to.setCredit_balance(y + balanceTransferred);
-			System.out.println("Your New Balance is " + this.getCredit_balance());
-			System.out.println("Their New Credit Balance is " + to.getCredit_balance());
-		}
+
+		this.setCredit_balance(x - balanceTransferred);
+		to.setCredit_balance(y + balanceTransferred);
+		System.out.println("Your New Balance is " + this.getCredit_balance());
+		System.out.println("Their New Credit Balance is " + to.getCredit_balance());
 	}
 
 
