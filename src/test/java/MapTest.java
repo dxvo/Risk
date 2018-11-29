@@ -43,8 +43,16 @@ public class MapTest {
 
     @Test
     public void isValidCoordinates() {
-        assertTrue(testMap.isValidCoordinates(5,5));
-        assertFalse(testMap.isValidCoordinates(10,10));
+        int x = 5; int y =5;
+        int row = 10; int col = 10;
+        if (x >= 0 && y >= 0 && x < row && y < col)
+            assertTrue(testMap.isValidCoordinates(x,y));
+        else
+        {
+            System.out.println("\nCoordinates Are Not Valid...");
+            assertFalse(testMap.isValidCoordinates(10,10));
+        }
+
     }
 
     @Test
@@ -77,14 +85,18 @@ public class MapTest {
 
     @Test
     public void getOwnerID() {
-        testMap.setId(3,3,3);
-        int x = testMap.getOwnerID(3,3);
-        assertEquals(3, x);
+        if(testMap.isValidCoordinates(3,3))
+        {
+            testMap.setId(3,3,3);
+            int x = testMap.getOwnerID(3,3);
+            assertEquals(3, x);
+        }
     }
 
     @Test
     public void setId() {
         testMap.setId(2,2,2);
+        testMap.isValidCoordinates(2,2);
         int x = testMap.getOwnerID(2,2);
         assertEquals(2, x);
     }
@@ -99,9 +111,11 @@ public class MapTest {
 
     @Test
     public void canAttack() {
-        assertFalse(testMap.canAttack(10,10));
-        testMap.setNumUnits(1,1,1);
-        assertFalse(testMap.canAttack(1,1));
+        if(!testMap.isValidCoordinates(10,10))
+            assertFalse(testMap.canAttack(10,10));
+
+        testMap.setNumUnits(1,1,2);
+        assertTrue(testMap.canAttack(1,1));
     }
 
     @Test
@@ -109,9 +123,10 @@ public class MapTest {
         testMap.setId(1,1,1);
         testMap.setId(1,0,1);
         testMap.setId(1,2,2);
+
         assertFalse(testMap.areEnemyNeighbors(10,10,1,2));
         assertFalse(testMap.areEnemyNeighbors(1,1,10,10));
-        assertFalse(testMap.areEnemyNeighbors(1,0,1,1));
+        assertTrue(testMap.areEnemyNeighbors(1,0,1,1));
     }
 
 

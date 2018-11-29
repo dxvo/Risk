@@ -177,7 +177,7 @@ public class Map
 	 */
 	public boolean canAttack(int x, int y)
 	{
-		if(isValidCoordinates(x, y) == false)
+		if(!isValidCoordinates(x, y))
 			return false;
 		return data[x][y].getNumUnits() > 1;
 	}
