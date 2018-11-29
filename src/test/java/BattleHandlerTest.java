@@ -6,6 +6,7 @@ import org.junit.Before;
 import java.util.ArrayList;
 import twitter4j.TwitterException;
 import java.io.*;
+import java.util.Scanner;
 
 import static org.junit.Assert.*;
 
@@ -16,12 +17,49 @@ public class BattleHandlerTest {
     Map gamemap = new Map(6,7);
     Player player1 = new Player(1);
     Player player2 = new Player(2);
+    Player player3 = new Player(3);
 
     @Test
     public void startBattle() {
-        assertNotNull(battle);
+        players.add(player1);
+        players.add(player2);
+        int turnCounter = 0;
+
+        battle.startBattle(player1,gamemap,players,turnCounter);
+        battle.endBattle(player1,gamemap,players,turnCounter);
     }
 
+    @Test
+    public void Battle(){
+        gamemap.setId(1,1,1);
+        gamemap.setNumUnits(1,1,5);
+        gamemap.setId(1,2,2);
+        gamemap.setNumUnits(1,2,3);
+        players.add(player1);
+        players.add(player2);
+        players.add(player3);
+        System.out.println("\n CURRENT MAP");
+        for (int i = 0; i < gamemap.getRow(); i++) {
+            for (int j = 0; j < gamemap.getCol(); j++) {
+                System.out.printf("\t ID: %d, Units: %d", gamemap.getOwnerID(i, j), gamemap.getNumUnits(i, j));
+            }
+            System.out.println();
+        }
+        System.out.printf("\nThis is player's %d turn\n", player1.getPlayerID());
+
+
+        int x = 1;
+        int y = 1;
+        int ownerID = gamemap.getOwnerID(x, y);
+        int attacker_ID = player1.getPlayerID();
+        assertEquals(ownerID,attacker_ID);
+
+        battle.addArmyEachTurn(1,1,player1,gamemap);
+        boolean canAttack = gamemap.canAttack(x, y);
+
+
+
+    }
     @Test
     public void endBattle(){
         int turnCounter = 0;
@@ -50,7 +88,6 @@ public class BattleHandlerTest {
 
 
     }
-
 
     @Test
     public void addArmyEachTurn() {
