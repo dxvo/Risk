@@ -123,7 +123,7 @@ public class MapTest {
 
         assertFalse(testMap.areEnemyNeighbors(10,10,1,2));
         assertFalse(testMap.areEnemyNeighbors(1,1,10,10));
-        //assertTrue(testMap.areEnemyNeighbors(1,0,1,1));
+        assertTrue(testMap.areEnemyNeighbors(1,0,1,1));
     }
 
 
