@@ -5,6 +5,7 @@ import static org.junit.Assert.*;
 public class MapTest {
 
     Map testMap = new Map(6, 7);
+
     @Test
     public void setRow() {
         testMap.setRow(5);
@@ -44,8 +45,7 @@ public class MapTest {
     @Test
     public void isValidCoordinates() {
         int x = 5; int y =5;
-        int row = 10; int col = 10;
-        if (x >= 0 && y >= 0 && x < row && y < col)
+        if (x < testMap.getRow() && y < testMap.getCol())
             assertTrue(testMap.isValidCoordinates(x,y));
         else
         {
@@ -69,8 +69,6 @@ public class MapTest {
         testMap.setNumUnits(10,10,-1);
         assertNotEquals(-1, testMap.getNumUnits(10,10));
         assertNotNull((testMap.getNumUnits(10,10)));
-
-
     }
 
     @Test
@@ -85,16 +83,15 @@ public class MapTest {
 
     @Test
     public void getOwnerID() {
-        if(testMap.isValidCoordinates(3,3))
-        {
-            testMap.setId(3,3,3);
-            int x = testMap.getOwnerID(3,3);
-            assertEquals(3, x);
-        }
+        testMap.isValidCoordinates(3,3);
+        testMap.setId(3,3,3);
+        int x = testMap.getOwnerID(3,3);
+        assertEquals(3, x);
     }
 
     @Test
     public void setId() {
+        testMap.isValidCoordinates(2,2);
         testMap.setId(2,2,2);
         testMap.isValidCoordinates(2,2);
         int x = testMap.getOwnerID(2,2);
@@ -104,6 +101,7 @@ public class MapTest {
 
     @Test
     public void setTerritory() {
+        testMap.isValidCoordinates(1,1);
         testMap.setTerritory(1,1,1,1);
         int x = testMap.getOwnerID(1, 1);
         assertEquals(1, x);
@@ -111,11 +109,11 @@ public class MapTest {
 
     @Test
     public void canAttack() {
-        if(!testMap.isValidCoordinates(10,10))
-            assertFalse(testMap.canAttack(10,10));
-
-        testMap.setNumUnits(1,1,2);
-        assertTrue(testMap.canAttack(1,1));
+        testMap.isValidCoordinates(2,2);
+        testMap.setNumUnits(2,2,5);
+        assertTrue(testMap.canAttack(2,2));
+        testMap.setNumUnits(1,1,0);
+        assertFalse(testMap.canAttack(1,1));
     }
 
     @Test
@@ -126,7 +124,7 @@ public class MapTest {
 
         assertFalse(testMap.areEnemyNeighbors(10,10,1,2));
         assertFalse(testMap.areEnemyNeighbors(1,1,10,10));
-        assertTrue(testMap.areEnemyNeighbors(1,0,1,1));
+        //assertTrue(testMap.areEnemyNeighbors(1,0,1,1));
     }
 
 

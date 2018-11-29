@@ -90,10 +90,6 @@ public class Map
 	 */
 	public int getNumUnits(int x, int y)
 	{
-		if(isValidCoordinates(x, y) == false)
-		{
-			return 0;
-		}
 		return data[x][y].getNumUnits();
 	}
 
@@ -137,7 +133,7 @@ public class Map
 	{
 		if(isValidCoordinates(x,y))
 			return data[x][y].getOwnerID();
-		return 0;
+		return -1;
 	}
 
 	/***
@@ -176,10 +172,12 @@ public class Map
 	 * @return - true if this territory is adjacent to attacker territory
 	 */
 	public boolean canAttack(int x, int y)
-	{
-		if(!isValidCoordinates(x, y))
-			return false;
-		return data[x][y].getNumUnits() > 1;
+	{	boolean flag;
+		if(isValidCoordinates(x, y) && data[x][y].getNumUnits() > 1)
+			flag = true;
+		else
+			flag = false;
+		return flag;
 	}
 
 
