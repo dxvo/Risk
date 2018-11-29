@@ -26,8 +26,8 @@ public class Map
 	}
 
 	/***
-	 * GameMap height setter
-	 * @param r - number of row
+	 * GameMap Length setter
+	 * @param r - the number of columns given by user
 	 */
 	public void setRow(int r) { row = r; }
 
@@ -71,19 +71,14 @@ public class Map
 	 */
 	public boolean isValidCoordinates(int x, int y)
 	{
-		boolean flag = false;
-		if(x > 0 && y > 0)
-		{
-			if (x < this.row && y < this.col)
-				flag = true;
-		}
+		if (x >= 0 && y >= 0 && x < row && y < col)
+			return true;
 		else
 		{
 			System.out.println("\nCoordinates Are Not Valid...");
-			flag = false;
+			return false;
 		}
 
-		return flag;
 	}
 
 
@@ -95,6 +90,10 @@ public class Map
 	 */
 	public int getNumUnits(int x, int y)
 	{
+		if(isValidCoordinates(x, y) == false)
+		{
+			return 0;
+		}
 		return data[x][y].getNumUnits();
 	}
 
@@ -136,9 +135,9 @@ public class Map
 	 */
 	public int getOwnerID(int x, int y)
 	{
-		if(!isValidCoordinates(x,y))
-			return -1;
-		return data[x][y].getOwnerID();
+		if(isValidCoordinates(x,y))
+			return data[x][y].getOwnerID();
+		return 0;
 	}
 
 	/***
@@ -163,8 +162,11 @@ public class Map
 	 */
 	public void setTerritory(int x, int y, int id, int units)
 	{
+		if(isValidCoordinates(x, y))
+		{
 			data[x][y].setOwnerID(id);
 			data[x][y].setNumUnits(units);
+		}
 	}
 
 	/***
@@ -174,12 +176,10 @@ public class Map
 	 * @return - true if this territory is adjacent to attacker territory
 	 */
 	public boolean canAttack(int x, int y)
-	{	boolean flag;
-		if(isValidCoordinates(x, y) && data[x][y].getNumUnits() > 1)
-			flag = true;
-		else
-			flag = false;
-		return flag;
+	{
+		if(!isValidCoordinates(x, y))
+			return false;
+		return data[x][y].getNumUnits() > 1;
 	}
 
 
@@ -198,10 +198,8 @@ public class Map
 		if(!isValidCoordinates(x2, y2))
 			return false;
 		if(Math.abs(x2 - x1) + Math.abs(y2 - y1) == 1)
-		{
 			if(data[x1][y1].getOwnerID() != data[x2][y2].getOwnerID())
 				return true;
-		}
 		return false;
 	}
 
