@@ -17,4 +17,16 @@ public class TerritoryTest {
         tester.setOwnerID(5);
         assertEquals(5, tester.getOwnerID());
     }
+
+    @Test
+    public void setOwnerID() {
+        tester.setOwnerID(5);
+        assertEquals(5, tester.getOwnerID());
+    }
+
+    @Test
+    public void setNumUnits() {
+        tester.setNumUnits(20);
+        assertEquals(20, tester.getNumUnits());
+    }
 }

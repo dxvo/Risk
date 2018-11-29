@@ -137,10 +137,18 @@ public class Player implements Observer
 	public void setDefender_id(int id){defender_id = id;}
 
 
+	/***
+	 * This method is use particular for the update during battle mechanic
+	 * implemented with observer desigb method
+	 * @return - the ID of the Defender
+	 */
+	public int getDefender_id(){return defender_id;}
+
+
 	@Override
 	/***
 	 * this method needs to be implemented from parent - the Observer interface
-	 * This is used to update the batte state change from BattleHandler
+	 * This is used to update the battle state change from BattleHandler
 	 */
 	public void update(Object id) {
 		this.setDefender_id((int)id);

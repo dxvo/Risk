@@ -26,6 +26,25 @@ public class Map
 	}
 
 	/***
+	 * Retrieve Territory at specified coordinate
+	 * @param i - number of row
+	 * @param j - number of column
+	 */
+	public Territory getData(int i, int j)
+	{
+		return data[i][j];
+	}
+
+	/***
+	 * Set Territory at specified coordinate
+	 * @param i - number of row
+	 * @param j - number of column
+	 */
+	public void setData(int i, int j, Territory datapoint)
+	{
+		data[i][j] = datapoint;
+	}
+	/***
 	 * GameMap height setter
 	 * @param r - number of row
 	 */

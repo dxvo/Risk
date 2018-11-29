@@ -30,7 +30,15 @@ public class MapTest {
     }
 
     @Test
-    public void initMap() {
+    public void initMap()
+    {
+
+        testMap.initMap();
+        for(int x = 0; x < testMap.getRow(); x++)
+        {
+            for(int y = 0; y < testMap.getCol(); y++)
+                assertEquals(testMap.getData(x,y), 0);
+        }
     }
 
     @Test
@@ -77,7 +85,18 @@ public class MapTest {
     public void areEnemyNeighbors() {
     }
 
+
     @Test
-    public void getData() {
+    public void getData1() {
+        Territory data = new Territory();
+        testMap.setData(1,1, data);
+        assertEquals(testMap.getData(1,1), data);
+    }
+
+    @Test
+    public void setData() {
+        Territory data = new Territory();
+        testMap.setData(1,1, data);
+        assertEquals(testMap.getData(1,1), data);
     }
 }
