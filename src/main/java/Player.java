@@ -42,8 +42,7 @@ public class Player implements Observer
 	 */
 	public void setPlayerID(int id)
 	{
-		if(id >= 0)
-			playerID = id;
+		playerID = id;
 	}
 
 	/***
@@ -52,8 +51,7 @@ public class Player implements Observer
 	 */
 	public void setNumUnits(int units)
 	{
-		if(units >= 0)
-			numUnits = units;
+		numUnits = units;
 	}
 
 	/***
@@ -61,9 +59,7 @@ public class Player implements Observer
 	 * @param units - the bench units value to be set for player
 	 */
 	public void setNumBenchedUnits(int units)
-	{
-		if(units >= 0)
-			numBenchedUnits = units;
+	{ numBenchedUnits = units;
 	}
 
 	/***
@@ -72,7 +68,6 @@ public class Player implements Observer
 	 */
 	public void setNumTerritories(int count)
 	{
-		if(count >= 0)
 			numTerritories = count;
 	}
 
@@ -82,8 +77,7 @@ public class Player implements Observer
 	 */
 	public void setDie_value(int value)
 	{
-		if(value >= 0)
-			die_value = value;
+		die_value = value;
 	}
 
 
