@@ -18,6 +18,8 @@ public class BattleHandlerTest {
     Player player1 = new Player(1);
     Player player2 = new Player(2);
     Player player3 = new Player(3);
+    int defender_Id = -1;
+    Die die = new Die();
 
     @Test
     public void startBattle() {
@@ -56,8 +58,42 @@ public class BattleHandlerTest {
 
         battle.addArmyEachTurn(1,1,player1,gamemap);
         boolean canAttack = gamemap.canAttack(x, y);
+        assertTrue(canAttack);
+        assertFalse(gamemap.canAttack(10, 10));
+        int x2 = 1;
+        int y2 =2;
+        boolean areEnemyNeighbors = gamemap.areEnemyNeighbors(x,y,x2,y2);
+        assertTrue(areEnemyNeighbors);
+        assertFalse(gamemap.areEnemyNeighbors(x,y,4,4));
 
+        defender_Id = gamemap.getOwnerID(x2,y2);
+        assertEquals(2,defender_Id);
 
+        battle.addObserver(player2);
+        battle.setDefender_Id(defender_Id);
+
+        System.out.println("BATTLE BEGINS.\n");
+        battle.removeObserver(player2);
+
+        int attacker_unit = gamemap.getNumUnits(x, y);
+        int defender_unit = gamemap.getNumUnits(x2, y2);
+        int attacker_num_die_roll = 0;
+        int defender_num_die_roll = 0;
+        int[] largest_die = new int[2];
+        int units_moved_after_battle = 0;
+        boolean keep_attack = true;
+        int attack_counter = 1;
+
+        while (attacker_unit >= 2 && defender_unit > 0 && keep_attack){
+            System.out.printf("\nAttacker - Player %d - Your territory currently has %d units", attacker_ID, attacker_unit);
+            System.out.print("\nHow many times do you want to roll ?( Max is 3): ");
+            attacker_num_die_roll = 1;
+            defender_num_die_roll = 1;
+            largest_die[0] = 6;
+            largest_die[1] = attacker_ID;
+            gamemap.setNumUnits(x2,y2,defender_unit -1);
+            keep_attack = false;
+        }
 
     }
     @Test
