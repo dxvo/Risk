@@ -30,24 +30,7 @@ public class Map
 	 * @param i - number of row
 	 * @param j - number of column
 	 */
-	public Territory getData(int i, int j)
-	{
-		return data[i][j];
-	}
 
-	/***
-	 * Set Territory at specified coordinate
-	 * @param i - number of row
-	 * @param j - number of column
-	 */
-	public void setData(int i, int j, Territory datapoint)
-	{
-		data[i][j] = datapoint;
-	}
-	/***
-	 * GameMap height setter
-	 * @param r - number of row
-	 */
 	public void setRow(int r) { row = r; }
 
 	/***
@@ -196,7 +179,7 @@ public class Map
 	 */
 	public boolean canAttack(int x, int y)
 	{
-		if(isValidCoordinates(x, y) == false)
+		if(!isValidCoordinates(x, y))
 			return false;
 		return data[x][y].getNumUnits() > 1;
 	}
