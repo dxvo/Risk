@@ -55,14 +55,7 @@ public class GameMasterTest {
 
     @Test
     public void playerSetup() {
-        for (int i = 0 ; i < numPlayers; i++)
-        {
-            Player player = new Player(i); //initialize player ID - start with 0
-            numUnits = 50 - numPlayers * 5;
-            player.setNumUnits(numUnits); // set player number of units
-            player.setNumBenchedUnits(numUnits); //set bench unit equal to numunits when just started
-            playerList.add(player); // append player into list
-        }
+        game2.playerSetup();
         assertEquals(35,playerList.get(1).getNumBenchedUnits());
         assertEquals(35,playerList.get(1).getNumUnits());
         assertEquals(3,playerList.size());
