@@ -514,7 +514,7 @@ public class GameMaster
 	protected void next_turn(Player player)
 	{
 		int pos = playerList.indexOf(player); //find position of the current player in arraylist
-		#System.out.print("Moving to next player\n");
+		//System.out.print("Moving to next player\n");
 		if(pos == playerList.size() - 1)
 			pos = -1;
 		playerTurn(playerList.get(pos+1));
