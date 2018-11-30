@@ -27,9 +27,7 @@ public class Risk
 		} catch (TelegramApiException e) {
 			e.printStackTrace();
 		}
-
 		*/
-
 		//game now starts in chatbox
 		 GameMaster gameMaster = new GameMaster();
 		 gameMaster.gameStart();
