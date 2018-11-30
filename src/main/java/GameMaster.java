@@ -496,13 +496,14 @@ public class GameMaster
 		if(choice == 5){
 			next_turn(player);
 		}
-		*/
+
 
 		//if(choice ==6)
 		{
 			System.out.println("Thanks for playing! BYE ");
 			System.exit(0);
 		}
+		*/
 
 	}
 
