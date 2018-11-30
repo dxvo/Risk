@@ -1,6 +1,7 @@
 import org.junit.Test;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertTrue;
 
 public class MapTest {
 
@@ -43,6 +44,14 @@ public class MapTest {
 
     @Test
     public void isValidCoordinates() {
+        int row = testMap.getRow();
+        int col = testMap.getCol();
+        int x = 5;
+        int y = 5;
+        assertTrue(x <row);
+        assertTrue(y <col);
+        assertTrue(x >0);
+        assertTrue(y >0);
         assertTrue(testMap.isValidCoordinates(5,5));
         assertFalse(testMap.isValidCoordinates(10,10));
     }
