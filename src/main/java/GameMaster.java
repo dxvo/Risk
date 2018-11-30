@@ -256,11 +256,23 @@ public class GameMaster
 	 */
 	protected void playerOrderSetup()
 	{
+		int [] turn_order = new int[3];
+
+		for (int i = 0; i<3; i++)
+			turn_order[i] = 2 - i;
+
+		//order should be 2, 1, 0
+		for(int i = 0; i < playerList.size(); i++)
+		{
+			playerList.get(i).setPlayerID(turn_order[i]);
+		}
+
 		//Properly will re-arrange the arraylist of playpler
 		//NOW NEED TO ASSIGN TURN VALUE TO PLAYER
 		//based on the number of player and roll dice
 		// Roll Dice
 		// Calculate Starting Player - Store in "playerTurn"
+		/*
 		int[] roll_value = new int[2];
 		roll_value[0] = 0;
 		int die_value = 0;
@@ -301,7 +313,6 @@ public class GameMaster
 
 		System.out.printf("\nPlayer %d with rolled value %d goes first\n", roll_value[1],roll_value[0]);
 
-
 		//This is to organize the playerlistID
 		int [] turnID = new int[numPlayers]; //store player turn ID
 		turnID[0] = roll_value[1]; //store the Id of person who go first here
@@ -320,6 +331,8 @@ public class GameMaster
 			System.out.printf("Player %d, ", playerList.get(i).getPlayerID());
 		}
 		System.out.println();
+		*/
+
 
 	}
 
