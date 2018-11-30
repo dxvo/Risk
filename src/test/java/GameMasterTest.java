@@ -64,17 +64,20 @@ public class GameMasterTest {
 
     @Test
     public void mapSetup() {
-        //game2.mapSetup();
+        game2.mapSetup();
     }
 
     @Test
     public void playerOrderSetup() {
         game2.playerOrderSetup();
         assertEquals(2,playerList.get(0).getPlayerID());
+        assertEquals(1,playerList.get(1).getPlayerID());
+        assertEquals(0,playerList.get(2).getPlayerID());
     }
 
     @Test
     public void gameLoop() {
+
     }
 
     @Test
