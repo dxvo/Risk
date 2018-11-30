@@ -30,7 +30,7 @@ public class BattleHandler
 	{
 		die = new Die();
 		this.defender_Id = -2;
-		this.players = new ArrayList<>();
+		this.players = new ArrayList<Player>();
 
 	}
 
@@ -57,6 +57,7 @@ public class BattleHandler
 	 * Once attacker chooses territory to attack, the program will notify the player who own that territory.
 	 * @param attacker the player who attacks
 	 * @param gameMap the current game with current game info
+	 * @param playerList  - current players in the game
 	 */
 	public void Battle(Player attacker, Map gameMap, ArrayList<Player> playerList)
 	{

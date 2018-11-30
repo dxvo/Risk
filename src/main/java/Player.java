@@ -5,8 +5,8 @@
  * numTerritories - how many territories own
  * credit_balance - credit balance - Max is 100
  * defender_id is used for observer design pattern via update method
- * @author: De, Carlos and Will
- * @version: 1.2
+ * @author  De, Carlos and Will
+ * @version  1.2
  * @since 2018-10
  *
  */
@@ -129,7 +129,7 @@ public class Player implements Observer
 	/***
 	 * This method is use particular for the update during battle mechanic
 	 * implemented with observer desigb method
-	 * @param id
+	 * @param id the current player ID
 	 */
 	public void setDefender_id(int id){defender_id = id;}
 
@@ -152,13 +152,13 @@ public class Player implements Observer
 	public int getDefender_id(){return defender_id;}
 
 
-	@Override
+
 	/***
 	 * this method needs to be implemented from parent - the Observer interface
 	 * This is used to update the battle state change from BattleHandler
 	 */
-	public void update(Object id) {
-		this.setDefender_id((int)id);
+	public void update(int id) {
+		this.setDefender_id(id);
 		System.out.printf("\nPlayer %d. Your territory is under attack\n", id);
 	}
 }

@@ -29,7 +29,7 @@ public class Die
 
 	/***
 	 * getter function which returns die value
-	 * @return
+	 * @return return die value
 	 */
 	public int getValue() {return value; }
 

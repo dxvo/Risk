@@ -24,7 +24,7 @@ public class Tweeter
      * Constructor method
      * Makes an instance of twitter - this is re-usable and thread safe
      * This connects to twitter and performs authorization
-     * @param console -
+     * @param console the object type Printstream
      */
     public Tweeter(PrintStream console)
     {
@@ -37,7 +37,7 @@ public class Tweeter
     /***
      * This method will tweet a given message
      * @param message the message that will be send after each event
-     * @throws TwitterException
+     * @throws TwitterException throw excecption if cant tweet message
      */
     public void tweetOut(String message) throws TwitterException
     {

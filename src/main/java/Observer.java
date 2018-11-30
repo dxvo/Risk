@@ -7,5 +7,5 @@
  * @since 2018-11
  */
 public interface Observer {
-    public void update(Object o);
+    public void update(int o);
 }

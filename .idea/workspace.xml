@@ -2,7 +2,171 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_acm_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_acmpca_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_alexaforbusiness_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_api_gateway_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_applicationautoscaling_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_appstream_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_appsync_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_athena_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_autoscaling_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_autoscalingplans_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_batch_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_budgets_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloud9_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_clouddirectory_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudformation_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudfront_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudhsm_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudhsmv2_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudsearch_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudtrail_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudwatch_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cloudwatchmetrics_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codebuild_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codecommit_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codedeploy_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codepipeline_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_codestar_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitoidentity_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitoidp_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_cognitosync_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_comprehend_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_config_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_connect_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_core_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_costandusagereport_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_costexplorer_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_datapipeline_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dax_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_devicefarm_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_directconnect_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_directory_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_discovery_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dms_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_dynamodb_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ec2_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ecr_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ecs_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_efs_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticache_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticbeanstalk_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticloadbalancing_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticloadbalancingv2_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elasticsearch_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_elastictranscoder_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_emr_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_events_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_fms_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_gamelift_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_glacier_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_glue_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_greengrass_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_guardduty_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_health_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iam_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_importexport_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_inspector_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iot_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iotanalytics_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_iotjobsdataplane_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kinesis_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kinesisvideo_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_kms_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lambda_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lex_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lexmodelbuilding_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_lightsail_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_logs_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_machinelearning_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_marketplacecommerceanalytics_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_marketplaceentitlement_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_marketplacemeteringservice_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mechanicalturkrequester_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediaconvert_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_medialive_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediapackage_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediastore_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mediastoredata_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_migrationhub_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mobile_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_models_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_mq_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_opsworks_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_opsworkscm_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_organizations_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_pinpoint_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_polly_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_pricing_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_rds_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_redshift_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_rekognition_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_resourcegroups_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_resourcegroupstaggingapi_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_route53_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_s3_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sagemaker_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sagemakerruntime_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_secretsmanager_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_serverlessapplicationrepository_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_servermigration_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_servicecatalog_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_servicediscovery_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ses_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_shield_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_simpledb_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_simpleworkflow_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_snowball_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sns_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sqs_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_ssm_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_stepfunctions_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_storagegateway_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_sts_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_support_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_swf_libraries_1_11_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_transcribe_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_translate_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_waf_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_workdocs_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_workmail_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_workspaces_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_aws_java_sdk_xray_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_amazonaws_jmespath_java_1_11_327.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_6_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pengrad_java_telegram_bot_api_4_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_logging_interceptor_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_17_Final.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__software_amazon_ion_ion_java_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junit5-jupiter-starter-maven.iml" beforeDir="false" afterPath="$PROJECT_DIR$/junit5-jupiter-starter-maven.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BattleHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BattleHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Die.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Observer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Observer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Tweeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Tweeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/BattleHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/BattleHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Observer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Observer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Player.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Player.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/BattleHandlerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BattleHandlerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/MapTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PlayerTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -13,9 +177,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/RISK4$TerritoryTest.ic" NAME="TerritoryTest Coverage Results" MODIFIED="1543478374158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Risk3$Risk.ic" NAME="Risk Coverage Results" MODIFIED="1543349272480" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/RISK4$BattleHandlerTest.ic" NAME="BattleHandlerTest Coverage Results" MODIFIED="1543478494650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-    <SUITE FILE_PATH="coverage/RISK4$TerritoryTest.ic" NAME="TerritoryTest Coverage Results" MODIFIED="1543478374158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Risk3$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1543353552931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/RISK4$BattleHandlerTest_Battle.ic" NAME="BattleHandlerTest.Battle Coverage Results" MODIFIED="1543476285254" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
@@ -26,293 +190,25 @@
     <option name="hideWarnings" value="true" />
     <option name="HIDE_WARNINGS" value="true" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="112667621">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="TwitterProperties" value="3" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="24" />
-          <entry key="md" value="2" />
-          <entry key="properties" value="1" />
-          <entry key="sh" value="2" />
-          <entry key="txt" value="2" />
-          <entry key="yml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="24" />
-          <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Properties" value="1" />
-          <entry key="Scratch" value="2" />
-          <entry key="YAML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="TwitterProperties" value="163" />
-          <entry key="java" value="2123" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2123" />
-          <entry key="PLAIN_TEXT" value="163" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-554121060">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.16" value="2" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.3" value="2" />
-          <entry key="project.opened" value="8" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="16" />
-          <entry key="md" value="2" />
-          <entry key="properties" value="8" />
-          <entry key="sh" value="1" />
-          <entry key="xml" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Bash" value="1" />
-          <entry key="CLASS" value="3" />
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="16" />
-          <entry key="Markdown" value="2" />
-          <entry key="Properties" value="8" />
-          <entry key="XML" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="1555" />
-          <entry key="md" value="2" />
-          <entry key="properties" value="16" />
-          <entry key="sh" value="16" />
-          <entry key="xml" value="19" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Bash" value="16" />
-          <entry key="JAVA" value="1555" />
-          <entry key="Markdown" value="2" />
-          <entry key="Properties" value="16" />
-          <entry key="XML" value="19" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.vcs.git.usages" />
-    </session>
-    <session id="-888255989">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="12" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.open.time.4" value="2" />
-          <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="2" />
-          <entry key="project.opened" value="13" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="java" value="14752" />
-          <entry key="md" value="56" />
-          <entry key="xml" value="32" />
-          <entry key="yml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="JAVA" value="14752" />
-          <entry key="Markdown" value="56" />
-          <entry key="XML" value="32" />
-          <entry key="YAML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="class" value="3" />
-          <entry key="iml" value="2" />
-          <entry key="java" value="73" />
-          <entry key="md" value="2" />
-          <entry key="sh" value="2" />
-          <entry key="xml" value="6" />
-          <entry key="yml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CLASS" value="3" />
-          <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="73" />
-          <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="6" />
-          <entry key="YAML" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-1112459685">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="4" />
-          <entry key="project.opened" value="6" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="79" />
-          <entry key="md" value="1" />
-          <entry key="xml" value="3" />
-          <entry key="yml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="79" />
-          <entry key="Markdown" value="1" />
-          <entry key="XML" value="3" />
-          <entry key="YAML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="2831" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="2831" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1105065538">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1691122774">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="16" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="712038530">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="xml" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="XML" value="4" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="xml" value="39" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="XML" value="39" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/MapTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="888">
-              <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="117" column="48" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="48" />
+            <state relative-caret-position="-101">
+              <caret selection-end-line="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -332,6 +228,7 @@
       <find>tw</find>
       <find>by</find>
       <find>get</find>
+      <find>3.1</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -353,15 +250,10 @@
         <option value="$PROJECT_DIR$/src/test/java/RiskTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/DieTest.java" />
         <option value="$PROJECT_DIR$/codecov.yml" />
-        <option value="$PROJECT_DIR$/src/main/java/Risk.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/chatbot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Die.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Observer.java" />
         <option value="$PROJECT_DIR$/src/test/java/timer_inputTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TerritoryTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Tweeter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/BattleHandler.java" />
         <option value="$PROJECT_DIR$/src/test/java/BattleHandlerTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TweeterTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Map.java" />
@@ -369,8 +261,13 @@
         <option value="$PROJECT_DIR$/src/test/java/PlayerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/GameMaster.java" />
         <option value="$PROJECT_DIR$/src/test/java/GameMasterTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Player.java" />
         <option value="$PROJECT_DIR$/src/main/java/timer_input.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Observer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BattleHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Die.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Tweeter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Risk.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
@@ -387,22 +284,22 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Risk_DWC" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="risk" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="Risk_DWC" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="risk" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="46" />
-    <option name="y" value="55" />
-    <option name="width" value="1410" />
-    <option name="height" value="782" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="6" />
+    <option name="y" value="23" />
+    <option name="width" value="1341" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectUserFactors">
@@ -417,7 +314,7 @@
         <observation name="false" value="145.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="false" value="291.0" />
+        <observation name="false" value="302.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:liftShorterClasses">
@@ -434,8 +331,8 @@
         <observation name="false" value="124.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="20.0" />
-        <observation name="false" value="271.0" />
+        <observation name="UNDEFINED" value="23.0" />
+        <observation name="false" value="279.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:middleMatching">
@@ -450,7 +347,7 @@
         <observation name="false" value="145.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="false" value="289.0" />
+        <observation name="false" value="300.0" />
         <observation name="true" value="2.0" />
       </dailyData>
     </factor>
@@ -467,8 +364,8 @@
         <observation name="UNDEFINED" value="94.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="0" value="113.0" />
-        <observation name="UNDEFINED" value="178.0" />
+        <observation name="0" value="116.0" />
+        <observation name="UNDEFINED" value="186.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_inResolveScope">
@@ -487,9 +384,9 @@
         <observation name="true" value="89.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="false" value="72.0" />
-        <observation name="true" value="206.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="false" value="79.0" />
+        <observation name="true" value="208.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_openedInEditor">
@@ -508,9 +405,9 @@
         <observation name="true" value="47.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="false" value="125.0" />
-        <observation name="true" value="153.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="false" value="133.0" />
+        <observation name="true" value="154.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameDirectory">
@@ -529,9 +426,9 @@
         <observation name="true" value="40.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="false" value="145.0" />
-        <observation name="true" value="133.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="false" value="152.0" />
+        <observation name="true" value="135.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sameLogicalRoot">
@@ -550,9 +447,9 @@
         <observation name="true" value="40.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="false" value="145.0" />
-        <observation name="true" value="133.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="false" value="152.0" />
+        <observation name="true" value="135.0" />
       </dailyData>
     </factor>
     <factor id="binaryFeature:prox_sdkOrLibrary">
@@ -571,8 +468,8 @@
         <observation name="true" value="8.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="false" value="267.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="false" value="276.0" />
         <observation name="true" value="11.0" />
       </dailyData>
     </factor>
@@ -587,7 +484,7 @@
         <observation name="false" value="145.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="false" value="291.0" />
+        <observation name="false" value="302.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:accessible">
@@ -604,8 +501,8 @@
         <observation name="UNDEFINED" value="13.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="NORMAL" value="275.0" />
-        <observation name="UNDEFINED" value="16.0" />
+        <observation name="NORMAL" value="283.0" />
+        <observation name="UNDEFINED" value="19.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:expectedType">
@@ -628,10 +525,10 @@
         <observation name="ofDefaultType" value="1.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="16.0" />
+        <observation name="UNDEFINED" value="19.0" />
         <observation name="expected" value="80.0" />
         <observation name="maybeExpected" value="9.0" />
-        <observation name="normal" value="179.0" />
+        <observation name="normal" value="187.0" />
         <observation name="ofDefaultType" value="7.0" />
       </dailyData>
     </factor>
@@ -662,10 +559,12 @@
         <observation name="variable" value="18.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="16.0" />
+        <observation name="UNDEFINED" value="19.0" />
         <observation name="classNameOrGlobalStatic" value="16.0" />
+        <observation name="expectedTypeArgument" value="1.0" />
         <observation name="expectedTypeVariable" value="50.0" />
-        <observation name="normal" value="114.0" />
+        <observation name="improbableKeyword" value="2.0" />
+        <observation name="normal" value="119.0" />
         <observation name="probableKeyword" value="18.0" />
         <observation name="suitableClass" value="2.0" />
         <observation name="variable" value="75.0" />
@@ -684,8 +583,8 @@
         <observation name="unknown" value="132.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="unknown" value="278.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="unknown" value="287.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_javaInheritance">
@@ -705,9 +604,9 @@
         <observation name="true" value="1.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="false" value="18.0" />
-        <observation name="null" value="260.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="false" value="19.0" />
+        <observation name="null" value="268.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:prox_referenceList">
@@ -724,8 +623,8 @@
         <observation name="unknown" value="132.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="unknown" value="278.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="unknown" value="287.0" />
       </dailyData>
     </factor>
     <factor id="categoricalFeature:recursion">
@@ -745,9 +644,9 @@
         <observation name="normal" value="100.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="41.0" />
+        <observation name="UNDEFINED" value="50.0" />
         <observation name="delegation" value="4.0" />
-        <observation name="normal" value="244.0" />
+        <observation name="normal" value="246.0" />
         <observation name="recursive" value="2.0" />
       </dailyData>
     </factor>
@@ -768,9 +667,9 @@
         <observation name="typedSelect" value="47.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="cancelled" value="423.0" />
-        <observation name="explicitSelect" value="200.0" />
-        <observation name="typedSelect" value="91.0" />
+        <observation name="cancelled" value="589.0" />
+        <observation name="explicitSelect" value="204.0" />
+        <observation name="typedSelect" value="98.0" />
       </dailyData>
     </factor>
     <factor id="completionType">
@@ -784,7 +683,7 @@
         <observation name="BASIC" value="188.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="BASIC" value="367.0" />
+        <observation name="BASIC" value="380.0" />
       </dailyData>
     </factor>
     <factor id="completionUsage">
@@ -798,7 +697,7 @@
         <observation name="count" value="6625.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="count" value="713.0" />
+        <observation name="count" value="890.0" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:explicitProximity">
@@ -824,11 +723,11 @@
         <observation name="variance" value="0.083723" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="0.158348" />
-        <observation name="count" value="581.0" />
+        <observation name="average" value="0.152571" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.124455" />
+        <observation name="variance" value="0.122609" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:grouping">
@@ -855,7 +754,7 @@
       </dailyData>
       <dailyData date="29-11-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="581.0" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -887,7 +786,7 @@
         <observation name="variance" value="732.465474" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="184.0" />
+        <observation name="UNDEFINED" value="195.0" />
         <observation name="average" value="-13.981221" />
         <observation name="count" value="213.0" />
         <observation name="max" value="0.0" />
@@ -921,12 +820,12 @@
         <observation name="variance" value="0.13789" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="16.0" />
-        <observation name="average" value="-0.156649" />
-        <observation name="count" value="549.0" />
+        <observation name="UNDEFINED" value="19.0" />
+        <observation name="average" value="-0.152213" />
+        <observation name="count" value="565.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-3.0" />
-        <observation name="variance" value="0.163819" />
+        <observation name="variance" value="0.161824" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:position">
@@ -952,11 +851,11 @@
         <observation name="variance" value="16.682219" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="0.275387" />
-        <observation name="count" value="581.0" />
+        <observation name="average" value="0.26534" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="8.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="1.346528" />
+        <observation name="variance" value="1.323099" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prefix">
@@ -982,11 +881,11 @@
         <observation name="variance" value="58900.918298" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="-1095.624785" />
-        <observation name="count" value="581.0" />
+        <observation name="average" value="-1093.552239" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-1202.0" />
-        <observation name="variance" value="54638.244854" />
+        <observation name="variance" value="55670.668757" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:priority">
@@ -1012,11 +911,11 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="0.003443" />
-        <observation name="count" value="581.0" />
+        <observation name="average" value="0.006634" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="-1.0" />
-        <observation name="variance" value="0.01109" />
+        <observation name="variance" value="0.012525" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_explicitlyImported">
@@ -1044,12 +943,12 @@
         <observation name="variance" value="15343.461693" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="average" value="174.054054" />
-        <observation name="count" value="555.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="average" value="170.331588" />
+        <observation name="count" value="573.0" />
         <observation name="max" value="300.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="16832.243593" />
+        <observation name="variance" value="16960.408264" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_knownElement">
@@ -1077,12 +976,12 @@
         <observation name="variance" value="3.704583" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="average" value="0.34054" />
-        <observation name="count" value="555.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="average" value="0.329842" />
+        <observation name="count" value="573.0" />
         <observation name="max" value="8.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="2.351155" />
+        <observation name="variance" value="2.315738" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_sameModule">
@@ -1110,12 +1009,12 @@
         <observation name="variance" value="0.850747" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="average" value="1.232433" />
-        <observation name="count" value="555.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="average" value="1.207679" />
+        <observation name="count" value="573.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.859622" />
+        <observation name="variance" value="0.866452" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:prox_samePsiMember">
@@ -1143,12 +1042,12 @@
         <observation name="variance" value="0.524661" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="13.0" />
-        <observation name="average" value="0.717117" />
-        <observation name="count" value="555.0" />
+        <observation name="UNDEFINED" value="15.0" />
+        <observation name="average" value="0.701571" />
+        <observation name="count" value="573.0" />
         <observation name="max" value="2.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="0.605328" />
+        <observation name="variance" value="0.605726" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:query_length">
@@ -1175,7 +1074,7 @@
       </dailyData>
       <dailyData date="29-11-2018">
         <observation name="average" value="0.0" />
-        <observation name="count" value="581.0" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1204,11 +1103,11 @@
         <observation name="variance" value="10.423287" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="6.306369" />
-        <observation name="count" value="581.0" />
+        <observation name="average" value="6.228856" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="35.0" />
         <observation name="min" value="1.0" />
-        <observation name="variance" value="17.994656" />
+        <observation name="variance" value="17.843503" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:sameWords">
@@ -1237,12 +1136,12 @@
         <observation name="variance" value="0.144866" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="16.0" />
-        <observation name="average" value="-0.138433" />
-        <observation name="count" value="549.0" />
+        <observation name="UNDEFINED" value="19.0" />
+        <observation name="average" value="-0.134513" />
+        <observation name="count" value="565.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-3.0" />
-        <observation name="variance" value="0.144806" />
+        <observation name="variance" value="0.143008" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:shorter">
@@ -1271,12 +1170,12 @@
         <observation name="variance" value="51011.705874" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="16.0" />
-        <observation name="average" value="-127.267759" />
-        <observation name="count" value="549.0" />
+        <observation name="UNDEFINED" value="19.0" />
+        <observation name="average" value="-123.663716" />
+        <observation name="count" value="565.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-999.0" />
-        <observation name="variance" value="84775.988806" />
+        <observation name="variance" value="83791.935238" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:simple">
@@ -1305,9 +1204,9 @@
         <observation name="variance" value="0.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="16.0" />
+        <observation name="UNDEFINED" value="19.0" />
         <observation name="average" value="0.0" />
-        <observation name="count" value="549.0" />
+        <observation name="count" value="565.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="0.0" />
         <observation name="variance" value="0.0" />
@@ -1337,7 +1236,7 @@
       </dailyData>
       <dailyData date="29-11-2018">
         <observation name="average" value="1.0" />
-        <observation name="count" value="581.0" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="1.0" />
         <observation name="min" value="1.0" />
         <observation name="variance" value="0.0" />
@@ -1369,12 +1268,12 @@
         <observation name="variance" value="0.093584" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="UNDEFINED" value="264.0" />
-        <observation name="average" value="-2.886792" />
-        <observation name="count" value="53.0" />
+        <observation name="UNDEFINED" value="270.0" />
+        <observation name="average" value="-2.904762" />
+        <observation name="count" value="63.0" />
         <observation name="max" value="0.0" />
         <observation name="min" value="-5.0" />
-        <observation name="variance" value="0.579363" />
+        <observation name="variance" value="0.532666" />
       </dailyData>
     </factor>
     <factor id="doubleFeature:stats">
@@ -1400,11 +1299,11 @@
         <observation name="variance" value="15457426.507146" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="2942.685026" />
-        <observation name="count" value="581.0" />
+        <observation name="average" value="2835.323383" />
+        <observation name="count" value="603.0" />
         <observation name="max" value="10000.0" />
         <observation name="min" value="0.0" />
-        <observation name="variance" value="17923787.573792" />
+        <observation name="variance" value="17747304.06038" />
       </dailyData>
     </factor>
     <factor id="itemPosition">
@@ -1430,7 +1329,7 @@
         <observation name="7" value="1.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="0" value="165.0" />
+        <observation name="0" value="169.0" />
         <observation name="1" value="18.0" />
         <observation name="2" value="6.0" />
         <observation name="3" value="4.0" />
@@ -1453,7 +1352,7 @@
         <observation name="withMnemonics" value="1.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="total" value="158.0" />
+        <observation name="total" value="160.0" />
         <observation name="withMnemonics" value="9.0" />
       </dailyData>
     </factor>
@@ -1486,10 +1385,10 @@
         <observation name="8" value="3.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="0" value="13.0" />
-        <observation name="1" value="29.0" />
-        <observation name="2" value="82.0" />
-        <observation name="3" value="54.0" />
+        <observation name="0" value="14.0" />
+        <observation name="1" value="30.0" />
+        <observation name="2" value="83.0" />
+        <observation name="3" value="55.0" />
         <observation name="4" value="5.0" />
         <observation name="5" value="2.0" />
         <observation name="6" value="4.0" />
@@ -1512,8 +1411,8 @@
         <observation name="count" value="139.0" />
       </dailyData>
       <dailyData date="29-11-2018">
-        <observation name="average" value="381.48772" />
-        <observation name="count" value="285.0" />
+        <observation name="average" value="378.81787" />
+        <observation name="count" value="291.0" />
       </dailyData>
     </factor>
   </component>
@@ -1522,6 +1421,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="risk7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="risk7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="risk7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="risk7" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -1533,28 +1449,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="risk7" type="b2602c69:ProjectViewProjectNode" />
-              <item name="risk7" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543520344759" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543547039227" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.23602484" />
     <property name="project.structure.side.proportion" value="0.20020325" />
     <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
@@ -1629,11 +1533,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.Risk" />
       <item itemvalue="JUnit.MapTest.canAttack" />
       <item itemvalue="JUnit.PlayerTest" />
       <item itemvalue="JUnit.TweeterTest" />
       <item itemvalue="JUnit.TweeterTest.tweetOut" />
-      <item itemvalue="Application.Risk" />
     </list>
     <recent_temporary>
       <list>
@@ -1700,25 +1604,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="7" y="23" width="1440" height="815" extended-state="6" />
-    <editor active="true" />
+    <frame x="6" y="23" width="1341" height="813" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1509299" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.17090069" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="7" weight="0.2019893" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.45128205" visible="true" weight="0.15905948" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.548718" side_tool="true" weight="0.40724638" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.44902387" visible="true" weight="0.46601942" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.55097616" side_tool="true" weight="0.3976436" />
       <window_info anchor="bottom" id="Messages" order="2" sideWeight="0.4976489" weight="0.32753623" />
       <window_info anchor="bottom" id="Version Control" order="3" sideWeight="0.4968652" weight="0.11884058" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.31304348" />
-      <window_info anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" visible="true" weight="0.18405797" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" x="0" y="23" width="1280" height="707" id="Run" order="6" sideWeight="0.39811912" weight="0.24133149" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.39911634" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.4968652" weight="0.19855073" />
@@ -1726,12 +1629,13 @@
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Theme Preview" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32976282" />
+      <window_info active="true" anchor="right" id="Maven Projects" order="3" visible="true" weight="0.329718" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.34358975" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3287144" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.24942264" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.34358975" />
     </layout>
     <layout-to-restore>
       <window_info id="Designer" order="0" />
@@ -1787,19 +1691,26 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.travis.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Twitter.java" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.txt" />
-    <entry file="file://$PROJECT_DIR$/src/main/TwitterProperties" />
-    <entry file="file://$PROJECT_DIR$/out/production/main/twitter4j.properties" />
-    <entry file="file://$PROJECT_DIR$/target/classes/Risk.class" />
     <entry file="file://$PROJECT_DIR$/src/main/main.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1873,20 +1784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Observer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RiskTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1898,13 +1795,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="340" lean-forward="true" selection-start-line="340" selection-end-line="340" />
         </state>
       </provider>
     </entry>
@@ -1951,23 +1841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="19" selection-start-line="16" selection-start-column="19" selection-end-line="16" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
@@ -1982,12 +1855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#GameMaster#0;class#GameMaster#0" />
-            <element signature="method#playerOrderSetup#0;class#GameMaster#0" />
-            <element signature="method#gameLoop#0;class#GameMaster#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1998,38 +1865,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-          <folding>
-            <element signature="e#1028#1029#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1207#1208#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1445#1446#0" expanded="true" />
-            <element signature="e#1609#1610#0" expanded="true" />
-            <element signature="e#1638#1639#0" expanded="true" />
-            <element signature="e#1779#1780#0" expanded="true" />
-            <element signature="e#1803#1804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/PlayerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="583">
           <caret line="101" column="1" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/apidocs/allclasses.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/apidocs/resources/glass.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/apidocs/resources/x.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/apidocs/class-use/BattleHandler.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/BattleHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="59" column="56" selection-start-line="59" selection-start-column="56" selection-end-line="59" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#772#789#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Tweeter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="70" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/images/collapsed.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/images/expanded.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/images/newwindow.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Die.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MapTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="888">
+        <state relative-caret-position="390">
           <caret line="124" column="1" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -2037,10 +1951,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Risk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-101">
+          <caret selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/site/images/close.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="117" column="48" selection-start-line="117" selection-start-column="28" selection-end-line="117" selection-end-column="48" />
+        <state relative-caret-position="108">
+          <caret line="37" column="36" selection-start-line="37" selection-start-column="36" selection-end-line="37" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -2061,7 +1988,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2101,6 +2028,7 @@
             <option name="proportions">
               <list>
                 <option value="0.20020325" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -2120,7 +2048,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: org.apiguardian:apiguardian-api:1.0.0</last-edited>
+          <last-edited>Maven: antlr:antlr:2.7.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
