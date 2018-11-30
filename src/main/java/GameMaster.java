@@ -399,6 +399,7 @@ public class GameMaster
 	 */
 	protected void playerTurn(Player player)
 	{
+		/*
 		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
 		//Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
@@ -410,6 +411,7 @@ public class GameMaster
 		System.out.println("\t6. Quit game. ");
 
 		choice = timer_input.get_input();
+
 
 		if(choice == 1) //attack - call battlehandler
 		{
@@ -494,7 +496,9 @@ public class GameMaster
 		if(choice == 5){
 			next_turn(player);
 		}
-		if(choice ==6)
+		*/
+
+		//if(choice ==6)
 		{
 			System.out.println("Thanks for playing! BYE ");
 			System.exit(0);
@@ -510,7 +514,7 @@ public class GameMaster
 	protected void next_turn(Player player)
 	{
 		int pos = playerList.indexOf(player); //find position of the current player in arraylist
-		System.out.print("Moving to next player\n");
+		#System.out.print("Moving to next player\n");
 		if(pos == playerList.size() - 1)
 			pos = -1;
 		playerTurn(playerList.get(pos+1));

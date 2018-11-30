@@ -86,13 +86,18 @@ public class GameMasterTest {
 
     @Test
     public void playerTurn() {
+        Player player5 = new Player(5);
+        game2.playerTurn(player5);
     }
 
     @Test
     public void next_turn() {
+        game2.next_turn(playerList.get(0));
+        game2.next_turn(playerList.get(1));
     }
 
     @Test
     public void gameCleanup() {
+        game2.gameCleanup();
     }
 }
