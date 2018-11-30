@@ -307,6 +307,7 @@ public class BattleHandler
 		return additional_army;
 	}
 
+	/*
 
 	/***
 	 * This method Tweets out messages the result when battle ends
@@ -316,7 +317,7 @@ public class BattleHandler
 	 * @param turnCounter -  player current turn
 	 */
 
-
+	/*
 	public void endBattle(Player attacker, Map gameMap, ArrayList<Player> playerList, int turnCounter)
 	{
 		PrintStream consolePrint = System.out;
@@ -341,6 +342,8 @@ public class BattleHandler
 			System.out.println("Error Tweeting on Twitter");
 		}
 	}
+	*/
+
 	/***
 	 * This is observer design pattern method
 	 * This method is used to add the observer into list

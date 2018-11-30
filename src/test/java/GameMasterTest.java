@@ -40,9 +40,9 @@ public class GameMasterTest {
 
     @Test
     public void gameStart() {
-        game2.gameSetup();
-        game2.gameLoop();
-        game2.gameCleanup();
+        //game2.gameSetup();
+        //game2.gameLoop();
+        //game2.gameCleanup();
     }
 
     @Test
@@ -85,9 +85,12 @@ public class GameMasterTest {
     }
 
     @Test
-    public void playerTurn() {
+    public void playerTurn(int choice) {
+
         Player player5 = new Player(5);
         game2.playerTurn(player5);
+
+
     }
 
     @Test

@@ -399,7 +399,7 @@ public class GameMaster
 	 */
 	protected void playerTurn(Player player)
 	{
-		/*
+
 		System.out.printf("\nPLAYER %d TURN\n",player.getPlayerID());
 		//Scanner reader = new Scanner(System.in);
 		System.out.println("Choose your option to proceed: ");
@@ -412,99 +412,32 @@ public class GameMaster
 
 		choice = timer_input.get_input();
 
-
-		if(choice == 1) //attack - call battlehandler
-		{
+		if(choice == 1) {
 			battleHandler.startBattle(player,gameMap, playerList, turnCounter);
 		}
 
 		if(choice == 2)
-		{
-			System.out.println("OK! Purchase game credits.");
-			System.out.println("How many credits? $5/credit ");
-			int game_balance_before_purchase = player.getCredit_balance();
-			System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
-			System.out.print("Please enter amount to buy: ");
-			credit_purchase = reader.nextInt();
-			player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
-			int new_game_balance = player.getCredit_balance();
-
-			System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
-			playerTurn(player); //recursive call
-
-		}
+			purchase_credit(player);
 
 		if(choice == 3)
 		{
-			int received_player_Id;
-			boolean valid_transfer = false;
-			int transfer_balance = 0;
-			int available_balance_before_transfer = 0;
-			int received_player_position = -1;
-
-			available_balance_before_transfer = player.getCredit_balance();
-			System.out.printf("Your current balance is: %d\n", available_balance_before_transfer);
-
-			if(available_balance_before_transfer <= 0)
-			{
-				System.out.println("You have 0 balance. Please purchase credits to transfer\n");
-				playerTurn(player);
-			}
-			else
-			{
-				do {
-					System.out.print("Enter player ID that you want to transfer to: ");
-					received_player_Id = reader.nextInt();
-
-					//iterate through playerlist. check to see if player still in the game
-					for (int i = 0; i < playerList.size(); i++)
-					{
-						if (received_player_Id == playerList.get(i).getPlayerID() && received_player_Id != player.getPlayerID()) {
-							valid_transfer = true;
-							received_player_position = i;
-							break;
-						}
-					}
-					if(!valid_transfer)
-						System.out.println("In-valid player ID.");
-
-				}while (!valid_transfer);
-			}
-
-			if(valid_transfer)
-			{
-				System.out.print("How much credits do you want to transfer\n");
-				transfer_balance = reader.nextInt();
-				while(transfer_balance > available_balance_before_transfer)
-				{
-					System.out.println("Your transfer amount is more than your current balance. ");
-
-					System.out.print("Enter transfer amount again: \n");
-					transfer_balance = reader.nextInt();
-				}
-				player.TransferCredits(transfer_balance, playerList.get(received_player_position));
-			}
+			transfer_credit(player);
 			playerTurn(player);
 		}
 
 		if(choice == 4){
-			// if a particular choose to exit, then call this method and also remove that player from the game
 			System.exit(0);
 		}
 
-		//please keep choice = 6 to move to next turn
 		if(choice == 5){
 			next_turn(player);
 		}
 
-
-		//if(choice ==6)
+		if(choice ==6)
 		{
 			System.out.println("Thanks for playing! BYE ");
 			System.exit(0);
 		}
-		*/
-
 	}
 
 	/***
@@ -528,5 +461,82 @@ public class GameMaster
 	{
 		System.out.println("GAME OVER");
 		return;
+	}
+
+	/***
+	 * This method let player purchase credit
+	 * The credit will be store in player credit balance
+	 * @param player - current player who has the turn
+	 */
+	public void purchase_credit(Player player)
+	{
+		System.out.println("OK! Purchase game credits.");
+		System.out.println("How many credits? $5/credit ");
+		int game_balance_before_purchase = player.getCredit_balance();
+		System.out.printf("Your current credit balance is: %d\n", game_balance_before_purchase);
+		System.out.print("Please enter amount to buy: ");
+		credit_purchase = reader.nextInt();
+		player.setCredit_balance(credit_purchase + game_balance_before_purchase ); //set the balance
+		int new_game_balance = player.getCredit_balance();
+
+		System.out.printf("Your current balance is: %d\n", new_game_balance); //show new balance
+		playerTurn(player); //recursive call
+	}
+
+
+	/***
+	 * This method let player transfer to other player
+	 * The new balance will be updated when transfer complete
+	 * @param player - the current player who has the turn
+	 */
+	public void transfer_credit(Player player){
+		int received_player_Id;
+		boolean valid_transfer = false;
+		int transfer_balance = 0;
+		int available_balance_before_transfer = 0;
+		int received_player_position = -1;
+
+		available_balance_before_transfer = player.getCredit_balance();
+		System.out.printf("Your current balance is: %d\n", available_balance_before_transfer);
+
+		if(available_balance_before_transfer <= 0)
+		{
+			System.out.println("You have 0 balance. Please purchase credits to transfer\n");
+			playerTurn(player);
+		}
+		else
+		{
+			do {
+				System.out.print("Enter player ID that you want to transfer to: ");
+				received_player_Id = reader.nextInt();
+
+				//iterate through playerlist. check to see if player still in the game
+				for (int i = 0; i < playerList.size(); i++)
+				{
+					if (received_player_Id == playerList.get(i).getPlayerID() && received_player_Id != player.getPlayerID()) {
+						valid_transfer = true;
+						received_player_position = i;
+						break;
+					}
+				}
+				if(!valid_transfer)
+					System.out.println("In-valid player ID.");
+
+			}while (!valid_transfer);
+		}
+
+		if(valid_transfer)
+		{
+			System.out.print("How much credits do you want to transfer\n");
+			transfer_balance = reader.nextInt();
+			while(transfer_balance > available_balance_before_transfer)
+			{
+				System.out.println("Your transfer amount is more than your current balance. ");
+
+				System.out.print("Enter transfer amount again: \n");
+				transfer_balance = reader.nextInt();
+			}
+			player.TransferCredits(transfer_balance, playerList.get(received_player_position));
+		}
 	}
 }

@@ -29,7 +29,7 @@ public class Risk
 		}
 		*/
 		//game now starts in chatbox
-		 GameMaster gameMaster = new GameMaster();
+		 GameMaster gameMaster = new GameMaster(3);
 		 gameMaster.gameStart();
 
 		return;
