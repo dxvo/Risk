@@ -40,9 +40,9 @@ public class GameMasterTest {
 
     @Test
     public void gameStart() {
-        //game2.gameSetup();
-        //game2.gameLoop();
-        //game2.gameCleanup();
+        game2.gameSetup();
+        game2.gameLoop();
+        game2.gameCleanup();
     }
 
     @Test
