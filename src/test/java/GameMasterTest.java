@@ -47,9 +47,9 @@ public class GameMasterTest {
 
     @Test
     public void gameSetup() {
-        //game2.playerSetup();
-        //game2.playerOrderSetup();
-        //game2.mapSetup();
+        game2.playerSetup();
+        game2.playerOrderSetup();
+        game2.mapSetup();
     }
 
 
