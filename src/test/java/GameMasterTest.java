@@ -25,31 +25,31 @@ public class GameMasterTest {
     private int turnCounter;
 
 
-    public GameMasterTest(){
-        gameMap = new Map(6,7);
-        die = new Die();
-        numPlayers = 2;
-        row = gameMap.getRow();
-        col = gameMap.getCol();
-        battleHandler = new BattleHandler();
-        playerList = new ArrayList<>();
-
+    @Before
+    public void setup() throws Exception {
+        this.gameMap = new Map(6,7);
+        this.die = new Die();
+        this.numPlayers = 2;
+        this.row = gameMap.getRow();
+        this.col = gameMap.getCol();
+        this.battleHandler = new BattleHandler();
+        this.playerList = new ArrayList<Player>();
     }
 
 
 
     @Test
     public void gameStart() {
-        this.gameSetup();
-        this.gameLoop();
-        this.gameCleanup();
+        game2.gameSetup();
+        game2.gameLoop();
+        game2.gameCleanup();
     }
 
     @Test
     public void gameSetup() {
-        this.playerSetup();
-        this.playerOrderSetup();
-        this.mapSetup();
+        game2.playerSetup();
+        game2.playerOrderSetup();
+        game2.mapSetup();
     }
 
 
