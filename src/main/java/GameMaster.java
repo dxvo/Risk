@@ -144,6 +144,7 @@ public class GameMaster
 	 */
 	protected void mapSetup()
 	{
+		/*
 		System.out.println("\nPLAYERS' TERRITORIES MAP ");
 		do{
 			System.out.print("Enter map width: ");
@@ -179,6 +180,7 @@ public class GameMaster
 				} while(row <= 0);
 			} while (row*col != 42);
 		}
+		*/
 
 		gameMap = new Map(row, col);
 		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories

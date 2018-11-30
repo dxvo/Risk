@@ -59,15 +59,19 @@ public class GameMasterTest {
         {
             Player player = new Player(i);
             this.numUnits = 50 - numPlayers * 5;
-            player.setNumUnits(numUnits);
-            player.setNumBenchedUnits(numUnits);
+            assertEquals(35,50 - numPlayers * 5);
+            assertEquals(35,player.getNumUnits());
+            assertEquals(35,player.getNumBenchedUnits());
             playerList.add(player);
+            assertEquals(i,playerList.size());
         }
     }
 
 
     @Test
     public void mapSetup() {
+        int numToFill = 42/this.numPlayers + 1;
+
     }
 
     @Test
