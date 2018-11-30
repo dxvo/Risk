@@ -184,7 +184,6 @@ public class GameMaster
 
 		gameMap = new Map(row, col);
 		int numToFill = 42/numPlayers + 1; //number of turn it take to fill 42 territories
-
 		for (int cycle = 0; cycle < numToFill; cycle++)
 		{
 			for (int cell_col = 0; cell_col < col; cell_col++) // # row number
@@ -230,6 +229,7 @@ public class GameMaster
 				playerList.get(playerID).setNumBenchedUnits(bench_unit); //update bench unit
 			}
 		}
+		/*
 		//Randomly distribute player into territories
 		System.out.println("\n STARTING MAP");
 		for (int i = 0; i < col; i++)
@@ -245,6 +245,7 @@ public class GameMaster
 			}
 			System.out.println();
 		}
+		*/
 
 	}
 

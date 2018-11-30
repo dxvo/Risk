@@ -64,7 +64,6 @@ public class GameMasterTest {
 
     @Test
     public void mapSetup() {
-        int numToFill = 42/this.numPlayers + 1;
 
     }
 
