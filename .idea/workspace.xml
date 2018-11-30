@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ac229311-1b08-446f-836a-cd6f41dec16b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GameMaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/GameMaster.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/GameMasterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/GameMasterTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -36,8 +35,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="87" column="19" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="19" />
+                <state relative-caret-position="455">
+                  <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#1239#1263#0" expanded="true" />
@@ -401,13 +400,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="258">
-                  <caret line="51" selection-start-line="51" selection-end-line="51" />
+                <state relative-caret-position="225">
+                  <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#706#722#0" expanded="true" />
-                    <element signature="e#738#754#0" expanded="true" />
-                    <element signature="e#799#816#0" expanded="true" />
+                    <element signature="e#658#674#0" expanded="true" />
+                    <element signature="e#690#706#0" expanded="true" />
+                    <element signature="e#774#791#0" expanded="true" />
                     <element signature="method#gameStart#0;class#GameMasterTest#0" />
                     <element signature="method#gameSetup#0;class#GameMasterTest#0" />
                   </folding>
@@ -1923,7 +1922,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="vim&#9;ACTION&#9;VimPluginToggle" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543560688931" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543561401739" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -2075,6 +2074,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="24" width="1367" height="779" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
@@ -2455,8 +2455,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/GameMaster.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="87" column="19" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="19" />
+        <state relative-caret-position="455">
+          <caret line="72" column="30" lean-forward="true" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1239#1263#0" expanded="true" />
@@ -2802,13 +2802,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/GameMasterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="225">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#706#722#0" expanded="true" />
-            <element signature="e#738#754#0" expanded="true" />
-            <element signature="e#799#816#0" expanded="true" />
+            <element signature="e#658#674#0" expanded="true" />
+            <element signature="e#690#706#0" expanded="true" />
+            <element signature="e#774#791#0" expanded="true" />
             <element signature="method#gameStart#0;class#GameMasterTest#0" />
             <element signature="method#gameSetup#0;class#GameMasterTest#0" />
           </folding>

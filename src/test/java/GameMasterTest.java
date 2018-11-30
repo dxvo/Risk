@@ -9,6 +9,10 @@ import static org.junit.Assert.*;
 
 public class GameMasterTest {
 
+    GameMaster game = new GameMaster();
+    GameMaster game2 = new GameMaster(3);
+
+
     private Map gameMap;
     private ArrayList<Player> playerList;
     private BattleHandler battleHandler;
