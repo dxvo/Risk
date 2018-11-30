@@ -100,6 +100,7 @@ public class GameMaster
 	 */
 	protected void playerSetup()
 	{
+		/*
 		if(numPlayers == 0 )
 		{
 			do {
@@ -115,6 +116,7 @@ public class GameMaster
 
 			} while (numPlayers <= 1 || numPlayers > 6);
 		}
+		*/
 
 		for (int i = 0 ; i < numPlayers; i++)
 		{
@@ -125,13 +127,14 @@ public class GameMaster
 			playerList.add(player); // append player into list
 		}
 
+		/*
 		System.out.println("SETTING UP PLAYERS AND UNITS...");
 		for (int i=0; i<playerList.size(); i++)
 		{
 			System.out.printf("PlayerID: %d",playerList.get(i).getPlayerID());
 			System.out.printf(" - Number of unit: %d\n",playerList.get(i).getNumUnits());
 		}
-
+		*/
 	}
 
 	/***

@@ -29,7 +29,7 @@ public class GameMasterTest {
     public void setup() throws Exception {
         this.gameMap = new Map(6,7);
         this.die = new Die();
-        this.numPlayers = 2;
+        this.numPlayers = 3;
         this.row = gameMap.getRow();
         this.col = gameMap.getCol();
         this.battleHandler = new BattleHandler();
@@ -40,22 +40,31 @@ public class GameMasterTest {
 
     @Test
     public void gameStart() {
-        game2.gameSetup();
-        game2.gameLoop();
-        game2.gameCleanup();
+        //game2.gameSetup();
+        //game2.gameLoop();
+        //game2.gameCleanup();
     }
 
     @Test
     public void gameSetup() {
-        game2.playerSetup();
-        game2.playerOrderSetup();
-        game2.mapSetup();
+        //game2.playerSetup();
+        //game2.playerOrderSetup();
+        //game2.mapSetup();
     }
 
 
     @Test
     public void playerSetup() {
+        for(int i = 0; i < this.numPlayers; i++)
+        {
+            Player player = new Player(i);
+            this.numUnits = 50 - numPlayers * 5;
+            player.setNumUnits(numUnits);
+            player.setNumBenchedUnits(numUnits);
+            playerList.add(player);
+        }
     }
+
 
     @Test
     public void mapSetup() {
