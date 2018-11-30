@@ -135,9 +135,7 @@ public class Map
 	 */
 	public int getOwnerID(int x, int y)
 	{
-		if(isValidCoordinates(x,y))
-			return data[x][y].getOwnerID();
-		return 0;
+		return data[x][y].getOwnerID();
 	}
 
 	/***
@@ -148,8 +146,7 @@ public class Map
 	 */
 	public void setId(int x, int y, int id)
 	{
-		if(isValidCoordinates(x, y))
-			data[x][y].setOwnerID(id);
+		data[x][y].setOwnerID(id);
 	}
 
 
@@ -162,11 +159,8 @@ public class Map
 	 */
 	public void setTerritory(int x, int y, int id, int units)
 	{
-		if(isValidCoordinates(x, y))
-		{
-			data[x][y].setOwnerID(id);
-			data[x][y].setNumUnits(units);
-		}
+		data[x][y].setOwnerID(id);
+		data[x][y].setNumUnits(units);
 	}
 
 	/***
