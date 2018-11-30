@@ -358,6 +358,7 @@ public class GameMaster
 				}
 			}
 		}
+		/*
 		PrintStream consolePrint= System.out;
 		Tweeter tweet = new Tweeter(consolePrint);
 		String message = "";
@@ -380,6 +381,7 @@ public class GameMaster
 			System.out.println("Error Tweeting on Twitter");
 
 		}
+		*/
 
 	}
 

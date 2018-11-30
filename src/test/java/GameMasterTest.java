@@ -77,6 +77,10 @@ public class GameMasterTest {
 
     @Test
     public void gameLoop() {
+        Player player5 = new Player(5);
+        playerList.add(player5);
+        game.gameLoop();
+        assertEquals(5,playerList.get(0).getPlayerID());
 
     }
 
