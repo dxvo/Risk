@@ -34,10 +34,6 @@ public class GameMaster
 	private int turnCounter = 1;
 	private int choice;
 
-	/***
-	 * Class default constructor
-	 *
-	 */
 	public GameMaster()
 	{
 		//gameMap = new Map();

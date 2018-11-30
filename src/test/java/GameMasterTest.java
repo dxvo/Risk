@@ -20,8 +20,8 @@ public class GameMasterTest {
     private int credit_purchase; //for purchase function
     private int turnCounter;
 
-    @Before
-    public void setup() throws Exception {
+
+    public GameMasterTest(){
         gameMap = new Map(6,7);
         die = new Die();
         numPlayers = 2;
@@ -32,13 +32,22 @@ public class GameMasterTest {
 
     }
 
+
+
     @Test
     public void gameStart() {
+        this.gameSetup();
+        this.gameLoop();
+        this.gameCleanup();
     }
 
     @Test
     public void gameSetup() {
+        this.playerSetup();
+        this.playerOrderSetup();
+        this.mapSetup();
     }
+
 
     @Test
     public void playerSetup() {
